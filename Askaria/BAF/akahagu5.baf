@@ -1,0 +1,28 @@
+IF
+	Global("hagupoly","LOCALS",4)
+	HPPercentLT(Myself,15)
+THEN
+	RESPONSE #100
+	SetGlobal("hagupoly","LOCALS",5)
+	CreateVisualEffectObject("POLYBACK",Myself)
+	Polymorph(DOOM_GUARD)
+	ChangeAIScript("akahagu1","override")
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("ssw3","LOCALS",0)
+THEN
+	RESPONSE #100
+	ForceSpellRES("sweapon3",Myself)
+	SetGlobal("ssw3","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("hagusummon","LOCALS")
+THEN
+	RESPONSE #100
+	CreateCreatureDoor("stalke",[-1.-1],0)
+	SetGlobalTimer("hagusummon","LOCALS",12)
+END

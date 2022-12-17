@@ -1,0 +1,42 @@
+// * frist meet*
+//IF
+//  See([PC])
+//  NumTimesTalkedTo(0)
+//THEN
+//  RESPONSE #100
+//    Dialogue(Nearest([PC]))
+//END
+
+// * Combat* 
+IF 
+  Help([PC]) // 도움요청을 하는 동료가 있는가? 
+THEN 
+  RESPONSE #100 
+    AttackOneRound(LastAttackerOf(LastHelp(Myself)))  // 그 동료를 공격한 적을 6초간 공격 
+END 
+
+IF 
+  ActionListEmpty() 
+  See(NearestEnemyOf(Myself)) // 가장 가까운 적이 보일 때 
+THEN 
+  RESPONSE #100 
+    AttackReevaluate(NearestEnemyOf(Myself),12) // 12초간 공격, 도중에 다른 적으로부터 공격당할 경우 그 적으로 공격대상 바뀜.
+END 
+
+//* melee, aggressive 
+// * Will try and stay out of range, but once in close will start attacking melee. 
+
+//*Check for Injured Mages/Clerics to defend* 
+IF 
+  See([ENEMY]) // 적이 시야에 있고 
+  OR(2) 
+  See([PC.0.0.MAGE_ALL]) // 동료중 메이지가 보이거나 
+  See([PC.0.0.CLERIC_ALL]) // 동료중 클레릭이 보이면 
+  HPPercentLT(LastSeenBy(Myself),70) // 마지막으로 본게 HP가 70% 미만일경우 
+  Exists(LastAttackerOf(LastSeenBy(Myself))) // 존재하면 
+  THEN 
+  RESPONSE #100 
+    AttackReevaluate(LastAttackerOf(LastSeenBy(Myself)),12) // 12초간 공격 
+END 
+
+

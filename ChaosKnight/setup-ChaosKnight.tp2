@@ -1,0 +1,117 @@
+BACKUP ~ChaosKnight/backup~
+AUTHOR ~drizztdd@naver.com~
+
+AUTO_TRA ~ChaosKnight/Language/%s/D~
+
+LANGUAGE ~한국어~ ~korean~ ~ChaosKnight/Language/korean/setup.tra~
+LANGUAGE ~English~ ~english~ ~ChaosKnight/Language/english/setup.tra~
+
+BEGIN @0
+
+COPY ~ChaosKnight/SPL/zycs1.spl~ ~override~
+   SAY NAME1 @8
+
+COPY ~ChaosKnight/SPL/zycs2.spl~ ~override~
+   SAY NAME1 @9
+
+COPY ~ChaosKnight/SPL/zycs3.spl~ ~override~
+   SAY NAME1 @10
+
+COPY ~ChaosKnight/SPL/zycs4.spl~ ~override~
+   SAY NAME1 @11
+
+COPY ~ChaosKnight/SPL/zycs5.spl~ ~override~
+   SAY NAME1 @12
+
+COPY ~ChaosKnight/SPL/zycs6.spl~ ~override~
+   SAY NAME1 @13
+
+COPY ~ChaosKnight/SPL/zycs7.spl~ ~override~
+   SAY NAME1 @14
+
+COPY ~ChaosKnight/SPL/zycs8.spl~ ~override~
+   SAY NAME1 @15
+
+COPY ~ChaosKnight/SPL/zycs8_1.spl~ ~override~
+
+COPY ~ChaosKnight/EFF/zychaosd.eff~ ~override~
+
+COPY ~ChaosKnight/EFF/zychaost.eff~ ~override~
+
+COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
+  SAY NAME2 @6
+  SAY DESC @7
+
+COPY ~ChaosKnight/BMP~ ~override~
+
+COMPILE ~ChaosKnight/D~
+
+COMPILE ~ChaosKnight/BAF/ZYJCOB.baf~
+
+EXTEND_TOP ~AR6700.bcs~ ~ChaosKnight/BAF/AR6700.baf~
+
+APPEND ~PDIALOG.2DA~
+~ZYJCOB       ZYJCOBP             ZYJCOBJ            ***            ***                ***                ***                 ***~
+
+
+
+ADD_KIT ~CHAOSK~
+
+~CHAOSK 1 1 1 0 0 1 1 1~ //clasweap 8가지무기타입 사용가능설정.
+
+~CHAOSK 2 2 0 2 5 5 2 0 2 2 2 2 2 2 2 2 2 5 2 2 5 5 2 0 0 0 0 0 2 2 2 3 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5~ //WEAPPROF 무기 숙련도 설정.
+
+~CHAOSK 9 3 9 3 3 3~ //최소 능력치 str dex con int wis chr.
+
+~CHAOSK 0 -2 0 -2 0 0~ // 능력치 변동.
+
+~CHAOSK 9 3 9 3 3 3~ //이 키트로 듀얼하기 위한 최소치 .
+
+~CHAOSK 9 3 9 3 3 3~ //이 키트에서 듀얼하기 위한 최소치.
+
+~CHAOSK 0 0 0 0 0 0 1 1 1~ // L_G L_N L_E N_G N_N N_E C_G C_N C_E 사용가치관 설정.
+
+~CHAOSK 0 0 0 0 0 0~ // 듀얼 클래스 가능 여부설정. 순서대로, 파이터, 클레릭, 메이지, 시프, 드루이드, 레인저임.
+
+~ChaosKnight/2DA/clabjc01.2da~ //키트어빌러티에 관련됨. 레벨업할때마다 생기는 고유능력을 적용함. 이건 새로 만드는게 좋겠죠?
+
+~K_F_H K_F_HE~ //키트 가능 클레스와 종족 설정.
+
+~0x40000000 2~ //kitlist.2da의 unusable 과 class 영역, 이건 새로 만들수없고 여기 있는것 중에서 골라야오류가 안난답니다. 키트별로 아머착용제한 설정.
+
+~Fi0~ //파이터의 하이어빌사용. 대게 lu로 시작하는 테이블에 적혀있음.
+
+~PLAT12 * HELM07 BAG20 RING06 RING31 * BOOT01 AMUL21 BRAC16 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 HAMM07 SW1H27 XBOW06~ // 25STWEAP.2da참고
+
+SAY @1
+SAY @2
+SAY @3
+
+COPY ~ChaosKnight/CRE/zychaos.cre~ ~override~
+  SAY 0xac  @100	//HAPPY
+  SAY 0xb0  @101	//UNHAPPY_ANNOYED
+  SAY 0xb4  @102	//UNHAPPY_SERIOUS
+  SAY 0xb8  @103	//UNHAPPY_BREAKING_POINT
+  SAY 0xc0  @104	//TIRED
+  SAY 0xc8  @105	//BATTLE_CRY1
+  SAY 0xcc  @106	//BATTLE_CRY2	
+  SAY 0xd0  @107	//BATTLE_CRY3
+  SAY 0xf0  @108	//DYING
+  SAY 0xf4  @109	//HURT
+  SAY 0x10c @110	//SELECT_COMMON1
+  SAY 0x110 @111	//SELECT_COMMON2
+  SAY 0x114 @112	//SELECT_COMMON3
+  SAY 0x118 @113	//SELECT_COMMON4
+  SAY 0x11c @114	//SELECT_COMMON5
+  SAY 0x120 @115	//SELECT_COMMON6
+  SAY 0x124 @116	//SELECT_ACTION1
+  SAY 0x128 @117	//SELECT_ACTION2
+  SAY 0x12c @118	//SELECT_ACTION3
+  SAY 0x130 @119	//SELECT_ACTION4
+  SAY NAME1 @4
+  SAY NAME2 @4
+  SAY 0x1cc @5	//BIO
+  ADD_CRE_ITEM ~CHAN02~ #0 #0 #0 ~UNSTEALABLE~ ~ARMOR~
+  ADD_CRE_ITEM ~ZYCHMACE~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP
+  WRITE_SHORT  0x246 ~%CHAOSK%~ // the internal name of your kit, surrounded by %
+

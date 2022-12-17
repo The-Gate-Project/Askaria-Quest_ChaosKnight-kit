@@ -1,0 +1,29 @@
+IF
+	Global("hagupoly","LOCALS",2)
+	HPPercentLT(Myself,45)
+THEN
+	RESPONSE #100
+	SetGlobal("hagupoly","LOCALS",3)
+	CreateVisualEffectObject("POLYBACK",Myself)
+	Polymorph(FIGHTER_MALE_HUMAN)
+	ChangeAIScript("akahagu4","override")
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("ssw1","LOCALS",0)
+THEN
+	RESPONSE #100
+	ForceSpellRES("sweapon1",Myself)
+	SetGlobal("ssw1","LOCALS",1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("haguthief","LOCALS")
+THEN
+  RESPONSE #100
+    ApplySpell(Myself,WIZARD_INVISIBILITY)
+    SetGlobalTimer("haguthief","LOCALS",5)
+END
+	

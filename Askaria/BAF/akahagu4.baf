@@ -1,0 +1,19 @@
+IF
+	Global("hagupoly","LOCALS",3)
+	HPPercentLT(Myself,25)
+THEN
+	RESPONSE #100
+	SetGlobal("hagupoly","LOCALS",4)
+	CreateVisualEffectObject("POLYBACK",Myself)
+	Polymorph(SAREVOK)
+	ChangeAIScript("akahagu5","override")
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("ssw2","LOCALS",0)
+THEN
+	RESPONSE #100
+	ForceSpellRES("sweapon2",Myself)
+	SetGlobal("ssw2","LOCALS",1)
+END

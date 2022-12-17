@@ -1,0 +1,24 @@
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+  EquipMostDamagingMelee()
+  AttackReevaluate(LastAttackerOf(Myself),6)
+END
+
+IF
+  ActionListEmpty()
+  See(Nearestenemyof(Myself))
+THEN
+  RESPONSE #100
+  EquipMostDamagingMelee()
+  AttackReevaluate(NearestEnemyOf(Myself),6)
+END

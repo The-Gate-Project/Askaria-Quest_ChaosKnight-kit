@@ -1,0 +1,7 @@
+IF
+Global("zyjcobexists","AR6700",0)
+THEN
+RESPONSE #100
+SetGlobal("zyjcobexists","AR6700",1)
+CreateCreature("zychaos",[3683.1300],0)
+END

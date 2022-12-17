@@ -1,0 +1,305 @@
+IF
+  !See([ENEMY])
+  See([PC])
+  NumberOfTimesTalkedTo(0)
+  !StateCheck([PC],STATE_INVISIBLE)
+  !StateCheck([PC],STATE_IMPROVEDINVISIBILITY)
+THEN
+  RESPONSE #100
+    StartDialogue("zyhauser",[PC])
+END
+
+IF
+  See([PC])
+  Global("HAU#SM","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SmallWait(2)
+    StartDialogue("zyhauser",[PC])
+    Continue() //<-정말 중요한 구문이다. 이게 없으면 계속 밑에 IF구문을 실행하려고 버벅대면서 스크립트대로 전투를 하지 않는다. 하지만 이것을 추가함으로써 자연스러운 전투전개가 이루어지며, 결국 밑의 IF구문의 조건에 해당하면 PC와 대화하게된다.
+END
+
+IF
+  HPPercentLT(Myself,30)
+  Global("ZyhauserAlmostDie","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ZyhauserAlmostDie","GLOBAL",1)
+    Dialogue([PC])
+END
+
+
+
+
+IF
+  See(Nearestenemyof(Myself))
+  HPPercentLT(Myself,25)
+  HPGT(Myself,1)
+  !Range(Nearestmygroupoftype,10)
+  !GlobalTimerNotExpired("Whined","LOCALS")
+THEN
+  RESPONSE #50
+    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,46151)
+    Shout(ASSIST)
+    Continue()
+  RESPONSE #50
+    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,49763)
+    Shout(ASSIST)
+    Continue()
+  RESPONSE #50
+    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,49764)
+    Shout(ASSIST)
+    Continue()
+  RESPONSE #50
+    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,49765)
+    Shout(ASSIST)
+    Continue()
+END
+
+IF
+  BreakingPoint()
+THEN
+  RESPONSE #50
+    DisplayStringHead(Myself,49766)
+    Shout(ASSIST)
+  RESPONSE #50
+    DisplayStringHead(Myself,49767)
+    Shout(ASSIST)
+  RESPONSE #50
+    DisplayStringHead(Myself,49768)
+    Shout(ASSIST)
+END
+
+IF
+  HPPercentLT(Myself,20)
+  Global("SecondWind","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SecondWind","LOCALS",1)
+    DisplayStringHead(Myself,73944)
+    ApplySpell(Myself,CLERIC_HEAL)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN55",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,46150)
+    UseItem("POTN55",Myself)
+END
+
+IF
+  See(Nearestenemyof(Myself))
+  OR(2)
+    Range(Nearestmygroupoftype,20)
+    See(Nearestmygroupoftype([0.GENERAL_ITEM.0.CLERIC_ALL]))
+  HPPercentLT(Myself,35)
+  !GlobalTimerNotExpired("CalledForHealing","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("CalledForHealing","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,72808)
+    Shout(HEALME)
+    Continue()
+END
+
+IF
+  HitBy([0],CRUSHING)
+  Global("GiantStrengthPotion","LOCALS",0)
+  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  HasItem("POTN05",Myself)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+    SetGlobal("GiantStrengthPotion","LOCALS",1)
+    DisplayStringHead(Myself,46150)
+    UseItem("POTN05",Myself)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  !Range(Nearestenemyof(Myself),5)
+  HaveSpell(MONK_LAY_ON_HANDS)
+  !GlobalTimerNotExpired("LayOnHands","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("LayOnHands","LOCALS",ONE_ROUND)
+    Spell(Myself,MONK_LAY_ON_HANDS)
+END
+
+IF
+  HPPercentLT(Myself,50)
+  OR(2)
+    HaveSpell(MONK_LAY_ON_HANDS)
+    HasItem("POTN55",Myself)
+  Range(Nearestenemyof(Myself),6)
+  Range(Secondnearestenemyof(Myself),6)
+  RandomNum(2,1)
+  Global("TimeToMove","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",1)
+    Continue()
+END
+
+IF
+  RandomNum(2,1)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  Range(Nearestenemyof(Myself),8)
+  Range(Secondnearestenemyof(Myself),8)
+  Range(Thirdnearestenemyof(Myself),8)
+  Global("TimeToMove","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",1)
+    Continue()
+END
+
+IF
+  RandomNum(3,1)
+  HPPercentLT(Myself,30)
+  OR(2)
+    HaveSpell(MONK_LAY_ON_HANDS)
+    HasItem("POTN55",Myself)
+  Range(Nearestenemyof(Myself),6)
+  Global("TimeToMove","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TimeToMove","LOCALS",1)
+    Continue()
+END
+
+
+IF
+  RandomNum(3,1)
+  HPPercentLT(Myself,75)
+  Range(Lastseenby(Myself),10)
+  Global("Lunar","GLOBAL",0)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !StateCheck(Myself,STATE_NORMAL)
+  !GlobalTimerNotExpired("ShadowStance","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ShadowStance","LOCALS",FIVE_ROUNDS)
+    DisplayStringHead(Myself,73943)
+    ReallyForceSpellRES("BALTH10",Myself)
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  Range(Lastseenby(Myself),4)
+  RandomNum(3,1)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",3)
+    DisplayStringHead(Myself,73942)
+    FaceObject(Lastseenby(Myself))
+    SwingOnce()
+    PlaySound("BALTHA02")
+    ReallyForceSpellRES("BALTH09",Lastseenby(Myself))
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  Range(Lastseenby(Myself),10)
+  RandomNum(2,1)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",TWO_ROUNDS)
+    DisplayStringHead(Myself,72915)
+    ForceSpellRES("BALTH03",Myself)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  Range(Lastseenby(Myself),10)
+  RandomNum(2,2)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",TWO_ROUNDS)
+    DisplayStringHead(Myself,72916)
+    ForceSpellRES("BALTH04",Myself)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  Range(Lastseenby(Myself),5)
+  RandomNum(2,1)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",ONE_ROUND)
+    DisplayStringHead(Myself,71989)
+    ForceSpellRES("BALTH05",Myself)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  HaveSpell(MONK_QUIVERING_PALM)
+  RandomNum(2,2)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",5)
+    DisplayStringHead(Myself,72936)
+    ForceSpell(Myself,MONK_QUIVERING_PALM)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  HaveSpell(MONK_STUNNING_BLOW)
+  RandomNum(2,1)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("MonkTimer","LOCALS",9)
+    DisplayStringHead(Myself,72937)
+    ForceSpell(Myself,MONK_STUNNING_BLOW)
+    Continue()
+END
+
+IF
+  !HPPercentLT(Myself,20)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    AttackReevaluate(Lastseenby(Myself),15)
+END
+
+IF
+  HPPercentLT(Myself,20)
+  OR(3)
+    HasItem("POTN55",Myself)
+    HaveSpell(MONK_LAY_ON_HANDS)
+    Range(Nearestmygroupoftype,20)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    RunAwayFrom(Nearestenemyof(Myself),45)
+END
+
+IF
+  HPPercentLT(Myself,20)
+  !HasItem("POTN55",Myself)
+  !HaveSpell(MONK_LAY_ON_HANDS)
+  !Range(Nearestmygroupoftype,20)
+  Global("Lunar","GLOBAL",0)
+THEN
+  RESPONSE #100
+    AttackReevaluate(Lastseenby(Myself),15)
+END
+
