@@ -1,4 +1,5 @@
 IF
+GlobalGT("Chapter","GLOBAL",5)
 Global("zyaskaexists","AR6700",0)
 THEN
 RESPONSE #100
