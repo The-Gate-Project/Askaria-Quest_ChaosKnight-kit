@@ -1,7 +1,7 @@
 IF
-Global("zyjcobexists","AR6700",0)
+Global("zyjcobexists","%Beregost_BCS%",0)
 THEN
 RESPONSE #100
-SetGlobal("zyjcobexists","AR6700",1)
+SetGlobal("zyjcobexists","%Beregost_BCS%",1)
 CreateCreature("zychaos",[3683.1300],0)
 END
