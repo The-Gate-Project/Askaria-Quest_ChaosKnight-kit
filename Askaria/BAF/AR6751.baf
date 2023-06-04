@@ -1,9 +1,9 @@
 IF
 Global("AS#PAI","GLOBAL",1)
-Global("zy#hau#exists","AR6751",0)
+Global("zy#hau#exists","%Beregost_FeldepostsInn_L1_BCS%",0)
 THEN
 RESPONSE #100
-SetGlobal("zy#hau#exists","AR6751",1)
+SetGlobal("zy#hau#exists","%Beregost_FeldepostsInn_L1_BCS%",1)
 CreateCreature("zyhauser",[560.567],14)
 CreateCreature("zyhaum1",[465.589],14)
 CreateCreature("zyhaum2",[552.521],14)

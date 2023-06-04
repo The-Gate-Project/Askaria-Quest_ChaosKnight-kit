@@ -1,6 +1,6 @@
 BEGIN ~ZYDOP1~
 
-IF WEIGHT #1 ~PartyHasItem("ZYSUDUST") Global("DustHave", "GLOBAL", 1) AreaCheck("AR6720")
+IF WEIGHT #1 ~PartyHasItem("ZYSUDUST") Global("DustHave", "GLOBAL", 1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN 0
   SAY @0
   IF ~~ THEN REPLY @1 DO ~TakePartyItem("ZYSUDUST") DestroyItem("ZYSUDUST") SetGlobal("DustHave", "GLOBAL", 0)~ GOTO d1
@@ -29,7 +29,7 @@ END
   IF ~~ THEN EXTERN zyhagu epic1
 END
 
-IF ~!PartyHasItem("ZYSUDUST") Global("DustHave", "GLOBAL", 1) AreaCheck("AR6720")
+IF ~!PartyHasItem("ZYSUDUST") Global("DustHave", "GLOBAL", 1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN extra1
   SAY @15
   IF ~~ THEN EXIT 

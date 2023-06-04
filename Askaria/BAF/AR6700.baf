@@ -1,9 +1,9 @@
 IF
 GlobalGT("Chapter","GLOBAL",5)
-Global("zyaskaexists","AR6700",0)
+Global("zyaskaexists","%Beregost_BCS%",0)
 THEN
 RESPONSE #100
-SetGlobal("zyaskaexists","AR6700",1)
+SetGlobal("zyaskaexists","%Beregost_BCS%",1)
 CreateCreature("zyaska",[1738.2768],0)
 CreateCreature("zya#1gan",[1819.2758],3)
 END
@@ -19,9 +19,9 @@ ActionOverride("zyaska",StartDialog("zyaska",[PC])
 END
 
 IF
-Global("zya#tmoexists","AR6700",0)
+Global("zya#tmoexists","%Beregost_BCS%",0)
 THEN
 RESPONSE #100
-SetGlobal("zya#tmoexists","AR6700",1)
+SetGlobal("zya#tmoexists","%Beregost_BCS%",1)
 CreateCreature("zya#tmo",[1828.3686],0)
 END

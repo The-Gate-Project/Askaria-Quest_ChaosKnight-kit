@@ -2,6 +2,8 @@ BACKUP ~ChaosKnight/backup~
 AUTHOR ~drizztdd@naver.com~
 README ~Askaria/Readmes/Readme.%LANGUAGE%.txt~ ~Askaria/Readmes/readme.English.txt~
 
+VERSION ~v2.0~
+
 ALWAYS
 
 INCLUDE ~ChaosKnight/Lib/g3_cpmvars_master.tpa~

@@ -13,15 +13,15 @@ Advantages:
 -At level 4, learn Critical Strike as a passive skill
 -At level 4, 8, 12 learn Reality Lift
 -At level 10, 20, 33 learn Phantasm spell
--At level 11, 29, 38, 50 Add health (+1)
+-At level 11, 29, 38, 50 Add Constitution (+1)
 -Maximum blunt weapon proficiency up to 5 (except for staff)
 
 Disadvantage:
 -Can't use ranged weapon
 -Can't equip plate and full plate
--Penalty to Dexterity and Intelligent -2
+-Penalty to Dexterity and Intelligence (-2)
 -Only chaotic tendencies are allowed for Chaos knights
--Except for blunt weapons, can only have a weapon proficiency of 2
+-Except for blunt weapons, can only have a weapon proficiency up to 2
 -Dual classing is impossible~
 
 @4  =~Jacob~
@@ -52,7 +52,7 @@ Not useable by :
 @11 =~Chaos Arrow~
 @12 =~Illusion~
 @13 =~Phantasm~
-@14 =~Chaos Knight Added Health~
+@14 =~Chaos Knight Added Constitution~
 @15 =~Reality Lift~
 @16 =~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. The shaft of this magical mace seems to guide the wielder, becoming an extension of his hand.
 

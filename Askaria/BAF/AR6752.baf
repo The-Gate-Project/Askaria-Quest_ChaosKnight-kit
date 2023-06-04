@@ -1,7 +1,7 @@
 IF
-Global("zy#pai#exists","AR6752",0)
+Global("zy#pai#exists","%Beregost_FeldepostsInn_L2_BCS%",0)
 THEN
 RESPONSE #100
-SetGlobal("zy#pai#exists","AR6752",1)
+SetGlobal("zy#pai#exists","%Beregost_FeldepostsInn_L2_BCS%",1)
 CreateCreature("zypai",[505.628],15)
 END

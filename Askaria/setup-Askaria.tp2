@@ -1,27 +1,91 @@
 BACKUP ~Askaria/backup~
 AUTHOR ~drizztdd@naver.com~
-VERSION ~v1.3~
+README ~Askaria/Readmes/Readme.%LANGUAGE%.txt~ ~Askaria/Readmes/readme.English.txt~
 
-AUTO_TRA ~Askaria/Language/%s/D~
+VERSION ~v2.0~
+
+ALWAYS
+
+INCLUDE ~Askaria/Lib/g3_cpmvars_master.tpa~
+
+    //Copies tra files into the autotra-folder (to leave the originals untouched)
+    DEFINE_ACTION_FUNCTION autotra_workaround BEGIN
+      COPY ~Askaria/Language/english/D~  ~Askaria/Language/autotra/%LANGUAGE%/D~
+      COPY ~Askaria/Language/english~  ~Askaria/Language/autotra/%LANGUAGE%~
+	  COPY ~Askaria/Language/%LANGUAGE%/D~  ~Askaria/Language/autotra/%LANGUAGE%/D~
+      COPY ~Askaria/Language/%LANGUAGE%~  ~Askaria/Language/autotra/%LANGUAGE%~
+    END
+
+    LAF autotra_workaround END
+
+
+//  ACTION_DEFINE_ARRAY fl#noconvert BEGIN END
+
+ ACTION_DEFINE_ARRAY fl#reload BEGIN setup END
+
+    LAF HANDLE_CHARSETS
+      INT_VAR
+        infer_charsets = 1
+      STR_VAR
+        tra_path = EVAL ~Askaria/Language/autotra~
+//        noconvert_array = fl#noconvert
+        reload_array = fl#reload
+ END
+END
+
+AUTO_TRA ~Askaria/Language/autotra/%s/D~
 
 LANGUAGE ~ÇÑ±¹¾î~ ~korean~ ~Askaria/Language/korean/setup.tra~
 LANGUAGE ~English~ ~english~ ~Askaria/Language/english/setup.tra~
 
 BEGIN @0
 
-COPY ~Askaria/BMP~ ~override~
 
-APPEND ~PDIALOG.2DA~
-~ZYASKA       ZYASKAP             ZYASKAJ            ***            ***                ***                ***                 ***~
+// Portraits
+
+ACTION_IF (GAME_IS ~bgee bg2ee eet~) BEGIN
+  COPY ~Askaria/BMP/EE/zyaskaL.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zyaskaS.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zyaskaM.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zydop1S.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zyhaguS.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zyhaurS.bmp~ ~override~
+  COPY ~Askaria/BMP/EE/zypaiS.bmp~ ~override~
+END ELSE BEGIN
+  COPY ~Askaria/BMP/zyaskaL.bmp~ ~override~
+  COPY ~Askaria/BMP/zyaskaS.bmp~ ~override~
+  COPY ~Askaria/BMP/zyaskaM.bmp~ ~override~
+  COPY ~Askaria/BMP/zydop1S.bmp~ ~override~
+  COPY ~Askaria/BMP/zyhaguS.bmp~ ~override~
+  COPY ~Askaria/BMP/zyhaurS.bmp~ ~override~
+  COPY ~Askaria/BMP/zypaiS.bmp~ ~override~
+END
+
+
+// Dialogues
 
 COMPILE ~Askaria/D~
 
+COMPILE EVALUATE_BUFFER ~Askaria/D/Dop#1M.d~
+COMPILE ~Askaria/D/Hau#1M.d~
+COMPILE EVALUATE_BUFFER ~Askaria/D/Pai#1M.d~
+COMPILE ~Askaria/D/Zya#Tmo.d~
+COMPILE ~Askaria/D/ZYASKA.d~
+COMPILE ~Askaria/D/ZYASKAJ.d~
+COMPILE ~Askaria/D/ZYASKAP.d~
+COMPILE EVALUATE_BUFFER ~Askaria/D/ZYASMITH.d~
+
+
+// Spells
 
 COPY ~Askaria/SPL/st4he.spl~ ~override~
 COPY ~Askaria/SPL/akasun.spl~ ~override~
 COPY ~Askaria/SPL/sweapon1.spl~ ~override~
 COPY ~Askaria/SPL/sweapon2.spl~ ~override~
 COPY ~Askaria/SPL/sweapon3.spl~ ~override~
+
+
+// Creatures
 
 COPY ~Askaria/CRE/zya#1gan.cre~ ~override~
   SAY NAME1 @1
@@ -102,7 +166,9 @@ COPY ~Askaria/CRE/zyhagu.cre~ ~override~
 COPY ~Askaria/CRE/zya#tmo.cre~ ~override~
   SAY NAME1 @37
   SAY NAME2 @37
- 
+
+
+//Items
 
 COPY ~Askaria/ITM/sethel.itm~ ~override~
   SAY NAME1 @13
@@ -143,6 +209,8 @@ COPY ~Askaria/ITM/akasw2.itm~ ~override~
 COPY ~Askaria/ITM/akasw3.itm~ ~override~
 
 
+// Scripts
+
 COMPILE ~Askaria/BAF/ZYASKA.baf~
 COMPILE ~Askaria/BAF/ZYHAUSER.baf~
 COMPILE ~Askaria/BAF/ZYDOP1.baf~
@@ -153,10 +221,33 @@ COMPILE ~Askaria/BAF/akahagu3.baf~
 COMPILE ~Askaria/BAF/akahagu4.baf~
 COMPILE ~Askaria/BAF/akahagu5.baf~
 
-EXTEND_TOP ~AR6751.bcs~ ~Askaria/BAF/AR6751.baf~
-EXTEND_TOP ~AR6752.bcs~ ~Askaria/BAF/AR6752.baf~
-EXTEND_TOP ~AR6720.bcs~ ~Askaria/BAF/AR6720.baf~
-EXTEND_TOP ~AR6700.bcs~ ~Askaria/BAF/AR6700.baf~
-EXTEND_TOP ~AR9702.bcs~ ~Askaria/BAF/AR9702.baf~
-EXTEND_TOP ~AR9700.bcs~ ~Askaria/BAF/AR9700.baf~
-EXTEND_TOP ~AR6701.bcs~ ~Askaria/BAF/AR6701.baf~
+EXTEND_TOP ~%Beregost_FeldepostsInn_L1_BCS%.bcs~ ~Askaria/BAF/AR6751.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%Beregost_FeldepostsInn_L2_BCS%.bcs~ ~Askaria/BAF/AR6752.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%Beregost_TravenhurstManor_L1_BCS%.bcs~ ~Askaria/BAF/AR6720.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%Beregost_BCS%.bcs~ ~Askaria/BAF/AR6700.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%SouthBeregostRoad_Cave_BCS%.bcs~ ~Askaria/BAF/AR9702.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%SouthBeregostRoad_BCS%.bcs~ ~Askaria/BAF/AR9700.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%Beregost_ThunderhammerSmithy_BCS%.bcs~ ~Askaria/BAF/AR6701.baf~
+    EVALUATE_BUFFER
+
+
+// Append
+
+/*
+APPEND ~PDIALOG.2DA~
+~ZYASKA       ZYASKAP             ZYASKAJ            ***            ***                ***                ***                 ***~
+*/
+
+ACTION_IF (GAME_IS ~eet~) BEGIN
+  APPEND ~pdialog.2da~ ~ZYASKA       ZYASKAP             ZYASKAJ            ***            ***                ***                ***                 ***~
+    UNLESS ~ZYASKA~
+END ELSE BEGIN
+  APPEND ~pdialog.2da~ ~ZYASKA       ZYASKAP             ZYASKAJ            ***~
+    UNLESS ~ZYASKA~
+END
