@@ -102,7 +102,7 @@ Corrected by Xicloing
   - Move files and older
   - Up setup.exe
 
-- ChaosKnight : first draw
+- ChaosKnight :
   - Add lib folder (addkit fonction and cpmvars)
   - Autotra Iconv Handle Charset
   - cpmvars and EVALUATE_BUFFER for EE compatibility
