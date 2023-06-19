@@ -1,4 +1,4 @@
-@0   = ~Adds a Quest mod for BGT user~ 
+@0   = ~Askaria Quest for BGT, BGEE or EET~ 
 @1   = ~Outlaw1~ 
 @2   = ~Outlaw2~ 
 @3   = ~Outlaw3~ 
@@ -130,3 +130,5 @@ Huh... I don't know why there are so much more monsters today. Yesterday, all I 
 @37   = ~Twidley's Mother~ 
 
 @38   = ~Cries for release~
+
+@100 = ~Askaria Quest must be installed on BGT, BGEE or EET~

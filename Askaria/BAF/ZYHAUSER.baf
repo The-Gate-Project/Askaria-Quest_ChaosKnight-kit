@@ -36,25 +36,25 @@ IF
   HPPercentLT(Myself,25)
   HPGT(Myself,1)
   !Range(Nearestmygroupoftype,10)
-  !GlobalTimerNotExpired("Whined","LOCALS")
+  !GlobalTimerNotExpired("ZYWhined","LOCALS")
 THEN
   RESPONSE #50
-    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,46151)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
-    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,49763)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
-    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,49764)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
-    SetGlobalTimer("Whined","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,49765)
     Shout(ASSIST)
     Continue()
@@ -76,21 +76,21 @@ END
 
 IF
   HPPercentLT(Myself,20)
-  Global("SecondWind","LOCALS",0)
+  Global("ZYSecondWind","LOCALS",0)
 THEN
   RESPONSE #100
-    SetGlobal("SecondWind","LOCALS",1)
+    SetGlobal("ZYSecondWind","LOCALS",1)
     DisplayStringHead(Myself,73944)
     ApplySpell(Myself,CLERIC_HEAL)
 END
 
 IF
   HPPercentLT(Myself,50)
-  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYDrankPotioTime","LOCALS")
   HasItem("POTN55",Myself)
 THEN
   RESPONSE #100
-    SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYDrankPotioTime","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,46150)
     UseItem("POTN55",Myself)
 END
@@ -101,10 +101,10 @@ IF
     Range(Nearestmygroupoftype,20)
     See(Nearestmygroupoftype([0.GENERAL_ITEM.0.CLERIC_ALL]))
   HPPercentLT(Myself,35)
-  !GlobalTimerNotExpired("CalledForHealing","LOCALS")
+  !GlobalTimerNotExpired("ZYCallForHeal","LOCALS")
 THEN
   RESPONSE #100
-    SetGlobalTimer("CalledForHealing","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYCallForHeal","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,72808)
     Shout(HEALME)
     Continue()
@@ -112,13 +112,13 @@ END
 
 IF
   HitBy([0],CRUSHING)
-  Global("GiantStrengthPotion","LOCALS",0)
-  !GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+  Global("ZYGiantStrengPotio","LOCALS",0)
+  !GlobalTimerNotExpired("ZYDrankPotioTime","LOCALS")
   HasItem("POTN05",Myself)
 THEN
   RESPONSE #100
-    SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
-    SetGlobal("GiantStrengthPotion","LOCALS",1)
+    SetGlobalTimer("ZYDrankPotioTime","LOCALS",ONE_ROUND)
+    SetGlobal("ZYGiantStrengPotio","LOCALS",1)
     DisplayStringHead(Myself,46150)
     UseItem("POTN05",Myself)
 END
@@ -127,10 +127,10 @@ IF
   HPPercentLT(Myself,50)
   !Range(Nearestenemyof(Myself),5)
   HaveSpell(MONK_LAY_ON_HANDS)
-  !GlobalTimerNotExpired("LayOnHands","LOCALS")
+  !GlobalTimerNotExpired("ZYLayOnHands","LOCALS")
 THEN
   RESPONSE #100
-    SetGlobalTimer("LayOnHands","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYLayOnHands","LOCALS",ONE_ROUND)
     Spell(Myself,MONK_LAY_ON_HANDS)
 END
 
@@ -142,10 +142,10 @@ IF
   Range(Nearestenemyof(Myself),6)
   Range(Secondnearestenemyof(Myself),6)
   RandomNum(2,1)
-  Global("TimeToMove","LOCALS",0)
+  Global("ZYTimeToMove","LOCALS",0)
 THEN
   RESPONSE #100
-    SetGlobal("TimeToMove","LOCALS",1)
+    SetGlobal("ZYTimeToMove","LOCALS",1)
     Continue()
 END
 
@@ -155,10 +155,10 @@ IF
   Range(Nearestenemyof(Myself),8)
   Range(Secondnearestenemyof(Myself),8)
   Range(Thirdnearestenemyof(Myself),8)
-  Global("TimeToMove","LOCALS",0)
+  Global("ZYTimeToMove","LOCALS",0)
 THEN
   RESPONSE #100
-    SetGlobal("TimeToMove","LOCALS",1)
+    SetGlobal("ZYTimeToMove","LOCALS",1)
     Continue()
 END
 
@@ -169,10 +169,10 @@ IF
     HaveSpell(MONK_LAY_ON_HANDS)
     HasItem("POTN55",Myself)
   Range(Nearestenemyof(Myself),6)
-  Global("TimeToMove","LOCALS",0)
+  Global("ZYTimeToMove","LOCALS",0)
 THEN
   RESPONSE #100
-    SetGlobal("TimeToMove","LOCALS",1)
+    SetGlobal("ZYTimeToMove","LOCALS",1)
     Continue()
 END
 
@@ -181,25 +181,25 @@ IF
   RandomNum(3,1)
   HPPercentLT(Myself,75)
   Range(Lastseenby(Myself),10)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
   !StateCheck(Myself,STATE_INVISIBLE)
   !StateCheck(Myself,STATE_NORMAL)
-  !GlobalTimerNotExpired("ShadowStance","LOCALS")
+  !GlobalTimerNotExpired("ZYShadowStance","LOCALS")
 THEN
   RESPONSE #100
-    SetGlobalTimer("ShadowStance","LOCALS",FIVE_ROUNDS)
+    SetGlobalTimer("ZYShadowStance","LOCALS",FIVE_ROUNDS)
     DisplayStringHead(Myself,73943)
     ReallyForceSpellRES("BALTH10",Myself)
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   Range(Lastseenby(Myself),4)
   RandomNum(3,1)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",3)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",3)
     DisplayStringHead(Myself,73942)
     FaceObject(Lastseenby(Myself))
     SwingOnce()
@@ -208,65 +208,65 @@ THEN
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   Range(Lastseenby(Myself),10)
   RandomNum(2,1)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",TWO_ROUNDS)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",TWO_ROUNDS)
     DisplayStringHead(Myself,72915)
     ForceSpellRES("BALTH03",Myself)
     Continue()
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   Range(Lastseenby(Myself),10)
   RandomNum(2,2)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",TWO_ROUNDS)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",TWO_ROUNDS)
     DisplayStringHead(Myself,72916)
     ForceSpellRES("BALTH04",Myself)
     Continue()
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   Range(Lastseenby(Myself),5)
   RandomNum(2,1)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",ONE_ROUND)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",ONE_ROUND)
     DisplayStringHead(Myself,71989)
     ForceSpellRES("BALTH05",Myself)
     Continue()
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   HaveSpell(MONK_QUIVERING_PALM)
   RandomNum(2,2)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",5)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",5)
     DisplayStringHead(Myself,72936)
     ForceSpell(Myself,MONK_QUIVERING_PALM)
     Continue()
 END
 
 IF
-  !GlobalTimerNotExpired("MonkTimer","LOCALS")
+  !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
   HaveSpell(MONK_STUNNING_BLOW)
   RandomNum(2,1)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobalTimer("MonkTimer","LOCALS",9)
+    SetGlobalTimer("ZYMonkTimer","LOCALS",9)
     DisplayStringHead(Myself,72937)
     ForceSpell(Myself,MONK_STUNNING_BLOW)
     Continue()
@@ -274,7 +274,7 @@ END
 
 IF
   !HPPercentLT(Myself,20)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
     AttackReevaluate(Lastseenby(Myself),15)
@@ -286,7 +286,7 @@ IF
     HasItem("POTN55",Myself)
     HaveSpell(MONK_LAY_ON_HANDS)
     Range(Nearestmygroupoftype,20)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
     RunAwayFrom(Nearestenemyof(Myself),45)
@@ -297,7 +297,7 @@ IF
   !HasItem("POTN55",Myself)
   !HaveSpell(MONK_LAY_ON_HANDS)
   !Range(Nearestmygroupoftype,20)
-  Global("Lunar","GLOBAL",0)
+  Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
     AttackReevaluate(Lastseenby(Myself),15)

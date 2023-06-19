@@ -1,8 +1,8 @@
-@0  =~Installation of the Chaos Knight Kit for BGT~
+@0  = ~Installation of the Chaos Knight Kit for BGT, BGEE, BG2EE or EET~
 
-@1  =~Chaos Knight~
-@2  =~Chaos Knight~
-@3  =~Chaos Knight: 
+@1  = ~Chaos Knight~
+@2  = ~Chaos Knight~
+@3  = ~Chaos Knight: 
 The Chaos knight serves the god of chaos and uses his powers in order to spread the reign of chaos. They have abilities to gather chaos energy doing damage to their enemies, stunning them and instantly focusing on dealing the deadly blow. They are able to open a gate of dimension, and when they do so, their enemies take additional damage from the power of chaos. But their true power is awesome fast movement and the ability to summon an avatar that has the same abilities as themselves.
 
 Advantages:
@@ -24,12 +24,12 @@ Disadvantage:
 -Except for blunt weapons, can only have a weapon proficiency up to 2
 -Dual classing is impossible~
 
-@4  =~Jacob~
-@5  =~When asked about his past, he says he has grown up in a normal family, surprisingly. His parents wanted him to work for the country's border guards. Eventually, he left home and traveled for a while. After joining the temple of chaos, he started his regular training. He is extremely resourceful and has learned many abilities as a chaos knight. For him, war is merely a playground.~
+@4  = ~Jacob~
+@5  = ~When asked about his past, he says he has grown up in a normal family, surprisingly. His parents wanted him to work for the country's border guards. Eventually, he left home and traveled for a while. After joining the temple of chaos, he started his regular training. He is extremely resourceful and has learned many abilities as a chaos knight. For him, war is merely a playground.~
 
-@6 =~Jacob's Sun Star +1~
+@6 = ~Jacob's Sun Star +1~
 
-@7 =~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
+@7 = ~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
 
 STATISTICS:
 
@@ -46,18 +46,18 @@ Type: 1-handed
 Not useable by : 
  Everyone except for Jacob~
 
-@8 =~Chaos Knight's Immunity~
-@9 =~Chaos Knight Critical Strike~
-@10 =~Chaos Knight Increased speed~
-@11 =~Chaos Arrow~
-@12 =~Illusion~
-@13 =~Phantasm~
-@14 =~Chaos Knight Added Constitution~
-@15 =~Reality Lift~
-@16 =~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. The shaft of this magical mace seems to guide the wielder, becoming an extension of his hand.
+@8 = ~Chaos Knight's Immunity~
+@9 = ~Chaos Knight Critical Strike~
+@10 = ~Chaos Knight Increased speed~
+@11 = ~Chaos Arrow~
+@12 = ~Illusion~
+@13 = ~Phantasm~
+@14 = ~Chaos Knight Added Constitution~
+@15 = ~Reality Lift~
+@16 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. The shaft of this magical mace seems to guide the wielder, becoming an extension of his hand.
 
 This particular mass can only be handled by Jacob~
-@17 =~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
+@17 = ~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
 
 STATISTICS:
 
@@ -71,25 +71,29 @@ Weight: 10
 Speed Factor: 6
 Proficiency Type: Flail/ Morning Star
 Type: 1-handed~
-@18 =~Jacob's Sun Star~
+@18 = ~Jacob's Sun Star~
 
-@100 =~I like it!~
-@101 =~Now I'm pissed off~
-@102 =~I really hate this! This sucks!~
-@103 =~Get out of my way. I'm leaving.~
-@104 =~Shall we rest for a moment?~
-@105 =~For Chaos, crush the justice and good!~
-@106 =~Kill all!~
-@107 =~Whahahahahaha.~
-@108 =~Oops! My mistake.~
-@109 =~Huk!~
-@110 =~Hey, dude, what did you find?~
-@111 =~Ok, whatever you say.~
-@112 =~Hey, did you see that? A white thing passed by just before our eyes.~
-@113 =~You think I'm joking?~
-@114 =~I'm sick of doing what to say!~
-@115 =~I don't care whether you believe me or not.~
-@116 =~What do you want?~
-@117 =~I'm coming, I'm coming!~
-@118 =~Don't worry! No problem!~
-@119 =~Hhhhhh... Who is the victim, today.~
+@100 = ~I like it!~
+@101 = ~Now I'm pissed off~
+@102 = ~I really hate this! This sucks!~
+@103 = ~Get out of my way. I'm leaving.~
+@104 = ~Shall we rest for a moment?~
+@105 = ~For Chaos, crush the justice and good!~
+@106 = ~Kill all!~
+@107 = ~Whahahahahaha.~
+@108 = ~Oops! My mistake.~
+@109 = ~Huk!~
+@110 = ~Hey, dude, what did you find?~
+@111 = ~Ok, whatever you say.~
+@112 = ~Hey, did you see that? A white thing passed by just before our eyes.~
+@113 = ~You think I'm joking?~
+@114 = ~I'm sick of doing what to say!~
+@115 = ~I don't care whether you believe me or not.~
+@116 = ~What do you want?~
+@117 = ~I'm coming, I'm coming!~
+@118 = ~Don't worry! No problem!~
+@119 = ~Hhhhhh... Who is the victim, today.~
+
+
+@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE or EET~ 
+@201 = ~Only the ChaosKit will be installed on BG2EE~

@@ -79,4 +79,35 @@ Corrected by Xicloing
 CHANGES
 ********
 
-1.3 First version uploaded at Spell Hold
+1.3 
+
+- First version uploaded at SpellHold Studios
+
+2.0 
+
+- BWP fixes :
+  - Askaria... GlobalGT("Chapter","GLOBAL",5) to AR6700.baf
+  - ChaosKnight... WRITE_SHORT to tp2
+  - Move files and older
+  - Up setup.exe
+
+- ChaosKnight :
+  - Add lib folder (addkit fonction and cpmvars)
+  - Autotra Iconv Handle Charset
+  - cpmvars and EVALUATE_BUFFER for EE compatibility
+  - Portrait size for EE
+  - AddKit for EE
+  - Use Raduziel fonction for adding ChaosKnight kit to Jacob
+  - Handle charset and Autotra
+  - REQUIRE_PREDICATE
+  - Separate kit from Jacob npc to allow ChaosKit to be installed on BG2EE
+  
+- Askaria :
+
+  - Handle Charset and Autotra
+  - Portraits size for EE
+  - Correct wrong state in Pai#1M.d
+  - cpmvars and EVALUATE_BUFFER for EE compatibility
+  - Add Readme.md
+  - variables prefixes
+  - REQUIRE_PREDICATE

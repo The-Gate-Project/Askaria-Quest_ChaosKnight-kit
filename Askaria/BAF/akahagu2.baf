@@ -1,21 +1,22 @@
 IF
-	Global("hagupoly","LOCALS",1)
+	Global("ZYhagupoly","LOCALS",1)
 	HPPercentLT(Myself,64)
 THEN
 	RESPONSE #100
-	SetGlobal("hagupoly","LOCALS",2)
+	SetGlobal("ZYhagupoly","LOCALS",2)
 	CreateVisualEffectObject("POLYBACK",Myself)
 	Polymorph(FIGHTER_FEMALE_HUMAN)
 	ChangeAIScript("akahagu3","override")
 END
 	
 IF
+	Global("ZYfirstmeet2","LOCALS",0)
 	ActionListEmpty()
 	See(NearestEnemyOf(Myself))
 	!GlobalTimerNotExpired("haguspell","LOCALS")
 THEN
 	RESPONSE #100
-	SetGlobal("firstmeet","LOCALS",1)
+	SetGlobal("ZYfirstmeet2","LOCALS",1)
 	ApplySpell(Myself,WIZARD_STONE_SKIN)
 	ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
 	ApplySpell(Myself,WIZARD_SPELL_TURNING)
@@ -84,10 +85,10 @@ THEN
 END
 
 IF
-  !GlobalTimerNotExpired("spmissle","LOCALS")
+  !GlobalTimerNotExpired("ZYspmissle","LOCALS")
   See(NearestEnemyOf(Myself))
 THEN 
   RESPONSE #100 
     ForceSpell(NearestEnemyOf(Myself), WIZARD_MAGIC_MISSILE) 
-    SetGlobalTimer("spmissle","LOCALS",10)
+    SetGlobalTimer("ZYspmissle","LOCALS",10)
 END 

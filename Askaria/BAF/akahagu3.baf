@@ -1,9 +1,9 @@
 IF
-	Global("hagupoly","LOCALS",2)
+	Global("ZYhagupoly","LOCALS",2)
 	HPPercentLT(Myself,45)
 THEN
 	RESPONSE #100
-	SetGlobal("hagupoly","LOCALS",3)
+	SetGlobal("ZYhagupoly","LOCALS",3)
 	CreateVisualEffectObject("POLYBACK",Myself)
 	Polymorph(FIGHTER_MALE_HUMAN)
 	ChangeAIScript("akahagu4","override")
@@ -11,11 +11,11 @@ END
 
 IF
 	See(NearestEnemyOf(Myself))
-	Global("ssw1","LOCALS",0)
+	Global("ZYssw1","LOCALS",0)
 THEN
 	RESPONSE #100
 	ForceSpellRES("sweapon1",Myself)
-	SetGlobal("ssw1","LOCALS",1)
+	SetGlobal("ZYssw1","LOCALS",1)
 END
 
 IF

@@ -92,7 +92,9 @@ Corrected by Xicloing
 ## Version History :
 ------------------
 
-1.3 First version uploaded at SpellHold Studios
+1.3 
+
+- First version uploaded at SpellHold Studios
 
 2.0 
 
@@ -110,6 +112,8 @@ Corrected by Xicloing
   - AddKit for EE
   - Use Raduziel fonction for adding ChaosKnight kit to Jacob
   - Handle charset and Autotra
+  - REQUIRE_PREDICATE
+  - Separate kit from Jacob npc to allow ChaosKit to be installed on BG2EE
   
 - Askaria :
 
@@ -118,3 +122,5 @@ Corrected by Xicloing
   - Correct wrong state in Pai#1M.d
   - cpmvars and EVALUATE_BUFFER for EE compatibility
   - Add Readme.md
+  - variables prefixes
+  - REQUIRE_PREDICATE

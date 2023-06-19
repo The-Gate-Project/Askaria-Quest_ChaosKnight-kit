@@ -1,25 +1,25 @@
 IF
-	Global("hagupoly","LOCALS",0)
+	Global("ZYhagupoly","LOCALS",0)
 	HPPercentLT(Myself,81)
 THEN
 	RESPONSE #100
-	SetGlobal("hagupoly","LOCALS",1)
+	SetGlobal("ZYhagupoly","LOCALS",1)
 	CreateVisualEffectObject("POLYBACK",Myself)
 	Polymorph(MAGE_MALE_HUMAN)
 	ChangeAIScript("akahagu2","override")
 END
 
 IF
-	Global("itemcheck","LOCALS",0)
+	Global("ZYitemcheck","LOCALS",0)
 	HasItem("akasw3",Myself)
 THEN
 	RESPONSE #100
 	DestroyItem("akasw3")
-	SetGlobal("itemcheck","LOCALS",1)
+	SetGlobal("ZYitemcheck","LOCALS",1)
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([GOODCUTOFF.GENERAL_ITEM.0.0.0.SUMMONED])
 THEN
   RESPONSE #100
@@ -29,7 +29,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   HPGT(Myself,65)
 THEN
@@ -40,7 +40,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   HPGT(Myself,55)
 THEN
@@ -51,7 +51,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See(LeastDamagedOf(Myself))
   HPGT(Myself,45)
 THEN
@@ -62,7 +62,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   !See(LeastDamagedOf(Myself))
   HPGT(Myself,45)
@@ -74,7 +74,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   HPGT(Myself,25)
 THEN
@@ -85,29 +85,29 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   See([PC.GENERAL_ITEM.0.MAGE])
 THEN
   RESPONSE #100
     FaceObject(LastSeenBy(Myself))
     ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
-    SetGlobal("BeholderBehavior","LOCALS",1)
+    SetGlobal("ZYBeholdBehav","LOCALS",1)
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",0)
+  Global("ZYBeholdBehav","LOCALS",0)
   See([PC])
   !See([PC.GENERAL_ITEM.0.MAGE])
 THEN
   RESPONSE #100
     FaceObject([PC])
     ForceSpell([PC],BEHOLDER_ANTIMAGIC_RAY)
-    SetGlobal("BeholderBehavior","LOCALS",1)
+    SetGlobal("ZYBeholdBehav","LOCALS",1)
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([GOODCUTOFF.GENERAL_ITEM.0.0.0.SUMMONED])
 THEN
   RESPONSE #100
@@ -117,7 +117,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   HPGT(Myself,15)
 THEN
@@ -128,7 +128,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   HPGT(Myself,35)
 THEN
@@ -140,17 +140,17 @@ END
 
 IF
   See([GOODCUTOFF.GENERAL_ITEM.0.0.0.SUMMONED])
-  Global("summon","LOCALS",0)
+  Global("ZYsummon","LOCALS",0)
 THEN
   RESPONSE #100
     FaceObject(LastSeenBy(Myself))
     ForceSpell(LastSeenBy(Myself),BEHOLDER_PARALYZATION)
     ReallyForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
-    SetGlobal("summon","LOCALS",1)
+    SetGlobal("ZYsummon","LOCALS",1)
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   HPGT(Myself,5)
 THEN
@@ -161,7 +161,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See(LeastDamagedOf(Myself))
 THEN
   RESPONSE #100
@@ -171,7 +171,7 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   !See(LeastDamagedOf(Myself))
 THEN
@@ -182,25 +182,25 @@ THEN
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   See([PC.GENERAL_ITEM.0.MAGE])
 THEN
   RESPONSE #100
     FaceObject(LastSeenBy(Myself))
     ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
-    SetGlobal("BeholderBehavior","LOCALS",0)
+    SetGlobal("ZYBeholdBehav","LOCALS",0)
     Wait(2)
 END
 
 IF
-  Global("BeholderBehavior","LOCALS",1)
+  Global("ZYBeholdBehav","LOCALS",1)
   See([PC])
   !See([PC.GENERAL_ITEM.0.MAGE])
 THEN
   RESPONSE #100
     FaceObject(LastSeenBy(Myself))
     ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
-    SetGlobal("BeholderBehavior","LOCALS",0)
+    SetGlobal("ZYBeholdBehav","LOCALS",0)
 END
 

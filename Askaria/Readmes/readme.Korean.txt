@@ -44,7 +44,7 @@ BG1ÀÇ º£·¹°í½ºÆ®ÀÇ Æçµ¥Æ÷½ºÆ® ¿©°üÀÔ±¸·Î °¡¸é Ã¹ ÀÌº¥Æ®°¡ ½ÃÀÛµË´Ï´Ù. ¾Æ¹«¶§³ª Ç
   ¾Æ½ºÄ«¸®¾Æ¶ó´Â ÀÌ¸§ÀÇ ¼Ò³à°¡ º£·¹°í½ºÆ®ÀÇ Æçµ¥Æ÷½ºÆ® ¿©°ü ÀÔ±¸¿¡¼­ °Ç´ŞÀÇ ÃßÅÂ¿¡ ¸Â¼­ µµ¿òÀ» ¿äÃ»ÇÕ´Ï´Ù. °Ç´ŞµéÀ» ¹°¸®Ä¡¸é ÆÄÆ¼¿¡ ÇÕ·ùÇÏ°í ÀÌ»óÇØÁø
   ºÎ¸ğ´ÔµéÀÇ Á¤Ã¼¸¦ ¹àÈ÷±â À§ÇÑ ¿©ÇàÀ» ½ÃÀÛÇÕ´Ï´Ù.
 
-Áø½ÇÀÇ ¼öÁ¤ ¿ø¼®À» ªO¾Æ¼­ :
+Áø½ÇÀÇ ¼öÁ¤ ¿ø¼®À» ?¾Æ¼­ :
   
   Æçµ¥Æ÷½ºÆ® ¿©°ü 2Ãş¿¡¼­ Á¡¼º¼ú»ç ÆÄÀÌ·ÎºÎÅÍ µµÇÃ°»¾îÀÇ ¼ÒÇàÀÏÁöµµ ¸ğ¸¥´Ù´Â ¸»À» µè½À´Ï´Ù. ±×¸®°í Áø½ÇÀÇ ¼öÁ¤ ¿ø¼®ÀÌ ÀÖ´Ù¸é ¹àÇô³¾ ¼ö ÀÖ´Ù°í ¸»ÇÕ´Ï´Ù.
   ÀÌ ¼öÁ¤Àº ÇöÁ¦ º£·¹°í½ºÆ® ¾ß»ıÁö¿ª µ¿±¼¾È¿¡ ¸Ó¹°°í ÀÖ´Â ¾î¸° »çÆÄÀÌ¾î µå·¡°ï¿¡°Ô ÀÖ´Ù°í ÇÕ´Ï´Ù. µå·¡°ïÀ» Àâ°í ¼öÁ¤À» ±¸ÇØ¾ß ÇÕ´Ï´Ù.
@@ -75,7 +75,7 @@ BG1ÀÇ º£·¹°í½ºÆ®ÀÇ Æçµ¥Æ÷½ºÆ® ¿©°üÀÔ±¸·Î °¡¸é Ã¹ ÀÌº¥Æ®°¡ ½ÃÀÛµË´Ï´Ù. ¾Æ¹«¶§³ª Ç
 
 ¹ß´õ½º °ÔÀÌÆ® °ÔÀÓÀÌ ³ª¿ÂÁö°¡ 10³âÀÌ ³Ñ¾ú°í ¸ğµå¿¡ °ü·ÃµÈ ±Û µéÀº ¾à 3~4³â ÀüºÎÅÍ Á¶±İ¾¿ ³ª¿Â°É·Î ¾Ë°í ÀÖ½À´Ï´Ù. Áö¼ÓÀûÀ¸·Î ¸ğµå³ª ½ºÅ©¸³Æ®¿¡ °ü·ÃµÈ 
 ±ÛµéÀÌ ÀÖ¾ú±â¿¡ Á¤¸» ¾Æ¹«°Íµµ ¸ô¶ú´ø Àúµµ ÀÌ·¸°Ô µµ¿òÀ» ¹Ş¾Æ ¸¸µé ¼ö ÀÖ¾ú¾ú´ø °Í °°¾Ò½À´Ï´Ù. ¿©±â¿¡ ÀÌ¸§À» °Å·ĞÇÏ´Â ºĞµéÀº Á¦°¡ °Ë»öÀ» Çßµç ¾î¶»°Ô 
-±ÛÀ» ªO¾Òµç°£¿¡ ±×ºĞµé ±ÛÀ» ÀĞ°í µµ¿òÀ» ¹ŞÀº ºĞµéÀÔ´Ï´Ù.(°³ÀÎÀûÀ¸·Î ¾Æ´Â ºĞµéÀº ÇÑºĞµµ ¾ø½À´Ï´Ù..)
+±ÛÀ» ?¾Òµç°£¿¡ ±×ºĞµé ±ÛÀ» ÀĞ°í µµ¿òÀ» ¹ŞÀº ºĞµéÀÔ´Ï´Ù.(°³ÀÎÀûÀ¸·Î ¾Æ´Â ºĞµéÀº ÇÑºĞµµ ¾ø½À´Ï´Ù..)
 
 ~ 
 
@@ -128,3 +128,38 @@ Special Thanks To
 1.2 ¾Æ½ºÄ«¸®¾Æ ÄÉ¸¯ÅÍÀÇ ReactionÀ» ally¿¡¼­ neutral·Î º¯°æ.
 1.1 »ç½Ç»ó Ã¹¹öÀü. ¿Ã¸®´Â °úÁ¤¿¡¼­ ¿¹Àü¿¡ ¹é¾÷µÈ ÆÄÀÏ·Î ±³Ã¼µÇ¾î ¹ß»ıµÈ ¹®Á¦¸¦ ¹Ù·Î ¼öÁ¤.
 1.0 Ã¹¹öÀü. ¾øÀ½
+
+
+
+1.3 
+
+- First version uploaded at SpellHold Studios
+
+2.0 
+
+- BWP fixes :
+  - Askaria... GlobalGT("Chapter","GLOBAL",5) to AR6700.baf
+  - ChaosKnight... WRITE_SHORT to tp2
+  - Move files and older
+  - Up setup.exe
+
+- ChaosKnight :
+  - Add lib folder (addkit fonction and cpmvars)
+  - Autotra Iconv Handle Charset
+  - cpmvars and EVALUATE_BUFFER for EE compatibility
+  - Portrait size for EE
+  - AddKit for EE
+  - Use Raduziel fonction for adding ChaosKnight kit to Jacob
+  - Handle charset and Autotra
+  - REQUIRE_PREDICATE
+  - Separate kit from Jacob npc to allow ChaosKit to be installed on BG2EE
+  
+- Askaria :
+
+  - Handle Charset and Autotra
+  - Portraits size for EE
+  - Correct wrong state in Pai#1M.d
+  - cpmvars and EVALUATE_BUFFER for EE compatibility
+  - Add Readme.md
+  - variables prefixes
+  - REQUIRE_PREDICATE
