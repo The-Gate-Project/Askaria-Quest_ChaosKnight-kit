@@ -1,99 +1,112 @@
-@0  = ~Installation of the Chaos Knight Kit for BGT, BGEE, BG2EE or EET~
+@0  = ~Installer le Seigneur du Chaos, Kit pour BGT, BGEE, BG2EE ou EET et Jacob, Npc pour BGT, BGEE ou EET~
 
-@1  = ~Chaos Knight~
-@2  = ~Chaos Knight~
-@3  = ~Chaos Knight: 
-The Chaos knight serves the god of chaos and uses his powers in order to spread the reign of chaos. They have abilities to gather chaos energy doing damage to their enemies, stunning them and instantly focusing on dealing the deadly blow. They are able to open a gate of dimension, and when they do so, their enemies take additional damage from the power of chaos. But their true power is awesome fast movement and the ability to summon an avatar that has the same abilities as themselves.
+@1  = ~seigneur du chaos~
+@2  = ~Seigneur du Chaos~
+@3  = ~SEIGNEUR DU CHAOS : 
 
-Advantages:
--Immune to horror, stun, domination and mind attack.
--At level 1, 3, 5, 7, 9 learn Chaos Arrow
--At level 2, 4, 6, 8, 9 Bonus de 1 à la vitesse de déplacement
--At level 3, 6, 8 learn Illusion spell
--At level 4, learn Coup critique as a passive skill
--At level 4, 8, 12 learn Reality Lift
--At level 10, 20, 33 learn Phantasm spell
--At level 11, 29, 38, 50 Bonus de 1 à la Constitution
-- Peut acquérir la grande maîtrise  (5 points de compétences) avec la plupart des armes contondantes (les masses, les gourdins, les morgensterns et les fléaux d'armes).
+Les Seigneurs du Chaos sont au service des dieux chaotiques et utilisent leurs capacités pour répandre le règne du chaos. Capable de canaliser les énergies issues du chaos lui-même afin d'infliger des dégâts, d'étourdir ou de porter les coups les plus mortels qui soient a leurs adversaires. Le Seigneur du Chaos peut ouvrir un portail dimensionnel afin de semer le chaos sur les champs de bataille, il est doté d'une vitesse de déplacement impressionnante et de la faculté d'invoquer un simulacre possédant des pouvoirs en tout point similaire aux siens.
 
-Disadvantage:
--Can't use ranged weapon
--Can't equip plate and full plate
--Penalty to Dexterity and Intelligent -2
--Only chaotic tendencies are allowed for Chaos knights
--Except for blunt weapons, can only have a weapon proficiency of 2
--Dual classing is impossible~
+Avantages :
+- Immunité contre la peur, les charmes et la confusion.
+- Niveau 1, 3, 5, 7, 9 : Gagne la capacité « Trait du Chaos » (1d30 points de dégâts magique et 25 % de chance d'endormir la cible pendant 12 secondes).
+- Niveau 2, 4, 6, 8, 9 : Gagne un bonus de 1 à la vitesse de déplacement.
+- Niveau 3, 6, 8 : Gagne la capacité « Illusion du Chaos » (crée une image miroir).
+- Niveau 4 : Gagne la capacité passive « Coup critique ».
+- Niveau 4, 8, 12 : Gagne la capacité « Porte du Chaos » (Bonus de 5 à la Force pendant 8 secondes).
+- Niveau 10, 20, 33 : Gagne la capacité « Double Chaotique » (crée un simulacre).
+- Niveau 11, 29, 38, 50 : Gagne un bonus de 1 à la Constitution
+- Peut atteindre la grande maîtrise (5 points de compétences) avec la plupart des armes contondantes (les masses, les gourdins, les morgensterns et les fléaux d'armes).
+
+Inconvénients :
+- Ne peut pas utiliser d'arme à distance.
+- Ne peut pas équiper d'armure de plates et de plates complète.
+- Malus de 2 à la Dextérité et à l'Intelligence.
+- Alignement chaotique uniquement.
+- A l'exception des armes contondantes, il ne peut pas dépasser la spécialisation dans les compétences d'armes.
+- Ne peut pas se jumeler.~
 
 @4  = ~Jacob~
-@5  = ~When asked about his past, he says he has grown up in a normal family, surprisingly. His parents wanted him to work for the country's border guards. Eventually, he left home and traveled for a while. After joining the temple of chaos, he started his regular training. He is extremely resourceful and has learned many abilities as a chaos knight. For him, war is merely a playground.~
+@5  = ~Lorsqu'on l'interroge sur son passé, Jacob répond qu'il a grandi dans une famille des plus ordinaire, à votre grande surprise. Ses parents voulaient qu'il travaille dans la garde à la frontière du pays. Finalement, il a préféré quitté son foyer et pris la route pour un temps. Après avoir rejoint un temple dédié au Chaos, il a commencé à s'entraîner sérieusement. Étant extrêmement débrouillard, il a acquis de nombreuses compétences et capacités en tant que Seigneur du Chaos. Pour lui, la guerre n'est rien de plus qu'un terrain de jeu.~
 
-@6 = ~Jacob's Sun Star +1~
+@6 = ~Astre solaire~
 
-@7 = ~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
+@7 = ~Cette puissante arme a été confectionnée les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
 
-STATISTICS:
+PARAMÈTRES :
 
-Damage:  2D4 + 1 (vs lawful good +5 THAC0 , +10 Damage)
-Damage type:  blunt
-Special ability:
-  Against lawful good THAC0 +5, Damage +10 bonus
-  AC Bonus: (+1)
-  Resistance to cold: +50%
-Weight: 10
-Speed Factor: 6
-Proficiency Type: Flail/ Morning Star
-Type: 1-handed
-Not useable by : 
- Everyone except for Jacob~
+Capacités d'équipement : 
+- Classe d'armure : Bonus de 1
+- Résistance au froid : +50 %
 
-@8 = ~Chaos Knight's Immunity~
-@9 = ~Chaos Knight Critical Strike~
-@10 = ~Chaos Knight Increased speed~
-@11 = ~Chaos Arrow~
-@12 = ~Illusion~
-@13 = ~Phantasm~
-@14 = ~Chaos Knight Added Health~
-@15 = ~Reality Lift~
-@16 = ~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end. The shaft of this magical mace seems to guide the wielder, becoming an extension of his hand.
+TAC0 : +1, +5 contre les créatures d'alignement loyal
+Dégâts : 2D4 + 1, +10 contre les créatures d'alignement loyal
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / morgenstern
+Type : Arme à 1 main
 
-This particular mass can only be handled by Jacob~
-@17 = ~This powerful weapon was made by an powerful ancient blacksmith. In addition to the moonblade, it used to belong to the ruler of Evermeet for many years. It is said that the Sun Star chooses it's wielder. And it has now chosen Jacob. Only Jacob is able to use it, and others can not even pick it up. This Sun Star grants a powerful resistance of cold, and gives the wearer a AC bonus. This ancient weapon absorbed chaos power itself and is a horror to any lawful character.
+Nécessite : 
+- 18 en Force
 
-STATISTICS:
+Poids : 10
 
-Damage:  2D4 + 1 (vs lawful good +5 THAC0 , +10 Damage)
-Damage type:  blunt
-Special ability:
-  Against lawful good THAC0 +5, Damage +10 bonus
-  AC Bonus: (+1)
-  Resistance to cold: +50%
-Weight: 10
-Speed Factor: 6
-Proficiency Type: Flail/ Morning Star
-Type: 1-handed~
-@18 = ~Jacob's Sun Star~
+Inutilisable par :
 
-@100 = ~I like it!~
-@101 = ~Now I'm pissed off~
-@102 = ~I really hate this! This sucks!~
-@103 = ~Get out of my way. I'm leaving.~
-@104 = ~Shall we rest for a moment?~
-@105 = ~For Chaos, crush the justice and good!~
-@106 = ~Kill all!~
+- Tout le monde à l'exception de Jacob~
+
+@8 = ~Le Seigneur du Chaos est immunisé contre la peur, les charmes et la confusion~
+@9 = ~Le Seigneur du Chaos gagne la capacité passive « Coup critique »~
+@10 = ~Le Seigneur du Chaos gagne un bonus de 1 à la vitesse de déplacement~
+@11 = ~Trait du Chaos~
+@12 = ~Illusion du Chaos~
+@13 = ~Double Chaotique~
+@14 = ~Le Seigneur du Chaos gagne un bonus de 1 à la Constitution~
+@15 = ~Porte du Chaos~
+@16 = ~La masse d'armes descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. Le manche de cette masse d'armes magique semble guider celui qui la manie, en devenant une extension de sa main.
+
+Cette masse particulière ne peut être manipulée que par Jacob~
+@17 = ~Cette puissante arme a été confectionnée les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
+
+PARAMÈTRES :
+
+Capacités d'équipement : 
+- Classe d'armure : Bonus de 1
+- Résistance au froid : +50 %
+
+TAC0 : +1, +5 contre les créatures d'alignement loyal
+Dégâts : 2D4 + 1, +10 contre les créatures d'alignement loyal
+Type de dégâts : Contondant
+Facteur de vitesse : 6
+Type de compétence : Fléau d'armes / morgenstern
+Type : Arme à 1 main
+
+Nécessite : 
+- 18 en Force
+
+Poids : 10~
+@18 = ~L'étoile du matin de Jacob~
+
+@100 = ~J'adore ça !~
+@101 = ~Et voilà, je suis en rogne...~
+@102 = ~Je déteste ça ! C'est complètement minable !~
+@103 = ~Dégagez de mon chemin. Je tire ma révérence.~
+@104 = ~Allons-nous prendre du repos pour une fois ?~
+@105 = ~Au nom du Chaos, écrasons la justice et piétinons l'ordre !~
+@106 = ~Tuez-les tous !~
 @107 = ~Whahahahahaha.~
-@108 = ~Oops! My mistake.~
-@109 = ~Huk!~
-@110 = ~Hey, dude, what did you find?~
-@111 = ~Ok, whatever you say.~
-@112 = ~Hey, did you see that? A white thing passed by just before our eyes.~
-@113 = ~You think I'm joking?~
-@114 = ~I'm sick of doing what to say!~
-@115 = ~I don't care whether you believe me or not.~
-@116 = ~What do you want?~
-@117 = ~I'm coming, I'm coming!~
-@118 = ~Don't worry! No problem!~
-@119 = ~Hhhhhh... Who is the victim, today.~
+@108 = ~Oups ! Autant pour moi.~
+@109 = ~Argh !~
+@110 = ~Hé, mon pote, qu'as-tu découvert ?~
+@111 = ~Oui, oui, comme tu veux.~
+@112 = ~Hé, tu l'as vu ? Ce machin vient de passer sous nos yeux.~
+@113 = ~Tu as l'impression que je plaisante ?~
+@114 = ~J'en ai ma claque de tes ordres !~
+@115 = ~J'en ai rien à faire que tu me croies ou pas.~
+@116 = ~Qu'est-ce que tu veux ?~
+@117 = ~Je suis là, j'arrive !~
+@118 = ~Ne te fais pas de mouron ! Je m'en occupe !~
+@119 = ~Mhmmm... Qui est notre prochaine victime ?~
 
 
-@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE or EET~ 
-@201 = ~Only the ChaosKit will be installed on BG2EE~
+@200 = ~Le kit de Seigneur du Chaos doit etre installe sur BGT, BGEE, BG2EE ou EET~ 
+@201 = ~Seul le kit de Seigneur du Chaos sera installe sur BG2EE~

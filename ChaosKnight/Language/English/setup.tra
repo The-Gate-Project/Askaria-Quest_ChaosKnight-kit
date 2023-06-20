@@ -6,13 +6,13 @@
 The Chaos knight serves the god of chaos and uses his powers in order to spread the reign of chaos. They have abilities to gather chaos energy doing damage to their enemies, stunning them and instantly focusing on dealing the deadly blow. They are able to open a gate of dimension, and when they do so, their enemies take additional damage from the power of chaos. But their true power is awesome fast movement and the ability to summon an avatar that has the same abilities as themselves.
 
 Advantages:
--Immune to horror, stun, domination and mind attack.
--At level 1, 3, 5, 7, 9 learn Chaos Arrow
+-Immune to horror, charm and confusion.
+-At level 1, 3, 5, 7, 9 learn Chaos Arrow (1d30 points of magic damage and 25% chance of putting the target to sleep for 12 seconds)
 -At level 2, 4, 6, 8, 9 add speed (+1)
--At level 3, 6, 8 learn Illusion spell
+-At level 3, 6, 8 learn Illusion spell (create one mirror image)
 -At level 4, learn Critical Strike as a passive skill
--At level 4, 8, 12 learn Reality Lift
--At level 10, 20, 33 learn Phantasm spell
+-At level 4, 8, 12 learn Reality Lift (+5 Strength bonus for 8 seconds)
+-At level 10, 20, 33 learn Phantasm spell (create a simulacrum)
 -At level 11, 29, 38, 50 Add Constitution (+1)
 -Maximum blunt weapon proficiency up to 5 (except for staff)
 
@@ -33,10 +33,10 @@ Disadvantage:
 
 STATISTICS:
 
-Damage:  2D4 + 1 (vs lawful good +5 THAC0 , +10 Damage)
+Damage:  2D4 + 1 (vs lawful +5 THAC0 , +10 Damage)
 Damage type:  blunt
 Special ability:
-  Against lawful good THAC0 +5, Damage +10 bonus
+  Against lawful THAC0 +5, Damage +10 bonus
   AC Bonus: (+1)
   Resistance to cold: +50%
 Weight: 10
@@ -61,10 +61,10 @@ This particular mass can only be handled by Jacob~
 
 STATISTICS:
 
-Damage:  2D4 + 1 (vs lawful good +5 THAC0 , +10 Damage)
+Damage:  2D4 + 1 (vs lawful +5 THAC0 , +10 Damage)
 Damage type:  blunt
 Special ability:
-  Against lawful good THAC0 +5, Damage +10 bonus
+  Against lawful THAC0 +5, Damage +10 bonus
   AC Bonus: (+1)
   Resistance to cold: +50%
 Weight: 10
@@ -96,4 +96,4 @@ Type: 1-handed~
 
 
 @200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE or EET~ 
-@201 = ~Only the ChaosKit will be installed on BG2EE~
+@201 = ~Only the ChaosKnight Kit will be installed on BG2EE~

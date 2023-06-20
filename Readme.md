@@ -1,6 +1,6 @@
 # Askaria Npc and Quest & ChaosKnight Kit and Npc 
 
-![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20korean%20%7C%20&color=informational)
+![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20korean%20%7C%20french%20%7C%20&color=informational)
 
 **Autor** : ****
 
@@ -21,14 +21,14 @@ The first event will take place at Beregost's Feldepost inn after chapter 6. Whe
 For Baldur's Gate Trilogy (BGT):
 Baldur's Gate: EE and the Enhanced Edition Trilogy (EET).
 
-Askaria Quest need ChaosKnight Kit to be installed
+Askaria Quest NEED ChaosKnight Kit to be installed
 
 #### ChaosKnight Kit and Jacob Npc
 
 - Playable fighter kit
 
 For Baldur's Gate Trilogy (BGT):
-Baldur's Gate: EE, Baldur's Gate II: EE and the Enhanced Edition Trilogy (EET).
+Baldur's Gate: EE, **Baldur's Gate II: EE** and the Enhanced Edition Trilogy (EET).
 
 - Jacob Npc with ChaosKnight Kit, Jacob's model refers to Dota in mod of Warcraft3
 
@@ -112,8 +112,9 @@ Corrected by Xicloing
   - AddKit for EE
   - Use Raduziel fonction for adding ChaosKnight kit to Jacob
   - Handle charset and Autotra
-  - REQUIRE_PREDICATE
-  - Separate kit from Jacob npc to allow ChaosKit to be installed on BG2EE
+  - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
+  - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
+  - French translation
   
 - Askaria :
 
@@ -123,4 +124,5 @@ Corrected by Xicloing
   - cpmvars and EVALUATE_BUFFER for EE compatibility
   - Add Readme.md
   - variables prefixes
-  - REQUIRE_PREDICATE
+  - REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~)
+  - REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~)

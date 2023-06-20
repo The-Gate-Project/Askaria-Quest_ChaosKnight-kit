@@ -21,7 +21,7 @@ Hi, this is my third mod. I make this mod through experience making the Hero NPC
 INTRODUCTION
 **************
 
-ASKARIA QUEST- It starts first event at Feldepost Inn of Beregost. Whenever you go, quest will start. Scenarios refer to the Sonori's of Forgotten Saga.
+ASKARIA QUEST- It starts first event at Beregost's Feldepost inn after chapter 6. Whenever you go, quest will start. Scenarios refer to the Sonori's of Forgotten Saga.
 CHAOSKNIGHT Kit- Added a ChaosKnight Kit. And This Kit creates a NPC has ChaosKnight kit, named Jacob. Jacob's model refers to Dota in mod of Warcraft3
 
 
@@ -99,8 +99,9 @@ CHANGES
   - AddKit for EE
   - Use Raduziel fonction for adding ChaosKnight kit to Jacob
   - Handle charset and Autotra
-  - REQUIRE_PREDICATE
-  - Separate kit from Jacob npc to allow ChaosKit to be installed on BG2EE
+  - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
+  - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
+  - French translation
   
 - Askaria :
 
@@ -110,4 +111,5 @@ CHANGES
   - cpmvars and EVALUATE_BUFFER for EE compatibility
   - Add Readme.md
   - variables prefixes
-  - REQUIRE_PREDICATE
+  - REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~)
+  - REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~)
