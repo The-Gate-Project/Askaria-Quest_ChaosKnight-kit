@@ -30,7 +30,7 @@ Inconvénients :
 
 @6 = ~Astre solaire~
 
-@7 = ~Cette puissante arme a été confectionnée les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
+@7 = ~Cette puissante arme a été confectionnée par les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
 
 PARAMÈTRES :
 
@@ -38,15 +38,21 @@ Capacités d'équipement :
 - Classe d'armure : Bonus de 1
 - Résistance au froid : +50 %
 
+Enchantement : +1
 TAC0 : +1, +5 contre les créatures d'alignement loyal
 Dégâts : 2D4 + 1, +10 contre les créatures d'alignement loyal
 Type de dégâts : Contondant
 Facteur de vitesse : 6
-Type de compétence : Fléau d'armes / morgenstern
+Type de compétence : Fléau d'armes / Morgenstern
 Type : Arme à 1 main
 
 Nécessite : 
 - 18 en Force
+- 16 en Dextérité
+- 18 en Constitution
+- 13 en Intelligence
+- 9 en Sagesse
+- 11 en Charisme
 
 Poids : 10
 
@@ -65,7 +71,7 @@ Inutilisable par :
 @16 = ~La masse d'armes descend directement du simple gourdin ; elle n'est rien de plus qu'une hampe de bois avec une tête en pierre ou en fer fixée à l'extrémité. Le manche de cette masse d'armes magique semble guider celui qui la manie, en devenant une extension de sa main.
 
 Cette masse particulière ne peut être manipulée que par Jacob~
-@17 = ~Cette puissante arme a été confectionnée les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
+@17 = ~Cette puissante arme a été confectionnée par les forgerons de l'ancienne cité elfique Myth Drannor. A l'instar d'une lame de lune d'Eternelle-Rencontre. L'Astre solaire choisit son porteur et seul Jacob est capable de le brandir. Après avoir absorbé l'essence du Chaos cette masse est devenue le cauchemar des êtres d'alignement loyal.
 
 PARAMÈTRES :
 
@@ -73,15 +79,21 @@ Capacités d'équipement :
 - Classe d'armure : Bonus de 1
 - Résistance au froid : +50 %
 
+Enchantement : +1
 TAC0 : +1, +5 contre les créatures d'alignement loyal
 Dégâts : 2D4 + 1, +10 contre les créatures d'alignement loyal
 Type de dégâts : Contondant
 Facteur de vitesse : 6
-Type de compétence : Fléau d'armes / morgenstern
+Type de compétence : Fléau d'armes / Morgenstern
 Type : Arme à 1 main
 
 Nécessite : 
 - 18 en Force
+- 16 en Dextérité
+- 18 en Constitution
+- 13 en Intelligence
+- 9 en Sagesse
+- 11 en Charisme
 
 Poids : 10~
 @18 = ~L'étoile du matin de Jacob~

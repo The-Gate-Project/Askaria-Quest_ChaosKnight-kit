@@ -33,16 +33,28 @@ Disadvantage:
 
 STATISTICS:
 
-Damage:  2D4 + 1 (vs lawful +5 THAC0 , +10 Damage)
-Damage type:  blunt
-Special ability:
-  Against lawful THAC0 +5, Damage +10 bonus
-  AC Bonus: (+1)
-  Resistance to cold: +50%
-Weight: 10
+Equipped abilities: 
+- Armor Class: 1 bonus
+- Cold Resistance: +50 %
+
+Enchantment: +1
+THAC0: +1 (+5 vs. lawful creatures)
+Damage: 2d4 +1 (+10 vs. lawful creatures)
+Damage Type: Crushing
 Speed Factor: 6
-Proficiency Type: Flail/ Morning Star
-Type: 1-handed
+Proficiency Type: Flail / Morning Star
+Type: One-Handed
+
+Requires: 
+- 17 Strength
+- 16 Dexterity
+- 18 Constitution
+- 13 Intelligence
+- 9 Wisdom
+- 11 Charisma
+
+Weight: 10
+
 Not useable by : 
  Everyone except for Jacob~
 
@@ -61,16 +73,27 @@ This particular mass can only be handled by Jacob~
 
 STATISTICS:
 
-Damage:  2D4 + 1 (vs lawful +5 THAC0 , +10 Damage)
-Damage type:  blunt
-Special ability:
-  Against lawful THAC0 +5, Damage +10 bonus
-  AC Bonus: (+1)
-  Resistance to cold: +50%
-Weight: 10
+Equipped abilities: 
+- Armor Class: 1 bonus
+- Cold Resistance: +50 %
+
+Enchantment: +1
+THAC0: +1 (+5 vs. lawful creatures)
+Damage: 2d4 +1 (+10 vs. lawful creatures)
+Damage Type: Crushing
 Speed Factor: 6
-Proficiency Type: Flail/ Morning Star
-Type: 1-handed~
+Proficiency Type: Flail / Morning Star
+Type: One-Handed
+
+Requires: 
+- 17 Strength
+- 16 Dexterity
+- 18 Constitution
+- 13 Intelligence
+- 9 Wisdom
+- 11 Charisma
+
+Weight: 10~
 @18 = ~Jacob's Sun Star~
 
 @100 = ~I like it!~

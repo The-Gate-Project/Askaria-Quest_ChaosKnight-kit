@@ -3,7 +3,7 @@ BEGIN ~zypai~
 IF ~Global("AS#PAI","GLOBAL",1) Global("HAU#SM","GLOBAL",1)
 AreaCheck("%Beregost_FeldepostsInn_L2%") InParty("zyaska") IsValidForPartyDialogue("zyaska")~ THEN BEGIN 0
   SAY @0
-  IF ~~ THEN EXTERN ~zyaskaj~ 1
+  IF ~~ THEN EXTERN ~zyaskaj~ zyp#1ma
 END
 
 IF ~~ THEN BEGIN p1

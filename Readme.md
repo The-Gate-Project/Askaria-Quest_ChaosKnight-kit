@@ -18,22 +18,19 @@
 
 The first event will take place at Beregost's Feldepost inn after chapter 6. Whenever you go, the quest will start. Scenarios refer to the Sonori's of Forgotten Saga.
 
-For Baldur's Gate Trilogy (BGT):
-Baldur's Gate: EE and the Enhanced Edition Trilogy (EET).
+For Baldur's Gate Trilogy (BGT), Baldur's Gate: EE and the Enhanced Edition Trilogy (EET).
 
-Askaria Quest NEED ChaosKnight Kit to be installed
+Askaria Quest **NEED** ChaosKnight Kit to be installed
 
 #### ChaosKnight Kit and Jacob Npc
 
 - Playable fighter kit
 
-For Baldur's Gate Trilogy (BGT):
-Baldur's Gate: EE, **Baldur's Gate II: EE** and the Enhanced Edition Trilogy (EET).
+For Baldur's Gate Trilogy (BGT), Baldur's Gate: EE, **Baldur's Gate II: EE** and the Enhanced Edition Trilogy (EET).
 
 - Jacob Npc with ChaosKnight Kit, Jacob's model refers to Dota in mod of Warcraft3
 
-For Baldur's Gate Trilogy (BGT):
-Baldur's Gate: EE and the Enhanced Edition Trilogy (EET).
+For Baldur's Gate Trilogy (BGT), Baldur's Gate: EE and the Enhanced Edition Trilogy (EET).
 
 
 ## Install :
@@ -47,38 +44,43 @@ This is a WeiDU format. To install extract the archive in your game folder, then
 If you update this mod, select (R)e-install. If you want to delete, select (U).
 
 
-## Walkthrough :
+## Walkthrough / SPOILERS :
 -----------
 
 
 #### Askaria Quest 
 
-- Askaria Quest :
+- Askaria Quest (Chapter 6) :
  
-A young girl named Askaria asks for help to fight bandits. She'll join your group to track them down, and find out who her parents are.
+A girl named Ascaria asks for your help to fight bandits at the entrance to the Feldepost Inn in Beregost. After defeating the thugs, she joins your party and you begin a journey to discover the truth about the mysterious behavior of her parents.
 
-Find a crystal of truth :
+- Find a crystal of truth :
   
-You can hear about his parents from a doppelganger. The doppelganger will reveal the truth if you find a Crystal of Truth. This ore is in the possession of the sapphire dragon in the cavern.
+On the second floor of the Feldepost Inn, you are told by Pie the seer that the doppelgangers may be responsible and that you can reveal them if you have the Crystal of Truth.
+The crystal is supposedly detained by a young sapphire dragon currently residing in a cave south of Beregost. You must defeat the dragon and retrieve the crystal.
 
 - Obstruction by Hauser's group :
 
-Hauser se trouve au premier etage de l'auberge Feldepost. Si vous ne le tuez pas, il vous donnera un objet.
+Before heading up to the second floor of the Feldepost Inn, you may have encountered an NPC named Hauser. Some of you may have been angry with him at first and died prematurely, but you will have your revenge...
+
+When Hauser ambushes you, if is HP falls below 30, Hauser spoke to you, you can either spare him or kill him. If you choose to let him live, he will give you an interresting item.
 
 - A mother lost son:
 
-She's north of Beregost. If you give her the journal found in the cavern, you can receive money, or...
+She's South of Beregost. If you give her the journal found in the cavern, you can receive money, or...
 
 - All preparations are done ! :
  
-If you're with Askaria and have the Crystal of Truth, go north of Beregost. There's a large, enclosed house. As you enter, the story will continue. *Hegmemnon* is an epic monster. The quest is not linked to his death.
+If you're with Askaria and have the Crystal of Truth, talk again with the seer and go to the blacksmith, then go north of Beregost. There's a large, enclosed house (Travenhurst Manor). As you enter, the story will continue. When your oponent HP drop below 30, a dialogue will be set and let you choose... 
+
+*Hagamemnon* is an very epic fight. The quest is not linked to his death.
 
 
 #### ChaosKnight Kit
 
-You can see a NPC named Jacob in front of Beregost manor. He has a ChaosKnight kit.
+You can see a NPC named Jacob in front of Beregost Travenhurst manor. He has a ChaosKnight kit.
 
-
+Jacob is level 6, so don't pick him too early.
 
 ## Special thanks :
 ------------------
@@ -115,6 +117,7 @@ Corrected by Xicloing
   - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
   - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
   - French translation
+  - Really restrict the use of the Jacob's mace to Jacob only (APPEND ITEM_USE.2DA)
   
 - Askaria :
 
@@ -126,3 +129,7 @@ Corrected by Xicloing
   - variables prefixes
   - REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~)
   - REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~)
+  - Add prefix for some variables and items
+  - Correct Pai#1M.d
+  - Order for .d compilation in tp2
+  - New glogal variable and TakePartyItem for Zya#Tmo.d

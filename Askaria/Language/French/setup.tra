@@ -10,8 +10,8 @@
 @9   = ~Hauser~ 
 @10   = ~Hauser's right Hand~ 
 @11   = ~Hauser's left Hand~ 
-@12   = ~Viscous Shaman Pie~ 
-@13   = ~Ioun Stone~ 
+@12   = ~Mirabelle la voyante~ 
+@13   = ~Pierre ionique~ 
 @14   = ~(Description for Unidentified Ioun Stone) When equipped this small stone floats and starts spinning around the wearer's head. These magic stones have various abilities depending on their color.~ 
 @15   = ~Eye of Tyr~ 
 @16   = ~This shining Ioun stone is a gift from the God of Justice. It symbolizes the eye of Tyr. This stone floats above the wearer's head, and whoever owns it is seen in an elegant light. 
@@ -58,7 +58,7 @@ A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of T
 @20   = ~This bottle is used as a container for a crystal crushed into powder. The powder can turn everything into its original form.~ 
 @21   = ~Little Sapphire Dragon~ 
 @22   = ~Gauntlet~ 
-@23   = ~(Description for Unidentified Gauntlet)~ 
+@23   = ~(Description for Unidentified Gauntlet) Mettre la générique du jeu~ 
 @24   = ~Gauntlet of Holy Power~ 
 @25   = ~This gauntlet grants a awesome magic power, used very often by Ian the paladin. The wearer can call upon Tyr's Holy Power once a day. 
 
@@ -110,24 +110,24 @@ AC 0
 Only usable by: 
 Mages~ 
 
-@33   = ~Twidley's blood drenched Journal~ 
-@34   = ~Twidley's blood drenched Journal 
+@33   = ~Journal de Twidley maculé de sang~ // voir pour l'affichage en jeu
+@34   = ~Journal de Twidley maculé de sang 
 
 21 Eléasis  
-Ha! Exciting! It must be the cave grandpa often told me about, I remember him saying something about a thousand bats. He also said there has been a little dragon in here recently. Rowel, Hemish and me, the three musketeers, are the only ones who could manage to find it. We will be famous! 
+Ha ! Je suis tellement impatient de découvrir cette grotte ! Mon grand-père me disait qu'un millier de chauves-souris vivaient à l'intérieur, apparemment un petit dragon y aurait récemment élu domicile. Rowel, Hemish et moi, le trio légendaire, sommes les seuls à pouvoir le découvrir. Nous serons bientôt célèbres !
 
 22 Eléasis  
-All preparations are done. Rowel took his grandfather's *real* sword, his grandfather don't know that his grandson had taken his sword, hihi. I learned how to cast the colour spray scroll that will make the dragon unconscious. I may look like a fool, but they have called me a genius by our school's magician. If I only got a B+ last year. Anyway, Hemish will assault the dragon from behind. So the dragon cannot escape his death. Hihi. I'm exciting just thinking about it. 
+Tous les préparatifs sont terminés. Rowel a emprunté une *véritable* dague magique qui appartient à sa famille, personne n'est au courant.... J'ai appris à lancer le sort vapeur colorée afin d'endormir le dragon. J'en ai pas l'air mais je me débrouille avec la magie. Si seulement j'étais plus studieux, je pourrais surement... Quoi qu'il en soit, Hemish prendra le dragon à revers. afin qu'il ne s'échappe pas. Mon sang ne fait qu'un tour, rien que d'y penser.
 
 24 Eléasis  
-Huh... I don't know why there are so much more monsters today. Yesterday, all I met was three sick gibberlings before I reached the cave. Damn! Hemish was just standing by while Rowel and I were fighting against those monsters. And he was watching us fight! I would have left him behind in that very moment, even thou he is my best friend. Stupid Hemish... I wouldn't have let him in our team if he wasn't. He said he would bring a magic dagger from his grandpa. But the damn dagger's a fake. What was he thinking... we are going to fight against a dragon. 
+Hum... Je ne comprends pas pourquoi il y a tant de monstres aujourd'hui. Nous avons rencontré trois grouilleux malades avant même d'atteindre la grotte. En plus !  Ce satané Hemish est resté planté là pendant que Rowel et moi nous battions contre ces monstres. Il nous a regardé nous battre sans rien faire ! J'aurais voulu l'abandonner à ce moment précis, mais c'est mon  ami. Stupide Hemish... Il ne devrait pas être à nos côtés, mais nous avions besoin de sa dague soi-disant magique... Espérons qu'il ne nous raconte pas d'histoire... Nous allons nous battre contre un dragon...
 
 25 Eléasis 
-(This probably was written before they entered the cave. The letters are scrawly.) I'm so exciting. I don't think I ever felt like this since I was born. We three musketeers will soon be famous, if we bring the dragon's head back home. Sorry Mom, but when this job is done, I will quit school. Hahaha...~ 
+Je suis si excitée que je n'arrive pas à écrire correctement. Je crois n'avoir jamais ressenti une telle ardeur. Le trio légendaire sera bientôt... légendaire, mais pour ça nous devons ramener la tête de dragon. Maman, désolé d'être parti sans un mot, mais après cette aventure, nous n'aurons plus besoin de travailler...~ 
 
-@35   = ~Skull~ 
-@36   = ~The remains of the victims of the sapphire dragon.~ 
-@37   = ~Twidley's Mother~ 
+@35   = ~Crâne~ 
+@36   = ~Les restes d'une des victimes du dragon de saphir.~  
+@37   = ~Mère de Twidley~ 
 
 @38   = ~Cries for release~
 

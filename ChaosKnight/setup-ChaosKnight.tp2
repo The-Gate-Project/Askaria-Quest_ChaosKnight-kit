@@ -80,6 +80,8 @@ COPY ~ChaosKnight/EFF/zychaosd.eff~ ~override~
 
 COPY ~ChaosKnight/EFF/zychaost.eff~ ~override~
 
+// Item
+
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
 PRINT ~EE item~
 COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
@@ -87,7 +89,11 @@ COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @17
-END
+  
+OUTER_SET use_it = RESOLVE_STR_REF (@17)
+OUTER_SET use_him = RESOLVE_STR_REF (@4)
+APPEND ~ITEM_USE.2DA~ ~zychmace   JACOB      %use_it%      2          %use_him%~ UNLESS ~zychmace~ 
+  END
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
 PRINT ~Bgt item~
@@ -96,7 +102,9 @@ COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @7
-END
+OUTER_SET use_it = RESOLVE_STR_REF (@7)
+APPEND ~ITEM_USE.2DA~ ~zychmace   JACOB      %use_it%      2~ UNLESS ~zychmace~
+  END
 
 // Portraits
 

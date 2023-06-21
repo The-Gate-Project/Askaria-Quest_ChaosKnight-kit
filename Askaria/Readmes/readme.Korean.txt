@@ -1,5 +1,8 @@
- 					  ASKARIA EVENT Plus Mod For Baldur's Gate BGT-Weidu
-						 	      VERSION 1.3
+ 	ASKARIA Quest Mod for Baldur's Gate Trilogy (BGT), Baldur's Gate: EE and the Enhanced Edition Trilogy (EET). 
+					                     and 
+	CHAOSKNIGHT Kit for Baldur's Gate Trilogy (BGT), Baldur's Gate: EE, **Baldur's Gate II: EE** and the Enhanced Edition Trilogy (EET).
+						 	      
+								  VERSION 2.0
 						  Download:D&D Realm Next Naver Cafe
 						      Email:drizztdd@naver.com
 
@@ -130,6 +133,8 @@ Special Thanks To
 1.0 첫버전. 없음
 
 
+CHANGES
+********
 
 1.3 
 
@@ -154,6 +159,7 @@ Special Thanks To
   - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
   - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
   - French translation
+  - Really restrict the use of the Jacob's mace to Jacob only (APPEND ITEM_USE.2DA)
   
 - Askaria :
 
@@ -165,3 +171,7 @@ Special Thanks To
   - variables prefixes
   - REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~)
   - REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~)
+  - Add prefix for some variables and items
+  - Correct Pai#1M.d
+  - Order for .d compilation in tp2
+  - New glogal variable and TakePartyItem for Zya#Tmo.d

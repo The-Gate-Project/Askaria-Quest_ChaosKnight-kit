@@ -67,7 +67,7 @@ END
     
 IF ~~ THEN BEGIN fa6
   SAY @19
-  IF ~~ THEN DO ~GiveItemCreate("sethel",Player1,0,0,0)
+  IF ~~ THEN DO ~GiveItemCreate("ZYsethel",Player1,0,0,0)
   EscapeAreaDestroy(1) ~EXIT
 END
 
