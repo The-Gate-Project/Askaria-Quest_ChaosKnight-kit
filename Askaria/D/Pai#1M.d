@@ -18,18 +18,23 @@ END
 
 IF ~~ THEN BEGIN p3
   SAY @10
-  IF ~~ THEN REPLY @11 DO ~ SetGlobal("AS#PAI","GLOBAL",2) AddJournalEntry(@16,USER)~ EXIT
+  IF ~~ THEN REPLY @11 DO ~SetGlobal("AS#PAI","GLOBAL",2) SetGlobal("Pai#FM","GLOBAL",1) AddJournalEntry(@16,USER)~ EXIT
 END
 
 IF ~Global("AS#PAI","GLOBAL",2) Global("HAU#SM","GLOBAL",2) InParty("zyaska") PartyHasItem("ZYSUZUNG") 
-AreaCheck("%Beregost_FeldepostsInn_L2%") ~ THEN BEGIN pp1
+AreaCheck("%Beregost_FeldepostsInn_L2%")~ THEN BEGIN pp1
   SAY @12
   IF ~~ THEN REPLY @13 GOTO pp2
 END
 
 IF ~~ THEN BEGIN pp2
   SAY @14
-  IF ~~ THEN DO ~SetGlobal("AS#PAI","GLOBAL",3)~ EXIT
+  IF ~~ THEN DO ~SetGlobal("AS#PAI","GLOBAL",3)  SetGlobal("Pai#FM","GLOBAL",0)~ EXIT
+END
+
+IF ~Global("AS#PAI","GLOBAL",2) Global("Pai#FM","GLOBAL",1) InParty("zyaska") !PartyHasItem("ZYSUZUNG") AreaCheck("%Beregost_FeldepostsInn_L2%")~ THEN BEGIN default2
+  SAY @17
+  IF ~~ THEN EXIT
 END
 
 IF ~Global("Pai#FM","GLOBAL",0) AreaCheck("%Beregost_FeldepostsInn_L2%")~ THEN BEGIN defaultt

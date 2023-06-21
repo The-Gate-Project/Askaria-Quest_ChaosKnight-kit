@@ -14,7 +14,7 @@ IF
 	Global("ZYssw3","LOCALS",0)
 THEN
 	RESPONSE #100
-	ForceSpellRES("sweapon3",Myself)
+	ForceSpellRES("ZYeapon3",Myself)
 	SetGlobal("ZYssw3","LOCALS",1)
 END
 

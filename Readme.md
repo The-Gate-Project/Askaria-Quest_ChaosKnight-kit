@@ -133,3 +133,4 @@ Corrected by Xicloing
   - Correct Pai#1M.d
   - Order for .d compilation in tp2
   - New glogal variable and TakePartyItem for Zya#Tmo.d
+  - Add missing ZYakasun.eff

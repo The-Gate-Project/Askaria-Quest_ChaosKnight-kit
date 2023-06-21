@@ -18,7 +18,7 @@ IF ~GlobalTimerExpired("ZYMakeDust","GLOBAL")
 Global("ZYSmithDust","GLOBAL",1)
 AreaCheck("%Beregost_ThunderhammerSmithy%")~THEN BEGIN 2
   SAY @3
-  IF ~~ THEN DO ~GiveItem("ZYSUDUST",LastTalkedToBy()) SetGlobal("ZYDustHave","GLOBAL", 1) SetGlobal("ZYSmithDust","GLOBAL",0)
+  IF ~~ THEN DO ~GiveItem("ZYSUDUST",LastTalkedToBy()) SetGlobal("ZYDustHave","GLOBAL",1) SetGlobal("ZYSmithDust","GLOBAL",0)
    AddJournalEntry(@5,USER)~EXIT
 END
 

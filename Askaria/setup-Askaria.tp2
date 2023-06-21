@@ -74,15 +74,16 @@ COMPILE ~Askaria/D/ZYASKAP.d~
 COMPILE EVALUATE_BUFFER ~Askaria/D/ZYASMITH.d~
 COMPILE EVALUATE_BUFFER ~Askaria/D/Pai#1M.d~
 COMPILE EVALUATE_BUFFER ~Askaria/D/Dop#1M.d~
+COMPILE EVALUATE_BUFFER ~Askaria/D/Dop#2M.d~
 
 
 // Spells
 
-COPY ~Askaria/SPL/st4he.spl~ ~override~
-COPY ~Askaria/SPL/akasun.spl~ ~override~
-COPY ~Askaria/SPL/sweapon1.spl~ ~override~
-COPY ~Askaria/SPL/sweapon2.spl~ ~override~
-COPY ~Askaria/SPL/sweapon3.spl~ ~override~
+COPY ~Askaria/SPL/ZYst4he.spl~ ~override~
+COPY ~Askaria/SPL/ZYAKSUN.spl~ ~override~
+COPY ~Askaria/SPL/ZYeapon1.spl~ ~override~
+COPY ~Askaria/SPL/ZYeapon2.spl~ ~override~
+COPY ~Askaria/SPL/ZYeapon3.spl~ ~override~
 
 
 // Creatures
