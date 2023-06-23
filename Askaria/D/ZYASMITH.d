@@ -8,11 +8,27 @@ END
 
 IF ~~ THEN BEGIN 1
   SAY @2
-  IF ~~ THEN  DO ~TakePartyGold(100)
+  IF ~PartyGoldGT(99)~ THEN REPLY @12 DO ~TakePartyGold(100)
   TakePartyItem("ZYSUZUNG")
   SetGlobalTimer("ZYMakeDust","GLOBAL",TWO_DAYS)
-  SetGlobal("ZYSmithDust","GLOBAL",1)~EXIT
+  SetGlobal("ZYSmithDust","GLOBAL",1)~ GOTO ZYAJOSMITH
+  IF ~!PartyGoldGT(99)~ THEN REPLY @13 GOTO ZYAJOnoSMITH
+  IF ~~ THEN REPLY @14 GOTO ZYAJOnoSMITH
 END
+
+// JO change
+
+IF ~~ THEN BEGIN ZYAJOSMITH
+  SAY @10 
+  IF ~~ THEN EXIT
+END
+  
+IF ~~ THEN BEGIN ZYAJOnoSMITH
+  SAY @11 
+  IF ~~ THEN EXIT
+END
+
+// JO change
 
 IF ~GlobalTimerExpired("ZYMakeDust","GLOBAL")
 Global("ZYSmithDust","GLOBAL",1)

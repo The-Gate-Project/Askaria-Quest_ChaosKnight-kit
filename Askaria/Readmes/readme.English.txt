@@ -132,3 +132,5 @@ CHANGES
   - Add reply options for Askaria mother (Dop#2M.d)
   - Add a reply option for the seer (Pai#1M.d)
   - prevent dead end with Askaria parents (Dop#2M.d, Dop#1M.d)
+  - Add unused reply option for Dop#1M.d, Dop#2M.d
+  - Add reply options for Paul the blacksmith (ZYASMITH.d)

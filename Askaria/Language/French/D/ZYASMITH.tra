@@ -1,8 +1,24 @@
-@0  = ~Welcome. What can I do for you?~
-@1  = ~You're the blacksmith named Paul? Can you turn this crystal into powder?~
-@2  = ~I'm sure I can do so. No problem. But it will take some time, so come back in two days. The price is 100 gold in advance.~
-@3  = ~Here is the powder. That crystal was so hard I had difficulties to crack it, but I succeeded. Here you go.~
-@4  = ~It's not finished yet. Don't be hasty, you will need to wait a little longer.~
-@5  = ~All preparations are done!
+@0  = ~Soyez les bienvenus. Que puis-je faire pour vous ?~
+@1  = ~Vous êtes Paul, le forgeron ? Serait-il possible de transformer ce cristal en poussière ?~
+@2  = ~Oui bien sûr, sans problème. Cela va prendre un certain temps et il vous en coûteras 100 pièces d'or, payable d'avance.~
+@3  = ~Et voila. Ce cristal était tellement dur que j'ai eu du mal à le briser, mais j'ai finalement réussi à le réduire en poussière.~
+@4  = ~Ne soyez pas si pressé. Je n'ai pas encore terminé, il vous faudra attendre encore un peu.~ ~Ne soyez pas si pressée. Je n'ai pas encore terminé, il vous faudra attendre encore un peu.~
+@5  = ~Nous sommes prêt!
 
-Now, we'll be going to Askaria's parents home. But if her parents are doppelgangers, what happens to her real parents? Askaria is very worried about that. Maybe we should go there as soon as possible. Why do I feel something very bad is going to happen?~
+Il est temps de rendre visite aux parents d'Askaria. Si ce sont vraiment des doppelgänger cela n'augurerai rien de bon pour son père et sa mère. Askaria est très inquiète, nous devrions les rejoindre le plus tôt possible. 
+
+Pourquoi ai-je l'impression que nous courons à la catastrophe ?~
+
+// JO change
+
+@10  = ~Revenez dans deux jours.~
+
+@11  = ~100 pièces d'or, payable d'avance.~
+
+@12  = ~D'accord.~
+
+@13  = ~100 pièces d'or !!!~
+
+@14  = ~Non, nous partons !~
+
+// JO change
