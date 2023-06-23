@@ -40,4 +40,4 @@ IF  ~Global("ZYFirstMeet","GLOBAL",1) !IsValidForPartyDialogue("zyaska")~ THEN B
 END
 
 CHAIN ~zyaskaj~ dp#1
-@3 == ~zydop1~ @4 == ~zyaskaj~ @5  END ~zydop2~ d2
+@3 == ~zydop1~ @4 == ~zyaskaj~ @5 == ~zydop1~ @18 == ~zyaskaj~ @6 END ~zydop2~ d2

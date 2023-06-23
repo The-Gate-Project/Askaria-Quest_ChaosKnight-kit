@@ -1,135 +1,224 @@
 @0   = ~Askaria Quest pour BGT, BGEE ou EET~ 
-@1   = ~Outlaw1~ 
-@2   = ~Outlaw2~ 
-@3   = ~Outlaw3~ 
-@4   = ~Outlaw4~ 
-@5   = ~Outlaw5~ 
-@6   = ~Outlaw6~ 
-@7   = ~Outlaw7~ 
+@1   = ~Bandit~ 
+@2   = ~Brigand~ 
+@3   = ~Crapule~ 
+@4   = ~Malfrat~ 
+@5   = ~Malandrin~ 
+@6   = ~Truand~ 
+@7   = ~Fripouille ~ 
 @8   = ~Askaria~ 
 @9   = ~Hauser~ 
-@10   = ~Hauser's right Hand~ 
-@11   = ~Hauser's left Hand~ 
+@10   = ~Comparse de Hauser~ 
+@11   = ~Acolyte de Hauser~ 
 @12   = ~Mirabelle la voyante~ 
 @13   = ~Pierre ionique~ 
-@14   = ~(Description for Unidentified Ioun Stone) When equipped this small stone floats and starts spinning around the wearer's head. These magic stones have various abilities depending on their color.~ 
-@15   = ~Eye of Tyr~ 
-@16   = ~This shining Ioun stone is a gift from the God of Justice. It symbolizes the eye of Tyr. This stone floats above the wearer's head, and whoever owns it is seen in an elegant light. 
+@14   = ~Cette petite pierre flotte autour de la tête de son possesseur quand on la place dans son inventaire. Ces pierres évidemment magiques ont des propriétés différentes en fonction de leur couleur.~ 
+@15   = ~L’Œil de Tyr~ 
+@16   = ~Cette pierre ionique est un cadeau du dieu de la Justice, un symbole de son caractère sacrée. L'œil de Tyr flotte au-dessus de la tête de son porteur qui apparaît à tous comme rayonnant d'un lumière divine.
+
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
+
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice céleste
+
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
+
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
+
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
 
 
-STATISTICS: 
-Immunity to blindness, Charisma bonus 1 
+PARAMÈTRES : 
 
-Abilities: 
+Capacités d'équipement : 
+- Protection contre les coups critiques
+- Classe d'armure : +1
+- Charisme : +1
+- Immunité aux sorts Coups d'ailes, Enchevêtrement, Enchevêtrement de toile, Paralysie de dragon d'argent, Toile d'araignée et Toile de mimique
+- Immunité à la cécité et au sommeil
 
-Once per day: Cast Cure Light Wounds 
-Divine relic, Pray for Eye of Tyr. The caster will be fully cured. 
+Capacités de charge (1 fois par jour) : 
+- Restaure 100 % points de vie au porteur
+- Dissipe l'état d'ébriété
+- Neutralisation des poisons
+- Guérison de la cécité
+- Guérison de la débilité mentale
+- Guérison des maladies
+- Guérison de la surdité
 
-AC +1 
-Weight : 2 
-Only usable by: 
-Paladin 
+Poids : 2
 
-Other Items in the set (5 items) 
-Tears from the Maimed God 
+Utilisable par : 
+Paladin ~ 
 
-Gauntlets of Holy Power 
-Boots of Quick Justice 
-Eye of Tyr 
-Plate of Aura 
-Celestear
+@17   = ~Cristal de scrutation~  // de vérité
+@18   = ~Cette petite pierre d'un blanc éclatant a le pouvoir de révéler la vérité cachée.~ 
+@19   = ~Récipient pour la poussière de cristal~
+@20   = ~Ce récipient contient de la poussière de cristal, cette poussière révèle la vraie nature de toutes choses.~ 
+@21   = ~Jeune dragon de Saphir~ 
+@22   = ~Gantelets~ 
+@23   = ~Les gantelets sont des gants blindés. Il en existe en cuir, en plaques de métal et en cotte de mailles. Chaque armure complète doit comporter des gantelets d'un type approprié. Les gantelets magiques ont tendance à être plus fins, plus légers et plus confortables que les modèles ordinaires.~ 
+@24   = ~Gantelets de compétence divine~ 
+@25   = ~Ces gantelets, très souvent utilisé par Lucrecia le paladin, confère un grand pouvoir en invoquant la puissance sacrée de Tyr. 
 
-Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
 
-Set Effect (2 items) 
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice céleste
 
-Soul of freedom 
-A wearer is immune to the following effects : stun, capture, and horror. 
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
 
-Set Effect (5 items) 
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
 
-A Tear of Heaven  
-It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
-A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.~ 
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
 
-@17   = ~Stone of True Seeing.~ 
-@18   = ~This shiny white stone has the power to reveal everything.~ 
-@19   = ~Bottle of crystal powder~ 
-@20   = ~This bottle is used as a container for a crystal crushed into powder. The powder can turn everything into its original form.~ 
-@21   = ~Little Sapphire Dragon~ 
-@22   = ~Gauntlet~ 
-@23   = ~(Description for Unidentified Gauntlet) Mettre la générique du jeu~ 
-@24   = ~Gauntlet of Holy Power~ 
-@25   = ~This gauntlet grants a awesome magic power, used very often by Ian the paladin. The wearer can call upon Tyr's Holy Power once a day. 
+PARAMÈTRES : 
 
-Abilities: 
+Capacités d'équipement : 
+- TAC0 : +1
+- Immunité aux sorts Coups d'ailes, Enchevêtrement, Enchevêtrement de toile, Paralysie de dragon d'argent, Toile d'araignée et Toile de mimique
+- Immunité au sommeil
 
-Cast Holy Power once a day. 
+Capacités de charge : 
+- Puiser dans la puissance divine (2 fois par jour)
 
+Poids : 2
 
-THAC0: +1  
-Weight: 2 
-Only usable by: 
-Paladin 
+Utilisable par : 
+Paladin~ 
 
-Other Items in the set (5 items) 
-Tears from the Maimed God 
-
-Gauntlets of Holy Power 
-Boots of Quick Justice 
-Eye of Tyr 
-Plate of Aura 
-Celestear
-
-Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
-
-Set Effect (2 items) 
-
-Soul of freedom 
-A wearer is immune to the following effects : stun, capture, and horror. 
-
-Set Effect (5 items) 
-
-A Tear of Heaven  
-It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
-A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.~ 
-
-@26   = ~Blacksmith~ 
-@27   = ~Helmington, Askaria's father of Askaria~ 
-@28   = ~Celine, Askaria's  mother~ 
-@29   = ~Guard~ 
+@26   = ~Paul le forgeron~ 
+@27   = ~Helmington, le père d'Askaria~ 
+@28   = ~Céline, la mère d'Askaria~ 
+@29   = ~Garde des parents d'Askaria~ 
 @30   = ~Hagamemnon~ 
 
-@31   = ~Askaria's family ring~ 
-@32   = ~This light green colored ring is a treasure passed  from generation to generation in Askaria's family. It's mostly made of a material created with a secret ingredient. The ring was enhanced by a brilliant magician hundred years ago. It grants excellent protection to its wearer. 
+@31   = ~Don d'Askaria~ 
+@32   = ~Cet anneau de couleur verte est un trésor qui se transmet de génération en génération dans la famille d'Askaria. Le matériau qui le compose est inconnu.
 
-Abilities: 
-Immunity to normal weapons. Immunity to Level 3 or lower spells. 
-AC 0 
+Un siècle auparavant un magicien exceptionnel l'a amélioré afin qu'il offre une protection sans égale à celui ou celle qui le possède.
 
-Only usable by: 
-Mages~ 
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Classe d'armure de base : 0
+- Immunité aux sorts de 3ème niveau
+- Immunité contre les armes non-magiques
+
+Poids : 0
+
+Non utilisable par :
+ Mage~ 
 
 @33   = ~Journal de Twidley maculé de sang~ // voir pour l'affichage en jeu
-@34   = ~Journal de Twidley maculé de sang 
+@34   = ~ 
 
-21 Eléasis  
-Ha ! Je suis tellement impatient de découvrir cette grotte ! Mon grand-père me disait qu'un millier de chauves-souris vivaient à l'intérieur, apparemment un petit dragon y aurait récemment élu domicile. Rowel, Hemish et moi, le trio légendaire, sommes les seuls à pouvoir le découvrir. Nous serons bientôt célèbres !
+21 Eléasis :
+  
+Ha ! Je suis tellement impatient de découvrir cette grotte. Mon grand-père me disait qu'un millier de chauves-souris vivaient à l'intérieur, apparemment un petit dragon y aurait récemment élu domicile. Rowel, Hemish et moi, le trio légendaire, sommes les seuls à pouvoir le découvrir. Nous serons bientôt célèbres !
 
-22 Eléasis  
-Tous les préparatifs sont terminés. Rowel a emprunté une *véritable* dague magique qui appartient à sa famille, personne n'est au courant.... J'ai appris à lancer le sort vapeur colorée afin d'endormir le dragon. J'en ai pas l'air mais je me débrouille avec la magie. Si seulement j'étais plus studieux, je pourrais surement... Quoi qu'il en soit, Hemish prendra le dragon à revers. afin qu'il ne s'échappe pas. Mon sang ne fait qu'un tour, rien que d'y penser.
+22 Eléasis :  
 
-24 Eléasis  
-Hum... Je ne comprends pas pourquoi il y a tant de monstres aujourd'hui. Nous avons rencontré trois grouilleux malades avant même d'atteindre la grotte. En plus !  Ce satané Hemish est resté planté là pendant que Rowel et moi nous battions contre ces monstres. Il nous a regardé nous battre sans rien faire ! J'aurais voulu l'abandonner à ce moment précis, mais c'est mon  ami. Stupide Hemish... Il ne devrait pas être à nos côtés, mais nous avions besoin de sa dague soi-disant magique... Espérons qu'il ne nous raconte pas d'histoire... Nous allons nous battre contre un dragon...
+Tous les préparatifs sont terminés. Rowel a emprunté une *véritable* dague magique qui appartient à sa famille et personne n'est au courant. J'ai appris à lancer le sort vapeur colorée afin d'endormir le dragon. J'en ai pas l'air mais je me débrouille avec la magie. Si seulement j'étais plus studieux, je pourrais sûrement... Quoi qu'il en soit, Hemish prendra le dragon à revers. afin qu'il ne s'échappe pas. Mon sang ne fait qu'un tour, rien que d'y penser.
 
-25 Eléasis 
+24 Eléasis : 
+
+Hum... Je ne comprends pas pourquoi il y a tant de monstres aujourd'hui. Nous avons rencontré trois grouilleux malades avant même d'atteindre la grotte. En plus !  Ce satané Hemish est resté planté là pendant que Rowel et moi nous battions contre ces monstres. Il nous a regardé nous battre sans rien faire ! J'aurais voulu l'abandonner à ce moment précis, mais c'est mon  ami. Stupide Hemish... Il ne devrait pas être à nos côtés, mais nous avions besoin de son épée longue enchantée... Espérons qu'il ne nous raconte pas d'histoire, nous allons nous battre contre un dragon !
+
+25 Eléasis :
+ 
 Je suis si excitée que je n'arrive pas à écrire correctement. Je crois n'avoir jamais ressenti une telle ardeur. Le trio légendaire sera bientôt... légendaire, mais pour ça nous devons ramener la tête de dragon. Maman, désolé d'être parti sans un mot, mais après cette aventure, nous n'aurons plus besoin de travailler...~ 
 
 @35   = ~Crâne~ 
-@36   = ~Les restes d'une des victimes du dragon de saphir.~  
-@37   = ~Mère de Twidley~ 
+@36   = ~Les restes d'une des victimes du dragon de Saphir.~  
+@37   = ~Mère de Twidley~
 
-@38   = ~Cries for release~
+
+// Wihtout restricton for EE
+
+@40   = ~Cette pierre ionique est un cadeau du dieu de la Justice, un symbole de son caractère sacrée. L'œil de Tyr flotte au-dessus de la tête de son porteur qui apparaît à tous comme rayonnant d'un lumière divine.
+
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
+
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice céleste
+
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
+
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
+
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
+
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Protection contre les coups critiques
+- Classe d'armure : +1
+- Charisme : +1
+- Immunité aux sorts Coups d'ailes, Enchevêtrement, Enchevêtrement de toile, Paralysie de dragon d'argent, Toile d'araignée et Toile de mimique
+- Immunité à la cécité et au sommeil
+
+Capacités de charge (1 fois par jour) : 
+- Restaure 100 % points de vie au porteur
+- Dissipe l'état d'ébriété
+- Neutralisation des poisons
+- Guérison de la cécité
+- Guérison de la débilité mentale
+- Guérison des maladies
+- Guérison de la surdité
+
+Poids : 2~
+
+@41   = ~Ces gantelets, très souvent utilisé par Lucrecia le paladin, confère un grand pouvoir en invoquant la puissance sacrée de Tyr. 
+
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
+
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice céleste
+
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
+
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
+
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- TAC0 : +1
+- Immunité aux sorts Coups d'ailes, Enchevêtrement, Enchevêtrement de toile, Paralysie de dragon d'argent, Toile d'araignée et Toile de mimique
+- Immunité au sommeil
+
+Capacités de charge : 
+- Puiser dans la puissance divine (2 fois par jour)
+
+Poids : 2~
+
+@42   = ~Cet anneau de couleur verte est un trésor qui se transmet de génération en génération dans la famille d'Askaria. Le matériau qui le compose est inconnu.
+
+Un siècle auparavant un magicien exceptionnel l'a amélioré afin qu'il offre une protection sans égale à celui ou celle qui le possède.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Classe d'armure de base : 0
+- Immunité aux sorts de 3ème niveau
+- Immunité contre les armes non-magiques
+
+Poids : 0~ 
 
 @100 = ~Askaria Quest doit être installe sur BGT, BGEE ou EET~
 @101 = ~Askaria Quest a besoin du mod ChaosKnight~

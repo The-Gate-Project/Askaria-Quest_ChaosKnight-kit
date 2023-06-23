@@ -12,7 +12,7 @@
 @11   = ~Hauser's left Hand~ 
 @12   = ~Pie the seer~ 
 @13   = ~Ioun Stone~ 
-@14   = ~(Description for Unidentified Ioun Stone) When equipped this small stone floats and starts spinning around the wearer's head. These magic stones have various abilities depending on their color.~ 
+@14   = ~When equipped this small stone floats and starts spinning around the wearer's head. These magic stones have various abilities depending on their color.~ 
 @15   = ~Eye of Tyr~ 
 @16   = ~This shining Ioun stone is a gift from the God of Justice. It symbolizes the eye of Tyr. This stone floats above the wearer's head, and whoever owns it is seen in an elegant light. 
 
@@ -58,7 +58,7 @@ A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of T
 @20   = ~This bottle is used as a container for a crystal crushed into powder. The powder can turn everything into its original form.~ 
 @21   = ~Little Sapphire Dragon~ 
 @22   = ~Gauntlet~ 
-@23   = ~(Description for Unidentified Gauntlet)~ 
+@23   = ~Gauntlets are armored gloves. They can be made of leather, metal plates, or chain mail. Every suit of armor is assumed to include gauntlets of an appropriate type. Magical gauntlets tend to be finer, lighter, and more easily worn than normal varieties.~ 
 @24   = ~Gauntlet of Holy Power~ 
 @25   = ~This gauntlet grants a awesome magic power, used very often by Ian the paladin. The wearer can call upon Tyr's Holy Power once a day. 
 
@@ -94,9 +94,9 @@ A Tear of Heaven
 It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
 A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.~ 
 
-@26   = ~Blacksmith~ 
-@27   = ~Helmington, Askaria's father of Askaria~ 
-@28   = ~Celine, Askaria's  mother~ 
+@26   = ~Paul the Blacksmith~ 
+@27   = ~Helmington, Askaria's father~ 
+@28   = ~Celine, Askaria's mother~ 
 @29   = ~Guard~ 
 @30   = ~Hagamemnon~ 
 
@@ -129,7 +129,82 @@ Huh... I don't know why there are so much more monsters today. Yesterday, all I 
 @36   = ~The remains of the victims of the sapphire dragon.~ 
 @37   = ~Twidley's Mother~ 
 
-@38   = ~Cries for release~
+
+// Wihtout restricton for EE
+
+@40   = ~This shining Ioun stone is a gift from the God of Justice. It symbolizes the eye of Tyr. This stone floats above the wearer's head, and whoever owns it is seen in an elegant light. 
+
+
+STATISTICS: 
+Immunity to blindness, Charisma bonus 1 
+
+Abilities: 
+
+Once per day: Cast Cure Light Wounds 
+Divine relic, Pray for Eye of Tyr. The caster will be fully cured. 
+
+AC +1 
+Weight : 2
+
+Other Items in the set (5 items) 
+Tears from the Maimed God 
+
+Gauntlets of Holy Power 
+Boots of Quick Justice 
+Eye of Tyr 
+Plate of Aura 
+Celestear
+
+Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
+
+Set Effect (2 items) 
+
+Soul of freedom 
+A wearer is immune to the following effects : stun, capture, and horror. 
+
+Set Effect (5 items) 
+
+A Tear of Heaven  
+It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
+A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.~
+
+@41   = ~This gauntlet grants a awesome magic power, used very often by Ian the paladin. The wearer can call upon Tyr's Holy Power once a day. 
+
+Abilities: 
+
+Cast Holy Power once a day. 
+
+
+THAC0: +1  
+Weight: 2
+
+Other Items in the set (5 items) 
+Tears from the Maimed God 
+
+Gauntlets of Holy Power 
+Boots of Quick Justice 
+Eye of Tyr 
+Plate of Aura 
+Celestear
+
+Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
+
+Set Effect (2 items) 
+
+Soul of freedom 
+A wearer is immune to the following effects : stun, capture, and horror. 
+
+Set Effect (5 items) 
+
+A Tear of Heaven  
+It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
+A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.~
+
+@42   = ~This light green colored ring is a treasure passed  from generation to generation in Askaria's family. It's mostly made of a material created with a secret ingredient. The ring was enhanced by a brilliant magician hundred years ago. It grants excellent protection to its wearer. 
+
+Abilities: 
+Immunity to normal weapons. Immunity to Level 3 or lower spells. 
+AC 0~ 
 
 @100 = ~Askaria Quest must be installed on BGT, BGEE or EET~
 @101 = ~Askaria Quest needs the mod ChaosKnight~

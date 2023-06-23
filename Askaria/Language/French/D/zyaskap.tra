@@ -1,7 +1,7 @@
-@0    = ~Oh. <CHARNAME>, have you already forgotten what you promised?~
-@1    = ~Sorry. We need to separate for a while. But I'll keep my promise.~
-@2    = ~Haha. It's a joke! Certainly, you didn't think I would break my promise? Let's go!~
-@3    = ~OK. But come back as soon as possible. If not, I will need to find another way.~
-@4    = ~Sorry. I think it's too dangerous for you. I thank you for helping me.~
-@5    = ~Will you help me now?~
-@6    = ~Sure, let's go!~
+@0    = ~Heu... Mais <CHARNAME> que faites-vous de votre promesse ?~
+@1    = ~Pardonne moi, nous devons nous séparer pour quelques jours. Ne t'en fait pas, je tiens toujours parole.~
+@2    = ~Ha ha ! C'était pour rire ! Tu ne pensais tout de même pas que j'allais rompre mon engagement ? Aller, viens par ici !~
+@3    = ~D'accord. Revenez au plus vite, si vous tardez trop je devrais me résoudre à chercher une autre solution.~
+@4    = ~Pardon, mais vous êtes trop dangereux pour que je reste à vos côtés. Je vous remercie d'avoir bien voulu m'aider jusqu'ici.~ ~Pardon, mais vous êtes trop dangereuse pour que je reste à vos côtés. Je vous remercie d'avoir bien voulu m'aider jusqu'ici.~
+@5    = ~Vous êtes enfin prêt à vous occuper de ma situation ?~ ~Vous êtes enfin prête à vous occuper de ma situation ?~
+@6    = ~Évidemment, allons-y !~

@@ -63,7 +63,7 @@ The crystal is supposedly detained by a young sapphire dragon currently residing
 
 Before heading up to the second floor of the Feldepost Inn, you may have encountered an NPC named Hauser. Some of you may have been angry with him at first and died prematurely, but you will have your revenge...
 
-When Hauser ambushes you, if is HP falls below 30, Hauser spoke to you, you can either spare him or kill him. If you choose to let him live, he will give you an interresting item.
+When Hauser ambushes you, if is HP falls below 30, Hauser spoke to you, you can either spare him or kill him. If you choose to spare is life, he will give you an interresting item.
 
 - A mother lost son:
 
@@ -117,7 +117,7 @@ Corrected by Xicloing
   - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
   - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
   - French translation
-  - Really restrict the use of the Jacob's mace to Jacob only (APPEND ITEM_USE.2DA)
+  - Really restrict the use of Jacob's mace to Jacob only (APPEND ITEM_USE.2DA)
   
 - Askaria :
 
@@ -130,7 +130,12 @@ Corrected by Xicloing
   - REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~)
   - REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~)
   - Add prefix for some variables and items
-  - Correct Pai#1M.d
-  - Order for .d compilation in tp2
-  - New glogal variable and TakePartyItem for Zya#Tmo.d
-  - Add missing ZYakasun.eff
+  - Correct a variable in Pai#1M.d
+  - Order for .d compilation in tp2  
+  - Add reply options for Twidley mother (Zya#Tmo.d)
+  - TakePartyItem for Twidley journal (Zya#Tmo.d)
+  - Further prefixes
+  - Add reply options for Askaria mother (Dop#2M.d)
+  - Add a reply option for the seer (Pai#1M.d)
+  - prevent dead end with Askaria parents (Dop#2M.d, Dop#1M.d)
+  - Add unused reply option for Dop#1M.d, Dop#2M.d

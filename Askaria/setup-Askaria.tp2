@@ -46,6 +46,7 @@ REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~) @101 /* Askaria
 // Portraits
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+PRINT ~EE Portraits~
   COPY ~Askaria/BMP/EE/zyaskaL.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zyaskaS.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zyaskaM.bmp~ ~override~
@@ -54,6 +55,7 @@ ACTION_IF (GAME_IS ~bgee eet~) BEGIN
   COPY ~Askaria/BMP/EE/zyhaurS.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zypaiS.bmp~ ~override~
 END ELSE BEGIN
+PRINT ~BGT Portraits~
   COPY ~Askaria/BMP/zyaskaL.bmp~ ~override~
   COPY ~Askaria/BMP/zyaskaS.bmp~ ~override~
   COPY ~Askaria/BMP/zyaskaM.bmp~ ~override~
@@ -171,11 +173,21 @@ COPY ~Askaria/CRE/zya#tmo.cre~ ~override~
 
 //Items
 
+ACTION_IF (GAME_IS ~bgt~) BEGIN
+PRINT ~BGT Descriptions~
 COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
   SAY NAME1 @13
   SAY UNIDENTIFIED_DESC @14
   SAY NAME2 @15
   SAY DESC @16
+END ELSE BEGIN
+PRINT ~EE Descriptions~
+COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
+  SAY NAME1 @13
+  SAY UNIDENTIFIED_DESC @14
+  SAY NAME2 @15
+  SAY DESC @40
+END
 
 COPY ~Askaria/ITM/zysuzung.itm~ ~override~
   SAY NAME2 @17
@@ -185,15 +197,33 @@ COPY ~Askaria/ITM/zysudust.itm~ ~override~
   SAY NAME2 @19
   SAY DESC @20
 
+ACTION_IF (GAME_IS ~bgt~) BEGIN
+PRINT ~BGT Descriptions~
 COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
   SAY NAME1 @22
   SAY UNIDENTIFIED_DESC @23
   SAY NAME2 @24
   SAY DESC @25
+END ELSE BEGIN
+PRINT ~EE Descriptions~
+COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
+  SAY NAME1 @22
+  SAY UNIDENTIFIED_DESC @23
+  SAY NAME2 @24
+  SAY DESC @41
+END
 
+ACTION_IF (GAME_IS ~bgt~) BEGIN
+PRINT ~BGT Descriptions~
 COPY ~Askaria/ITM/zyaring.itm~ ~override~
   SAY NAME2 @31
   SAY DESC @32
+END ELSE BEGIN
+PRINT ~EE Descriptions~
+COPY ~Askaria/ITM/zyaring.itm~ ~override~
+  SAY NAME2 @31
+  SAY DESC @42
+END
 
 COPY ~Askaria/ITM/zya#bone.itm~ ~override~
   SAY NAME2 @35
