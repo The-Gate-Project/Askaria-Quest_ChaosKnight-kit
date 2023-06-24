@@ -65,6 +65,10 @@ PRINT ~BGT Portraits~
   COPY ~Askaria/BMP/zypaiS.bmp~ ~override~
 END
 
+// Journal
+
+ADD_JOURNAL TITLE (@200) @201 @204 @205 @206 @207
+ADD_JOURNAL TITLE (@199) @202 @203 @208
 
 // Dialogues
 

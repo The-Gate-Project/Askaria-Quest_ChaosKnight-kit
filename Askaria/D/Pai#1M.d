@@ -18,7 +18,7 @@ END
 
 IF ~~ THEN BEGIN p3
   SAY @10
-  IF ~~ THEN REPLY @11 DO ~SetGlobal("AS#PAI","GLOBAL",2) SetGlobal("Pai#FM","GLOBAL",1) AddJournalEntry(@16,USER)~ EXIT
+  IF ~~ THEN REPLY @11 DO ~SetGlobal("AS#PAI","GLOBAL",2) SetGlobal("Pai#FM","GLOBAL",1) AddJournalEntry(@201,QUEST)~ EXIT
 END
 
 IF ~Global("AS#PAI","GLOBAL",2) Global("HAU#SM","GLOBAL",2) InParty("zyaska") PartyHasItem("ZYSUZUNG") 

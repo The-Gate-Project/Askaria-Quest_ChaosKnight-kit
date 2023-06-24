@@ -10,7 +10,7 @@
 @9   = ~Hauser~ 
 @10   = ~Hauser's right Hand~ 
 @11   = ~Hauser's left Hand~ 
-@12   = ~Pie the seer~ 
+@12   = ~Pie the Seer~ 
 @13   = ~Ioun Stone~ 
 @14   = ~When equipped this small stone floats and starts spinning around the wearer's head. These magic stones have various abilities depending on their color.~ 
 @15   = ~Eye of Tyr~ 
@@ -208,3 +208,56 @@ AC 0~
 
 @100 = ~Askaria Quest must be installed on BGT, BGEE or EET~
 @101 = ~Askaria Quest needs the mod ChaosKnight~
+
+
+// Journal
+
+@199 = ~Twidley's fate~
+@200 = ~Askaria Quest~
+
+// @18,@17  Pai#1M.tra
+
+@201 = ~Searching for a crystal of truth.
+
+Pie the Seer said we need the crystal of truth to know if Askaria's parents are terrible disguised creatures.But these crystals are not only rare but also belong to horrible sapphire dragon. So, it won't be an easy task to get hold of one. Sapphire dragons! Fortunately, I heard there is a little sapphire dragon living in a cave in the wilderness surrounding Beregost. I will need to be perfectly prepared before I dare to enter that cave.~
+
+
+
+// @37,@49  Zya#Tmo.tra
+
+@202 = ~Give and Take
+
+I fought back a sapphire dragon and found the children's belongings from the cave. And I went to see Twidley's mother. I didn't want to be repaid but she insisted in paying me. I said it wasn't necessary, you would have done it anyway. But she gave us 50 gold.~
+
+@203 = ~The lost son
+
+I fought back a sapphire dragon and found a blood drenched journal. When I arrive at village, I gave the journal to the kid's mother. She offered us some money, but I refused. It's enough for me if she can find solace.~
+
+// zyaska.tra @8   = ~Askaria~ 
+
+@204=~Askaria's request
+
+I met a girl named Askaria in front of the Feldpost Inn. We accidentally got involved in a fight, and after saving her, she asked us to help her right after we chased off the outlaws. We accepted to do so, and she insisted to accompany us. I need to meet the girl's parents, or I look for this fortune-teller living on the second floor of the inn.~
+
+
+@205=~Farewell... and a new beginning
+
+We helped Askaria the best we could, but her parent were already dead. I hope she will have the courage to go. Even if now she sees only sadness. But if she overcomes it, happy days will come to her again. Fortunately, she seems to be a courageous girl. I still need to get used to this kind of situations, but I have helped her anyway. Now as we separate, I hope she's able to move on and will always be happy.~
+
+// @5 ZYASMITH.tra
+
+@206  = ~All preparations are done!
+
+Now, we'll be going to Askaria's parents home. But if her parents are doppelgangers, what happens to her real parents? Askaria is very worried about that. Maybe we should go there as soon as possible. Why do I feel something very bad is going to happen?~
+
+// JO change
+
+@207  = ~Broken promise
+
+We didn't honor our commitment and Askaria flew away.~
+
+@208  = ~Twidley's fate
+
+Twidley has not been home for a week. He is a bit too fat and a bit too short for his age. Will I be able to look after him?~
+
+// JO change

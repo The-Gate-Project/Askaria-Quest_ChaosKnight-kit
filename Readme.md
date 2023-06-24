@@ -140,3 +140,4 @@ Corrected by Xicloing
   - prevent dead end with Askaria parents (Dop#2M.d, Dop#1M.d)
   - Add unused reply option for Dop#1M.d, Dop#2M.d
   - Add reply options for Paul the blacksmith (ZYASMITH.d)
+  - ADD_JOURNAL TITLE and move journal in quest

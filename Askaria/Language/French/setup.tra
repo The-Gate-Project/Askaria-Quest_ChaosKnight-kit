@@ -54,10 +54,10 @@ Poids : 2
 Utilisable par : 
 Paladin ~ 
 
-@17   = ~Cristal de scrutation~  // de vérité
+@17   = ~Cristal de vérité~  // de scrutation
 @18   = ~Cette petite pierre d'un blanc éclatant a le pouvoir de révéler la vérité cachée.~ 
 @19   = ~Récipient pour la poussière de cristal~
-@20   = ~Ce récipient contient de la poussière de cristal, cette poussière révèle la vraie nature de toutes choses.~ 
+@20   = ~Ce récipient contient de la poussière obtenu grâce au cristal de vérité, cette poussière révèle la vraie nature de toutes choses.~ 
 @21   = ~Jeune dragon de Saphir~ 
 @22   = ~Gantelets~ 
 @23   = ~Les gantelets sont des gants blindés. Il en existe en cuir, en plaques de métal et en cotte de mailles. Chaque armure complète doit comporter des gantelets d'un type approprié. Les gantelets magiques ont tendance à être plus fins, plus légers et plus confortables que les modèles ordinaires.~ 
@@ -222,6 +222,61 @@ Poids : 0~
 
 @100 = ~Askaria Quest doit être installe sur BGT, BGEE ou EET~
 @101 = ~Askaria Quest a besoin du mod ChaosKnight~
+
+
+// Journal
+
+@199 = ~Le destin de Twidley~
+@200 = ~Askaria~
+
+// @16 Pai#1M.tra @12   = ~Mirabelle la voyante~
+
+@201 = ~À la recherche de la vérité.
+
+Shaman Pie said we need the crystal of truth to know if Askaria's parents are terrible disguised creatures.But these crystals are not only rare but also belong to horrible sapphire dragon. So, it won't be an easy task to get hold of one. Sapphire dragons! Fortunately, I heard there is a little sapphire dragon living in a cave in the wilderness surrounding Beregost. I will need to be perfectly prepared before I dare to enter that cave.~
+
+
+
+// @18,@17 Zya#Tmo.tra @37   = ~Mère de Twidley~
+
+@202 = ~Donner et recevoir
+
+J'ai vaincu le dragon de Saphir et découvert ce qui était arrivé au jeune Twidley et ses amis. Sa mère a insisté pour me donner une récompense de 50 pièces d'or, malgré ma réticence.~
+
+@203 = ~Donner, sans attendre en retour
+
+J'ai vaincu le dragon de Saphir et découvert ce qui était arrivé au jeune Twidley et ses amis. Sa mère a proposé d'offrir une récompense, mais j'ai refusé. Son soulagement me suffit amplement.~
+
+// @37,@49 zyaska.tra @8   = ~Askaria~ 
+
+@204=~Askaria's request
+
+I met a girl named Askaria in front of the Feldpost Inn. We accidentally got involved in a fight, and after saving her, she asked us to help her right after we chased off the outlaws. We accepted to do so, and she insisted to accompany us. I need to meet the girl's parents, or I look for this fortune-teller living on the second floor of the inn.~
+
+
+@205=~Farewell... and a new beginning
+
+We helped Askaria the best we could, but her parent were already dead. I hope she will have the courage to go. Even if now she sees only sadness. But if she overcomes it, happy days will come to her again. Fortunately, she seems to be a courageous girl. I still need to get used to this kind of situations, but I have helped her anyway. Now as we separate, I hope she's able to move on and will always be happy.~
+
+// @5 ZYASMITH.tra @26   = ~Paul le forgeron~
+
+@206  = ~Nous sommes prêt!
+
+Il est temps de rendre visite aux parents d'Askaria. Si ce sont vraiment des doppelgänger cela n'augurerai rien de bon pour son père et sa mère. Askaria est très inquiète, nous devrions les rejoindre le plus tôt possible. 
+
+Pourquoi ai-je l'impression que nous courons à la catastrophe ?~
+
+// JO change
+
+@207  = ~Promesse brisée
+
+Nous n'avons pas respecté notre engagement et Askaria s'est volatilisé.~
+
+@208  = ~Le destin de Twidley
+
+Twidley n'est pas rentré à la maison depuis plus d'une semaine. Il est plutôt rond et pas très grand pour son âge. Serais-je capable de le retrouver ?~
+
+// JO change
 
 
 /* =============== *

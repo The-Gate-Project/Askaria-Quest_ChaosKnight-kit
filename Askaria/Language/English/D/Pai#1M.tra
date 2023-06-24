@@ -14,8 +14,9 @@
 @13 = ~Huh? Another job? More troubles. Tough luck.~
 @14 = ~Ha-ha-ha... Your next task will be easy. Bring the crystal to the Thunderhammer forgery. There will be a smith called Paul. Strong guy, that one... haha! Anyway, just tell him to turn the crystal into powder. I already contacted him in advance, so he should know what to do. Good luck, then.~
 @15 = ~How are you? I'm sorry, I have no time for you now.~
-@16 = ~Searching for a crystal of truth.
 
-Shaman Pie said we need the crystal of truth to know if Askaria's parents are terrible disguised creatures.But these crystals are not only rare but also belong to horrible sapphire dragon. So, it won't be an easy task to get hold of one. Sapphire dragons! Fortunately, I heard there is a little sapphire dragon living in a cave in the wilderness surrounding Beregost. I will need to be perfectly prepared before I dare to enter that cave.~
+// JO change
 
 @17 = ~Do you have the crystal of truth ?~
+
+// JO change

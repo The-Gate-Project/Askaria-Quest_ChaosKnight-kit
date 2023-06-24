@@ -1,2 +1,8 @@
 @0    = ~Vous êtes bien trop effrayant... Je dois m'éloigner le plus vite possible.~ ~Vous êtes bien trop effrayante... Je dois m'éloigner le plus vite possible.~
 @1    = ~Hein ?~
+
+// JO change
+
+@2    = ~Oh. <CHARNAME> !~
+
+// JO change

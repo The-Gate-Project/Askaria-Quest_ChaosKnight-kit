@@ -2,7 +2,7 @@ BEGIN ~zya#tmo~
 
 IF ~Global("zya#tmoFM","GLOBAL",0)~ THEN BEGIN t0
   SAY @0
-  IF ~~ THEN REPLY @1 DO ~SetGlobal("zya#tmoFM","GLOBAL",1)~ GOTO t1
+  IF ~~ THEN REPLY @1 DO ~SetGlobal("zya#tmoFM","GLOBAL",1) AddJournalEntry(@208,QUEST)~ GOTO t1
   IF ~~ THEN REPLY @2 DO ~EscapeArea()~ EXIT 
   IF ~~ THEN REPLY @3 EXIT
 END
@@ -32,10 +32,10 @@ END
 
 IF ~~ THEN BEGIN t5
   SAY @15
-  IF ~~ THEN DO ~TakePartyItem("zya#book") AddJournalEntry(@18, USER) ReputationInc(1) EscapeArea()~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("zya#book") AddJournalEntry(@203,QUEST_DONE) ReputationInc(1) EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN t6
   SAY @16
-  IF ~~ THEN DO ~TakePartyItem("zya#book") AddJournalEntry(@17, USER) GivePartyGold(50) EscapeArea() ~ EXIT
+  IF ~~ THEN DO ~TakePartyItem("zya#book") AddJournalEntry(@202,QUEST_DONE) GivePartyGold(50) EscapeArea() ~ EXIT
 END

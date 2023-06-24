@@ -75,13 +75,13 @@ IF ~~ THEN BEGIN aa6
   SAY @33
   IF ~IsValidForPartyDialogue("zyjcob")~ THEN  DO ~SetGlobal("AS#PAI","GLOBAL",1)~
   EXTERN ~zyjcobj~ zya#ihh 
-  IF ~!IsValidForPartyDialogue("zyjcob")~ THEN DO ~SetGlobal("AS#PAI","GLOBAL",1) AddJournalEntry(@37,USER) 
+  IF ~!IsValidForPartyDialogue("zyjcob")~ THEN DO ~SetGlobal("AS#PAI","GLOBAL",1) AddJournalEntry(@204,QUEST) 
   ChangeEnemyAlly("zyaska",PC)  JoinParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN aa7
   SAY @36
-  IF ~~ THEN DO ~AddJournalEntry(@37,USER)
+  IF ~~ THEN DO ~AddJournalEntry(@204,QUEST)
   JoinParty()~EXIT
 END
 
@@ -112,7 +112,7 @@ END
 
 IF ~~ THEN BEGIN abye6
   SAY @48
-  IF ~~ THEN DO ~AddJournalEntry(@49,USER) GiveItemCreate("zyaring",Player1,0,0,0) EscapeArea()~ EXIT
+  IF ~~ THEN DO ~AddJournalEntry(@205,QUEST_DONE) GiveItemCreate("zyaring",Player1,0,0,0) EscapeArea()~ EXIT
 END
 
 CHAIN ~zyjcobj~ zya#ihh

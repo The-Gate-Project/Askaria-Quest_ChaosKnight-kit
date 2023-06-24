@@ -48,7 +48,7 @@ IF ~~ THEN BEGIN fa3
   IF ~~ THEN DO ~TakePartyItem("ZYSUZUNG")
   ActionOverride("zyhaum1",EscapeAreaDestroy(5))
   ActionOverride("zyhaum2",EscapeAreaDestroy(5))
-  EscapeAreaDestroy(5)~EXIT
+  EscapeAreaDestroy(5) SetGlobal("AskaJOnotDONE","GLOBAL",1) ReputationInc(-1) AddJournalEntry(@207,QUEST_DONE)~ EXIT
 END
 
 IF ~~ THEN BEGIN fa4
