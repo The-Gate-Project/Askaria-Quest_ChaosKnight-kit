@@ -63,29 +63,13 @@ StartDialogueNoSet(Player1)
 END
 
 IF
-!InParty("zyaska") Global("AskaJOnotDONE","GLOBAL",1)
-THEN
-RESPONSE #100
-Wait(3)
-StartDialogueNoSet(Player1)
-END
-
-IF
 Global("AskaEnding","GLOBAL",0) InParty("zyaska") Dead("zydop1")
 THEN
 RESPONSE #100
 Wait(2)
 SetGlobal("AskaJOnotDONE","GLOBAL",2)
 Wait(3)
-StartDialogue("ZYASKAP","AskaJOnotFINISH2",[PC])
-END
-
-IF
-Global("AskaEnding","GLOBAL",0) !InParty("zyaska") Dead("zydop1")
-THEN
-RESPONSE #100
-Wait(2)
-SetGlobal("AskaJOnotDONE","GLOBAL",2)
+StartDialogue("ZYASKAP",[PC])
 END
 
 IF
@@ -96,13 +80,4 @@ Wait(2)
 SetGlobal("AskaJOnotDONE","GLOBAL",2)
 Wait(3)
 StartDialogue("ZYASKAP",[PC])
-END
-
-IF
-Global("AskaEnding","GLOBAL",0) !InParty("zyaska") Dead("zydop2")
-THEN
-RESPONSE #100
-Wait(2)
-SetGlobal("AskaJOnotDONE","GLOBAL",2)
-END
 

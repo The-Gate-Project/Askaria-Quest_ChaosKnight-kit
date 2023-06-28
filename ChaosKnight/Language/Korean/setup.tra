@@ -1,4 +1,4 @@
-@0    = ~BGT, BGEE, BG2EE or EET사용자를 위한 카오스 나이트 키트와 관련 모드설치~
+@0    = ~BGT, BGEE, BG2EE, IWDEE or EET사용자를 위한 카오스 나이트 키트와 관련 모드설치~
 
 @1    = ~카오스 나이트~
 @2    = ~카오스 나이트~
@@ -92,5 +92,5 @@
 @119   = ~흐으으으.. 오늘은 누가 희생자가 되려나.~
 
 
-@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE or EET~ 
-@201 = ~Only the ChaosKnight Kit will be installed on BG2EE~
+@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE, IWDEE or EET~ 
+@201 = ~Only the ChaosKnight Kit will be installed on BG2EE / IWDEE~

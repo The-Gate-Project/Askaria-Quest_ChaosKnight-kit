@@ -1,4 +1,4 @@
-@0  = ~Installation of the Chaos Knight Kit for BGT, BGEE, BG2EE or EET~
+@0  = ~Install the Chaos Knight Kit for BGT, BGEE, BG2EE, IWDEE or EET and Jacob, Npc pour BGT, BGEE ou EET~
 
 @1  = ~Chaos Knight~
 @2  = ~Chaos Knight~
@@ -118,5 +118,5 @@ Weight: 10~
 @119 = ~Hhhhhh... Who is the victim, today.~
 
 
-@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE or EET~ 
-@201 = ~Only the ChaosKnight Kit will be installed on BG2EE~
+@200 = ~ChaosKnight must be installed on BGT, BGEE, BG2EE, IWDEE or EET~ 
+@201 = ~Only the ChaosKnight Kit will be installed on BG2EE / IWDEE~

@@ -1,4 +1,4 @@
-@0  = ~Installer le Seigneur du Chaos, Kit pour BGT, BGEE, BG2EE ou EET et Jacob, Npc pour BGT, BGEE ou EET~
+@0  = ~Installer le Seigneur du Chaos, Kit pour BGT, BGEE, BG2EE, IWDEE ou EET et Jacob, Npc pour BGT, BGEE ou EET~
 
 @1  = ~seigneur du chaos~
 @2  = ~Seigneur du Chaos~
@@ -106,9 +106,9 @@ Poids : 10~
 @105 = ~Au nom du Chaos, écrasons la justice et piétinons l'ordre !~
 @106 = ~Tuez-les tous !~
 @107 = ~Whahahahahaha.~
-@108 = ~Oups ! Autant pour moi.~
+@108 = ~Et voilà ! Je n'ai pas été à la hauteur.~
 @109 = ~Argh !~
-@110 = ~Hé, mon pote, qu'as-tu découvert ?~
+@110 = ~Hé, mon pote, qu'as-tu découvert ?~ ~Hé, copine, qu'as-tu découvert ?~
 @111 = ~Oui, oui, comme tu veux.~
 @112 = ~Hé, tu l'as vu ? Ce machin vient de passer sous nos yeux.~
 @113 = ~Tu as l'impression que je plaisante ?~
@@ -120,5 +120,5 @@ Poids : 10~
 @119 = ~Mhmmm... Qui est notre prochaine victime ?~
 
 
-@200 = ~Le kit de Seigneur du Chaos doit etre installe sur BGT, BGEE, BG2EE ou EET~ 
-@201 = ~Seul le kit de Seigneur du Chaos sera installe sur BG2EE~
+@200 = ~Le kit de Seigneur du Chaos doit etre installe sur BGT, BGEE, BG2EE, IWDEE ou EET~ 
+@201 = ~Seul le kit de Seigneur du Chaos sera installe sur BG2EE / IWDEE~
