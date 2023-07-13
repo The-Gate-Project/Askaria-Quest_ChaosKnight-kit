@@ -43,10 +43,16 @@ BEGIN @0
 REQUIRE_PREDICATE (GAME_IS ~bgee eet bgt~) @100 /*Askaria Quest must be installed on BGT, BGEE or EET*/
 REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~) @101 /* Askaria Quest needs the mod ChaosKnight */
 
+PRINT ~              ~
+PRINT ~Jacob the Chaosknight is installed~
+PRINT ~              ~
+
 // Portraits
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
+PRINT ~              ~
 PRINT ~EE Portraits~
+PRINT ~              ~
   COPY ~Askaria/BMP/EE/zyaskaL.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zyaskaS.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zyaskaM.bmp~ ~override~
@@ -55,7 +61,9 @@ PRINT ~EE Portraits~
   COPY ~Askaria/BMP/EE/zyhaurS.bmp~ ~override~
   COPY ~Askaria/BMP/EE/zypaiS.bmp~ ~override~
 END ELSE BEGIN
+PRINT ~              ~
 PRINT ~BGT Portraits~
+PRINT ~              ~
   COPY ~Askaria/BMP/zyaskaL.bmp~ ~override~
   COPY ~Askaria/BMP/zyaskaS.bmp~ ~override~
   COPY ~Askaria/BMP/zyaskaM.bmp~ ~override~
@@ -178,14 +186,18 @@ COPY ~Askaria/CRE/zya#tmo.cre~ ~override~
 //Items
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
-PRINT ~BGT Descriptions~
+PRINT ~              ~
+PRINT ~BGT Descriptions for ioun stone~
+PRINT ~              ~
 COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
   SAY NAME1 @13
   SAY UNIDENTIFIED_DESC @14
   SAY NAME2 @15
   SAY DESC @16
 END ELSE BEGIN
-PRINT ~EE Descriptions~
+PRINT ~              ~
+PRINT ~EE Descriptions for ioun stone~
+PRINT ~              ~
 COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
   SAY NAME1 @13
   SAY UNIDENTIFIED_DESC @14
@@ -202,14 +214,18 @@ COPY ~Askaria/ITM/zysudust.itm~ ~override~
   SAY DESC @20
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
-PRINT ~BGT Descriptions~
+PRINT ~              ~
+PRINT ~BGT Descriptions for gantelets~
+PRINT ~              ~
 COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
   SAY NAME1 @22
   SAY UNIDENTIFIED_DESC @23
   SAY NAME2 @24
   SAY DESC @25
 END ELSE BEGIN
-PRINT ~EE Descriptions~
+PRINT ~              ~
+PRINT ~EE Descriptions for gantelets~
+PRINT ~              ~
 COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
   SAY NAME1 @22
   SAY UNIDENTIFIED_DESC @23
@@ -218,12 +234,16 @@ COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
 END
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
-PRINT ~BGT Descriptions~
+PRINT ~              ~
+PRINT ~BGT Descriptions for Zyaska ring~
+PRINT ~              ~
 COPY ~Askaria/ITM/zyaring.itm~ ~override~
   SAY NAME2 @31
   SAY DESC @32
 END ELSE BEGIN
-PRINT ~EE Descriptions~
+PRINT ~              ~
+PRINT ~EE Descriptions for Zyaska ring~
+PRINT ~              ~
 COPY ~Askaria/ITM/zyaring.itm~ ~override~
   SAY NAME2 @31
   SAY DESC @42
@@ -249,6 +269,7 @@ COPY ~Askaria/ITM/akasw3.itm~ ~override~
 COMPILE ~Askaria/BAF/ZYASKA.baf~
 COMPILE ~Askaria/BAF/ZYHAUSER.baf~
 COMPILE ~Askaria/BAF/ZYDOP1.baf~
+COMPILE ~Askaria/BAF/ZYDOP2.baf~
 COMPILE ~Askaria/BAF/MQSIGHT.baf~
 COMPILE ~Askaria/BAF/akahagu1.baf~
 COMPILE ~Askaria/BAF/akahagu2.baf~
@@ -280,9 +301,15 @@ APPEND ~PDIALOG.2DA~
 */
 
 ACTION_IF (GAME_IS ~eet~) BEGIN
+PRINT ~              ~
+	PRINT ~APPEND pdialog.2da for EET~
+PRINT ~              ~
   APPEND ~pdialog.2da~ ~ZYASKA       ZYASKAP             ZYASKAJ            ***            ***                ***                ***                 ***~
     UNLESS ~ZYASKA~
-END ELSE BEGIN
+END ELSE BEGIN // bgee bgt in this case (other exemple in ChaosKnight)
+PRINT ~              ~
+	PRINT ~APPEND pdialog.2da for BGEE or BGT~
+PRINT ~              ~
   APPEND ~pdialog.2da~ ~ZYASKA       ZYASKAP             ZYASKAJ            ***~
     UNLESS ~ZYASKA~
 END

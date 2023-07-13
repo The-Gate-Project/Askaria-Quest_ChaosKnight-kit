@@ -14,6 +14,7 @@ INCLUDE ~ChaosKnight/lib/fl#add_kit_ee.tpa~
 
 ACTION_IF (GAME_IS ~bg2ee iwdee~) BEGIN
 PRINT @201 /*Only the ChaosKnight Kit will be installed on BG2EE / IWDEE*/
+PRINT ~   ~
 END
 
     //Copies tra files into the autotra-folder (to leave the originals untouched)
@@ -82,34 +83,67 @@ COPY ~ChaosKnight/EFF/zychaost.eff~ ~override~
 
 // Item
 
+// Item can be equipped by one and unique NPC using ITEM_USE.2DA ... (https://gibberlings3.github.io/iesdp/files/2da/2da_bgee/item_use.htm)
+
+// zychmace = Item ressource / ZYJCOB = Script name of npc / %use_it% = Message in inventory when another pnj attempts to equip the item / 2 = conditions that display the message in the inventory / %use_him% = Name of NPC (If existing NPC use streff reference in game)
+
+// See below nuances for Tobex version ! (And look at ITEM_USE.2DA in Near Infinity)
+
+
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
-PRINT ~EE item~
+PRINT ~EE item description~
+PRINT ~   ~
+PRINT ~Item restricted to Jacob~
+PRINT ~   ~
 COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME1 @18
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @17
   
-OUTER_SET use_it = RESOLVE_STR_REF (@17)
 OUTER_SET use_him = RESOLVE_STR_REF (@4)
-APPEND ~ITEM_USE.2DA~ ~zychmace   JACOB      %use_it%      2          %use_him%~ UNLESS ~zychmace~ 
-  END
+OUTER_SET use_it = RESOLVE_STR_REF (@203)
+APPEND ~ITEM_USE.2DA~ ~zychmace   ZYJCOB      %use_it%      2          %use_him%~ UNLESS ~zychmace~ 
+	
+END ELSE BEGIN 
 
-ACTION_IF (GAME_IS ~bgt~) BEGIN
-PRINT ~Bgt item~
+ACTION_IF (GAME_IS ~bgt~ AND MOD_IS_INSTALLED ~SETUP-TOBEX.TP2~ ~100~) BEGIN
+PRINT ~Bgt item description~
+PRINT ~   ~
+PRINT ~Tobex is Installed~
+PRINT ~   ~
+PRINT ~Item restricted to Jacob~
+PRINT ~   ~
 COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME1 @18
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @7
-OUTER_SET use_it = RESOLVE_STR_REF (@7)
-APPEND ~ITEM_USE.2DA~ ~zychmace   JACOB      %use_it%      2~ UNLESS ~zychmace~
+OUTER_SET use_it = RESOLVE_STR_REF (@203)
+APPEND ~ITEM_USE.2DA~ ~zychmace   ZYJCOB      -1      2          %use_it%~ UNLESS ~zychmace~
+	
+END ELSE BEGIN 
+
+ACTION_IF (GAME_IS ~bgt~ AND NOT MOD_IS_INSTALLED ~SETUP-TOBEX.TP2~ ~100~) BEGIN
+PRINT ~Tobex is not Installed~
+PRINT ~zychmace.itm restriction need Tobex for BGT~
+PRINT ~zychmace.itm will not be restricted to Jacob only~
+PRINT ~   ~
+COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
+  SAY NAME1 @18
+  SAY NAME2 @6
+  SAY UNIDENTIFIED_DESC @16 
+  SAY DESC @7
+
   END
+ END
+END
 
 // Portraits
 
 ACTION_IF (GAME_IS ~bgee eet~) BEGIN
 PRINT ~EE Portraits~
+PRINT ~   ~
   COPY ~ChaosKnight/BMP/EE/zychaosL.bmp~ ~override~
   COPY ~ChaosKnight/BMP/EE/zychaosS.bmp~ ~override~
   COPY ~ChaosKnight/BMP/EE/zychaosM.bmp~ ~override~
@@ -117,6 +151,7 @@ END
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
 PRINT ~Bgt Portraits~
+PRINT ~   ~
   COPY ~ChaosKnight/BMP/zychaosL.bmp~ ~override~
   COPY ~ChaosKnight/BMP/zychaosS.bmp~ ~override~
   COPY ~ChaosKnight/BMP/zychaosM.bmp~ ~override~
@@ -208,6 +243,18 @@ END ELSE BEGIN
   SAY 0x130 @119 // SELECT_ACTION4
 END
 
+//  IWDEE_SELECT_COMMON7 has issues so !!!
+  
+  PATCH_IF (GAME_IS ~bgee eet~) BEGIN
+  WRITE_LONG 0x204 (BNOT 0x0)  // SELECT_COMMON7
+END
+
+//  IWDEE_SELECT_COMMON7 has issues so !!! (probably useless in this case)
+  
+  PATCH_IF (GAME_IS ~bgee eet~) BEGIN
+  WRITE_LONG 0x204 (BNOT 0x0)  // IWDEE_SELECT_COMMON7
+END
+
   SAY NAME1 @4
   SAY NAME2 @4
   SAY 0x1cc @5	//BIO
@@ -239,7 +286,7 @@ ACTION_FOR_EACH creature IN zychaos BEGIN
 PRINT ~Zychaos Exists~
     COPY_EXISTING ~%creature%.cre~ ~override~
       WRITE_SHORT   0x244 0
-      WRITE_BYTE    0x246 "%kit%"
+      WRITE_BYTE    0x246 "%kit%" // WRITE_LONG 0x246 "%kit%"
       WRITE_BYTE    0x247 0x40
       BUT_ONLY
 

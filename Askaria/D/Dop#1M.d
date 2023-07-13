@@ -2,7 +2,7 @@ BEGIN ~ZYDOP1~
 
 IF WEIGHT #1 ~PartyHasItem("ZYSUDUST") Global("ZYDustHave","GLOBAL",1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN 0
-  SAY @0
+  SAY @15
   IF ~~ THEN REPLY @1 DO ~TakePartyItem("ZYSUDUST") DestroyItem("ZYSUDUST") SetGlobal("ZYDustHave","GLOBAL",0)~ GOTO d1
 END
 
@@ -15,7 +15,7 @@ IF ~~ THEN BEGIN d2
   SAY @7
   IF ~~ THEN DO ~ ActionOverride("zydop2",Polymorph(DOPPLEGANGER_GREATER))
   Polymorph(DOPPLEGANGER_GREATER)  ChangeEnemyAlly("zydop2",ENEMY) ChangeEnemyAlly("zydop1",ENEMY) 
-  SetGlobal("AskaEnding","GLOBAL",1)~EXIT
+  SetGlobal("AskaEnding","GLOBAL",1) SetGlobal("JOscoffs","GLOBAL",1)~EXIT
 END
  
  IF WEIGHT #0 ~Global("ZyDGAlmostDie","GLOBAL",1) Global("AskaEnding","GLOBAL",1)~ THEN BEGIN d3
@@ -31,12 +31,12 @@ END
 
 IF ~!PartyHasItem("ZYSUDUST") Global("ZYDustHave","GLOBAL",1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN extra1
-  SAY @15
+  SAY @14
   IF ~~ THEN EXIT 
 END
 
 IF ~Global("ZYFirstMeet","GLOBAL",0) IsValidForPartyDialogue("zyaska")~ THEN BEGIN extra2
-  SAY @15
+  SAY @0
   IF ~~ THEN EXIT 
 END 
 

@@ -2,13 +2,18 @@ BEGIN ~ZYDOP2~
 
 IF WEIGHT #1 ~PartyHasItem("ZYSUDUST") Global("ZYDustHave","GLOBAL",1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN 0
-  SAY @0
+  SAY @15
   IF ~~ THEN REPLY @1 DO ~TakePartyItem("ZYSUDUST") DestroyItem("ZYSUDUST") SetGlobal("ZYDustHave","GLOBAL",0)~ GOTO d1
 END
 
 IF ~~ THEN BEGIN d1
   SAY @2
   IF ~~ THEN EXTERN ~zyaskaj~ dp#1
+END
+
+IF ~Global("JOscoffs","GLOBAL",1)~ THEN BEGIN JOscoffs
+  SAY @7
+  IF ~~ THEN DO ~SetGlobal("JOscoffs","GLOBAL",2)~ EXIT 
 END
 
 IF ~~ THEN BEGIN d2
@@ -20,12 +25,12 @@ END
 
 IF ~!PartyHasItem("ZYSUDUST") Global("ZYDustHave","GLOBAL",1) AreaCheck("%Beregost_TravenhurstManor_L1%")
 IsValidForPartyDialogue("zyaska") ~ THEN BEGIN extra1
-  SAY @15
+  SAY @14	
   IF ~~ THEN EXIT 
 END
 
 IF ~Global("ZYFirstMeet","GLOBAL",0) IsValidForPartyDialogue("zyaska")~ THEN BEGIN extra2
-  SAY @15
+  SAY @0
   IF ~~ THEN EXIT 
 END 
 

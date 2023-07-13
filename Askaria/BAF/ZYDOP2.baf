@@ -1,0 +1,6 @@
+IF
+  Global("JOscoffs","GLOBAL",1)
+THEN
+  RESPONSE #100
+	StartDialogue("ZYDOP2",[PC]) // StartDialogueNoSet(Player1) // Dialogue([PC])
+END

@@ -1,30 +1,26 @@
-@0  = ~Askaria? Have you eaten your meal? You're so thin. You need to eat your meal, all of it, so later, you will... Mmh! You want to become a pretty girl, don't you, honey?~ // Same as Dop#1M.tra
-@1  = ~Ha! Now, I will unmask you. Come nearer! This is the crystal of the truth!~ // Same as Dop#1M.tra
-@2  = ~Uhh... Where did you get that? I can't believe that you dare reveal our true forms.~ // Same as Dop#1M.tra
-@3  = ~Ah... Of course... Bring back my parents! Monster!~ // Same as Dop#1M.tra
-@4  = ~Hahaha! This is all you want? Your parents are gone for good. But if you want, I can send you to your parents.~ // Same as Dop#1M.tra
-@5  = ~You! How dare you do this to my parents!~ // Same as Dop#1M.tra
-@6  = ~I will never forgive this to you!~ // Same as Dop#1M.tra // unused ???
+@0  = ~Askaria chérie ? As-tu pris ton déjeuner ? Tu es si fine. N'oublie pas de toujours t'alimenter convenablement, afin d'être... Mmmmm ! Si tu souhaites devenir une femme belle et forte, il faut faire des efforts~ // Same as Dop#1M.tra
+@1  = ~Ah ah ! Le temps est venu de vous démasquer. Approchez-vous et contemplez le cristal de vérité !~ // Same as Dop#1M.tra
+@2  = ~Hiii... Qu'est ce que c'est ? Comment osez-vous révéler notre véritable forme ?~ // Same as Dop#1M.tra
+@3  = ~Non... Taisez-vous monstre ..! Rendez-moi mes parents !~ // Same as Dop#1M.tra
+@4  = ~Ha ha ! C'est vraiment ce que tu souhaites . Tes parents ont rendu l'âme depuis longtemps tendre Askaria. Mais je me ferais un plaisir de t'envoyer les rejoindre.~ // Same as Dop#1M.tra
+@5  = ~Vous les avez... Comment avez-vous pu faire une telle chose à mes parents ?~ // Same as Dop#1M.tra
+@6  = ~Je ne vous le pardonnerai jamais !~ // Same as Dop#1M.tra
+
 
 // JO change
 
-@7  = ~(scoffs) Stupid human being...~ //// Same as @18 Dop#1M.tra
+@7  = ~*ricane* <RACE> stupide !...~
 
 // JO change
 
-@8  = ~Huk! This is unbelievable! Wa... Wait! Please... Hagamemnon... Please help us!~ // Same as Dop#1M.tra
-@9  = ~(Wait for a while watching what happens.)~ // Same as Dop#1M.tra
-@10  = ~Attack!~ // Same as Dop#1M.tra
-@11  = ~(Suddenly, you feel something wicked closing in from corner of the room. This is... some kind of evil not belonging to this world.)~ // Same as Dop#1M.tra
-@12  = ~Ugh! Krr.... Who...? Who dares to call my name? krrr... wait, These are my kin! Who killed my kin? Did you do this?~ // Same as Dop#1M.tra
-@13  = ~Hihihihi... Krrrk! You shall die. Feel my anger!~ // Same as Dop#1M.tra
-@14  = ~Hello? Welcome to my home. Feel free to rest in our home, we have many free rooms.~ // Same as Dop#1M.tra
-@15  = ~Sweet Askaria, where have you been? You can't imagine how long I tried to find you. Now, come with me.~ // Same as Dop#1M.tra
-@16  = ~Who are you? I have not permitted to enter my house. Get out of here!~ // Same as Dop#1M.tra
-@17  = ~How ignorant! Didn't I warn you? Guards! Guards! Seize this man, and kill him!~ // Same as Dop#1M.tra
+
+@14  = ~Bonjour ! Soyez les bienvenus au manoir. N'hésitez pas à prendre du repos dans l'une des chambres, cette maison est des plus spacieuse.~ // Same as Dop#1M.tra
+@15  = ~Ma tendre Askaria, où étais-tu ? Nous essayons de te retrouver depuis un moment. Le temps est venu pour toi de revenir à la maison.~ // Same as Dop#1M.tra
+@16  = ~Qui êtes-vous ? Qui vous a permis d'entrer chez nous ? Foutez-moi le camp... immédiatement !~ // Same as Dop#1M.tra
+@17  = ~Vous n'êtes que des imbéciles ! Vous étiez prévenus! Gardes ! Gardes ! Saisissez les et débarrassez-vous de ces mécréants !~ // Same as Dop#1M.tra
 
 // JO change
 
-@18  = ~I will put an end to this, If you don't want to live any longer, so be it.~  // Same as @7 Dop#1M.tra
+@18  = ~J'en ai assez entendu, tu sembles désireuse d'en finir... qu'il en soit ainsi.~
 
 // JO change

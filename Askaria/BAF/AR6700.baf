@@ -10,6 +10,7 @@ END
 
 IF
 Global("AskaEnding","GLOBAL",1) InParty("zyaska") Dead("zydop1") Dead("zydop2")
+CombatCounter(0)
 THEN
 RESPONSE #100
 ReputationInc(1)

@@ -54,6 +54,8 @@ THEN
     Spell(LastSeenBy(Myself), WIZARD_MELF_ACID_ARROW)  
 END 
 
+// JO
+
 IF
 InParty("zyaska") Global("AskaJOnotDONE","GLOBAL",1)
 THEN
@@ -80,4 +82,23 @@ Wait(2)
 SetGlobal("AskaJOnotDONE","GLOBAL",2)
 Wait(3)
 StartDialogue("ZYASKAP",[PC])
+END
+
+IF
+Global("JOZYASKAa2","Global",1)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ChangeEnemyAlly(Myself,NEUTRAL)
+StartDialogue("ZYASKA",[PC])
+END
+
+IF
+Global("JOZYASKAaa3_2","Global",1)
+THEN
+RESPONSE #100
+StartDialogue("ZYASKA",[PC])
+END
+
+// JO
 

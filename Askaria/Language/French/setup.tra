@@ -1,11 +1,11 @@
 @0   = ~Askaria Quest pour BGT, BGEE ou EET~ 
-@1   = ~Bandit~ 
+@1   = ~Fripouille~ 
 @2   = ~Brigand~ 
 @3   = ~Crapule~ 
 @4   = ~Malfrat~ 
 @5   = ~Malandrin~ 
 @6   = ~Truand~ 
-@7   = ~Fripouille ~ 
+@7   = ~Bandit~ 
 @8   = ~Askaria~ 
 @9   = ~Hauser~ 
 @10   = ~Comparse de Hauser~ 
@@ -233,7 +233,9 @@ Poids : 0~
 
 @201 = ~À la recherche de la vérité.
 
-Shaman Pie said we need the crystal of truth to know if Askaria's parents are terrible disguised creatures.But these crystals are not only rare but also belong to horrible sapphire dragon. So, it won't be an easy task to get hold of one. Sapphire dragons! Fortunately, I heard there is a little sapphire dragon living in a cave in the wilderness surrounding Beregost. I will need to be perfectly prepared before I dare to enter that cave.~
+Mirabelle la voyante nous a expliqué qu'un cristal de vérité nous permettrait de déterminer si les parents d'Askaria sont bien des doppelgängers, des créatures capables de prendre n'importe quelle forme. Mais ces cristaux ne sont pas seulement rares, ils semblent également que de terrifiants dragons se trouvent souvent à proximité. S'en procurer un ne sera pas chose aisée. Par chance, un de ces dragons de Saphir se serait installé dans une grotte des environs, au sud de Beregost. 
+
+Je devrais être parfaitement préparé avant d'oser m'aventurer dans cette grotte.~
 
 
 
@@ -249,12 +251,12 @@ J'ai vaincu le dragon de Saphir et découvert ce qui était arrivé au jeune Twidle
 
 // @37,@49 zyaska.tra @8   = ~Askaria~ 
 
-@204=~Askaria's request
+@204 = ~La quête d'Askaria
 
 I met a girl named Askaria in front of the Feldpost Inn. We accidentally got involved in a fight, and after saving her, she asked us to help her right after we chased off the outlaws. We accepted to do so, and she insisted to accompany us. I need to meet the girl's parents, or I look for this fortune-teller living on the second floor of the inn.~
 
 
-@205=~Farewell... and a new beginning
+@205 = ~Une séparation... pour une nouvelle vie
 
 We helped Askaria the best we could, but her parent were already dead. I hope she will have the courage to go. Even if now she sees only sadness. But if she overcomes it, happy days will come to her again. Fortunately, she seems to be a courageous girl. I still need to get used to this kind of situations, but I have helped her anyway. Now as we separate, I hope she's able to move on and will always be happy.~
 

@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN fa3
   =
   @14
   IF ~~ THEN DO ~TakePartyItem("ZYSUZUNG")
-  ActionOverride("zyhaum1",EscapeAreaDestroy(5))
+  ActionOverride("zyhaum1",EscapeAreaDestroy(5)) 
   ActionOverride("zyhaum2",EscapeAreaDestroy(5))
   EscapeAreaDestroy(5) SetGlobal("AskaJOnotDONE","GLOBAL",1) ReputationInc(-1) AddJournalEntry(@207,QUEST_DONE)~ EXIT
 END
@@ -67,8 +67,7 @@ END
     
 IF ~~ THEN BEGIN fa6
   SAY @19
-  IF ~~ THEN DO ~GiveItemCreate("ZYsethel",Player1,0,0,0)
-  EscapeAreaDestroy(1) ~EXIT
+  IF ~~ THEN DO ~GiveItemCreate("ZYsethel",Player1,0,0,0) EscapeAreaDestroy(1) ~EXIT
 END
 
 IF ~~ THEN BEGIN fa7

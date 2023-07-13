@@ -5,14 +5,22 @@
 @4  = ~Hahaha! This is all you want? Your parents are gone for good. But if you want, I can send you to your parents.~
 @5  = ~You! How dare you do this to my parents!~
 @6  = ~I will never forgive this to you!~
-@7  = ~(scoffs) Stupid human being... I will put an end to this, If you don't want to live any longer, so be it.~
-@8  = ~Huk! This is unbelievable! Wa... Wait! Please... Hagamemnon... Please help us!~
-@9  = ~(Wait for a while watching what happens.)~
-@10  = ~Attack!~
-@11  = ~(Suddenly, you feel something wicked closing in from corner of the room. This is... some kind of evil not belonging to this world.)~
-@12  = ~Ugh! Krr.... Who...? Who dares to call my name? krrr... wait, These are my kin! Who killed my kin? Did you do this?~
-@13  = ~Hihihihi... Krrrk! You shall die. Feel my anger!~
+
+
+// JO change
+
+@7  = ~(scoffs) Stupid <RACE> being...~
+
+// JO change
+
+
 @14  = ~Hello? Welcome to my home. Feel free to rest in our home, we have many free rooms.~
 @15  = ~Sweet Askaria, where have you been? You can't imagine how long I tried to find you. Now, come with me.~
 @16  = ~Who are you? I have not permitted to enter my house. Get out of here!~
 @17  = ~How ignorant! Didn't I warn you? Guards! Guards! Seize this man, and kill him!~
+
+// JO change
+
+@18  = ~I will put an end to this, If you don't want to live any longer, so be it.~
+
+// JO change

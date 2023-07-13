@@ -105,7 +105,7 @@ CHANGES
   - Autotra Iconv Handle Charset
   - cpmvars and EVALUATE_BUFFER for EE compatibility
   - Portrait size for EE
-  - AddKit for EE
+  - AddKit for EE (a7#add_kit_ex) and (fl#add_kit_ee)
   - Use Raduziel fonction for adding ChaosKnight kit to Jacob
   - Handle charset and Autotra
   - REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet bgt~)
@@ -126,11 +126,16 @@ CHANGES
   - Add prefix for some variables and items
   - Correct a variable in Pai#1M.d
   - Order for .d compilation in tp2  
-  - Add reply options for Twidley mother (Zya#Tmo.d)
+  - Add reply options for Twidley mother (Zya#Tmo.d) (Using existing dialogue)
   - TakePartyItem for Twidley journal (Zya#Tmo.d)
   - Further prefixes
-  - Add reply options for Askaria mother (Dop#2M.d)
-  - Add a reply option for the seer (Pai#1M.d)
-  - prevent dead end with Askaria parents (Dop#2M.d, Dop#1M.d)
+  - Add reply options for Askaria mother (Dop#2M.d) (Using existing dialogue)
+  - Add a reply option for the seer (Pai#1M.d) (Using existing dialogue)
+  - Prevent dead end with Askaria parents (Dop#2M.d, Dop#1M.d)
   - Add unused reply option for Dop#1M.d, Dop#2M.d
-  - Add reply options for Paul the blacksmith (ZYASMITH.d)
+  - Add reply options for Paul the blacksmith (ZYASMITH.d) (Using existing dialogue)
+  - ADD_JOURNAL TITLE and move journal in quest
+  - Prevent dead end with journal quest
+  - Add unused reply option for zyaska.d
+  - Rearrange a few quirks between English and Korean and try to put some polish into Askaria's meeting dialogue. (Using existing dialogue)
+  - French translation
