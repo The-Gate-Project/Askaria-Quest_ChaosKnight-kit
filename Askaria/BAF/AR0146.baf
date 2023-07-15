@@ -1,0 +1,7 @@
+IF
+  Global("zyASKAjoswor","GLOBAL",0)
+THEN
+  RESPONSE #100
+  CreateCreature("zyjoswor",[1327.1749],0)
+  SetGlobal("zyASKAjoswor","GLOBAL",1)
+END

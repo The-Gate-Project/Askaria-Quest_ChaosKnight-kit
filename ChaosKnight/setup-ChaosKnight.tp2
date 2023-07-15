@@ -81,6 +81,32 @@ COPY ~ChaosKnight/EFF/zychaosd.eff~ ~override~
 
 COPY ~ChaosKnight/EFF/zychaost.eff~ ~override~
 
+
+/* ---------------------------------------------------- *
+ *  Copy BAMs or convert them to EE  *
+ * ---------------------------------------------------- */
+ 
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
+	//OUTER_SPRINT file-exc ~ NAME of Bam in FOLDER to EXCLUDE~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
+	PRINT ~Convert BAMs to EE~
+	ACTION_BASH_FOR ~ChaosKnight/BAM/~ ~^.+\.bam$~ BEGIN
+		ACTION_TO_LOWER %BASH_FOR_FILE%
+		ACTION_TO_LOWER %BASH_FOR_RES%
+		ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+				LPF ~gw_convert_inventory_bam_to_ee~ END
+			BUT_ONLY
+		END ELSE BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+		END
+	END
+END ELSE BEGIN  // If game not EE add Bam without change
+	COPY ~ChaosKnight/BAM~ ~override~
+END
+
+
 // Item
 
 // Item can be equipped by one and unique NPC using ITEM_USE.2DA ... (https://gibberlings3.github.io/iesdp/files/2da/2da_bgee/item_use.htm)
@@ -99,6 +125,8 @@ COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @17
+  WRITE_ASCII 0x3A ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+  WRITE_ASCII 0x76 ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
   
 OUTER_SET use_him = RESOLVE_STR_REF (@4)
 OUTER_SET use_it = RESOLVE_STR_REF (@203)
@@ -118,6 +146,8 @@ COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @7
+  WRITE_ASCII 0x3A ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+  WRITE_ASCII 0x76 ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 OUTER_SET use_it = RESOLVE_STR_REF (@203)
 APPEND ~ITEM_USE.2DA~ ~zychmace   ZYJCOB      -1      2          %use_it%~ UNLESS ~zychmace~
 	
@@ -133,6 +163,8 @@ COPY ~ChaosKnight/ITM/zychmace.itm~ ~override~
   SAY NAME2 @6
   SAY UNIDENTIFIED_DESC @16 
   SAY DESC @7
+  WRITE_ASCII 0x3A ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+  WRITE_ASCII 0x76 ~zychmace~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 
   END
  END

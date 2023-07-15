@@ -10,12 +10,14 @@ IF ~~ THEN BEGIN d1
   SAY @2
   IF ~~ THEN EXTERN ~zyaskaj~ dp#1
 END
+/*
+Change to DiplayStringHead...
 
 IF ~Global("JOscoffs","GLOBAL",1)~ THEN BEGIN JOscoffs
   SAY @7
   IF ~~ THEN DO ~SetGlobal("JOscoffs","GLOBAL",2)~ EXIT 
 END
-
+*/
 IF ~~ THEN BEGIN d2
   SAY @7
   IF ~~ THEN DO ~ ActionOverride("zydop1",Polymorph(DOPPLEGANGER_GREATER))
@@ -45,4 +47,4 @@ IF  ~Global("ZYFirstMeet","GLOBAL",1) !IsValidForPartyDialogue("zyaska")~ THEN B
 END
 
 CHAIN ~zyaskaj~ dp#1
-@3 == ~zydop1~ @4 == ~zyaskaj~ @5 == ~zydop1~ @18 == ~zyaskaj~ @6 END ~zydop2~ d2
+@3 == ~zydop2~ @4 == ~zyaskaj~ @5 == ~zydop1~ @18 == ~zyaskaj~ @6 END ~zydop2~ d2

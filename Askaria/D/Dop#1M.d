@@ -20,7 +20,7 @@ END
  
  IF WEIGHT #0 ~Global("ZyDGAlmostDie","GLOBAL",1) Global("AskaEnding","GLOBAL",1)~ THEN BEGIN d3
    SAY @8
-   IF ~~ THEN REPLY @9 DO ~CreateCreature("zyhagu",[663.324],4) ~ GOTO d4 
+   IF ~~ THEN REPLY @9 DO ~CreateCreature("zyhagu",[663.324],4) SetGlobal("zyJOhagu","GLOBAL",1)~ GOTO d4 
    IF ~~ THEN REPLY @10 EXIT
  END
 

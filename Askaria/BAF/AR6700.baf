@@ -9,14 +9,20 @@ CreateCreature("zya#1gan",[1819.2758],3)
 END
 
 IF
-Global("AskaEnding","GLOBAL",1) InParty("zyaska") Dead("zydop1") Dead("zydop2")
-CombatCounter(0)
+Global("AskaEnding","GLOBAL",1) InParty("zyaska") Dead("zydop1") Dead("zydop2") !Global("zyJOhagu","GLOBAL",1)
 THEN
 RESPONSE #100
 ReputationInc(1)
 SetGlobal("AskaEnding","GLOBAL",2)
 Wait(2)
 ActionOverride("zyaska",StartDialog("zyaska",[PC])
+END
+
+IF
+Global("zyJOhagu","GLOBAL",1) Dead("zyhagu")
+THEN
+RESPONSE #100
+SetGlobal("zyJOhagu","GLOBAL",0)
 END
 
 IF

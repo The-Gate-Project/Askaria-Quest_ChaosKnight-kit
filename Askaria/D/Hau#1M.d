@@ -67,7 +67,10 @@ END
     
 IF ~~ THEN BEGIN fa6
   SAY @19
-  IF ~~ THEN DO ~GiveItemCreate("ZYsethel",Player1,0,0,0) EscapeAreaDestroy(1) ~EXIT
+  IF ~~ THEN DO ~GiveItemCreate("ZYsethel",Player1,0,0,0)
+  ActionOverride("zyhaum1",EscapeAreaDestroy(1)) 
+  ActionOverride("zyhaum2",EscapeAreaDestroy(1))
+  EscapeAreaDestroy(1) ~EXIT
 END
 
 IF ~~ THEN BEGIN fa7

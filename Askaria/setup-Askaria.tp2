@@ -5,6 +5,21 @@ README ~Askaria/Readmes/Readme.%LANGUAGE%.txt~ ~Askaria/Readmes/readme.English.t
 VERSION ~v2.0~
 
 ALWAYS
+		
+
+	ACTION_IF GAME_IS ~bgee~ BEGIN 
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#31819) // @31819 = ~Cet endroit maudit sera votre tombe. Mourez !~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#71024) // @71024 = ~Meurs en silence !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#42142) // @42142 = ~Préparez-vous à rencontrer vos dieux païens !~
+		END ELSE ACTION_IF GAME_IS ~eet~  BEGIN
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#100598) // @100598 = ~Je commencerai par danser sur votre tombe.~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#39147) // @39147  = ~Tu ne pourras pas m'échapper ! Je finirai par t'avoir !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23814) // @23814  = ~Je vous enterrerai tous !~
+		END ELSE ACTION_IF GAME_IS ~bgt~  BEGIN
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#57525) // @57525 = ~Doit détruire !~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#57522) // @57522 = ~Vous allez mourir !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23187) // @23187 = ~Je... je suis ta mort ! Tout ceci m'insupporte !~
+		END
 
 INCLUDE ~Askaria/Lib/g3_cpmvars_master.tpa~
 
@@ -30,6 +45,7 @@ INCLUDE ~Askaria/Lib/g3_cpmvars_master.tpa~
         tra_path = EVAL ~Askaria/Language/autotra~
 //        noconvert_array = fl#noconvert
         reload_array = fl#reload
+		
  END
 END
 
@@ -46,6 +62,32 @@ REQUIRE_PREDICATE (MOD_IS_INSTALLED ~SETUP-CHAOSKNIGHT.TP2~ ~0~) @101 /* Askaria
 PRINT ~              ~
 PRINT ~Jacob the Chaosknight is installed~
 PRINT ~              ~
+
+
+/* ---------------------------------------------------- *
+ *  Copy BAMs or convert them to EE  *
+ * ---------------------------------------------------- */
+ 
+
+ACTION_IF GAME_IS ~bg2ee eet~ BEGIN
+	INCLUDE ~%MOD_FOLDER%/lib/gw_convert_inventory_bam_to_ee.tpa~			// Loads function converting inventory BAMs to EE.
+	//OUTER_SPRINT file-exc ~ NAME of Bam in FOLDER to EXCLUDE~	// Special cases: unused inventory or description icons, and ability .bam don't need to be converted.
+	PRINT ~Convert BAMs to EE~
+	ACTION_BASH_FOR ~Askaria/BAM/~ ~^.+\.bam$~ BEGIN
+		ACTION_TO_LOWER %BASH_FOR_FILE%
+		ACTION_TO_LOWER %BASH_FOR_RES%
+		ACTION_IF (~%file-exc%~ STRING_CONTAINS_REGEXP ~%BASH_FOR_RES%~ = 1) BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+				LPF ~gw_convert_inventory_bam_to_ee~ END
+			BUT_ONLY
+		END ELSE BEGIN
+			COPY ~%BASH_FOR_FILESPEC%~ ~override/%BASH_FOR_FILE%~
+		END
+	END
+END ELSE BEGIN  // If game not EE add Bam without change
+	COPY ~Askaria/BAM~ ~override~
+END
+
 
 // Portraits
 
@@ -98,7 +140,9 @@ COPY ~Askaria/SPL/ZYAKSUN.spl~ ~override~
 COPY ~Askaria/SPL/ZYeapon1.spl~ ~override~
 COPY ~Askaria/SPL/ZYeapon2.spl~ ~override~
 COPY ~Askaria/SPL/ZYeapon3.spl~ ~override~
-
+COPY ~Askaria/SPL/zyjotest.spl~ ~override~
+  SAY NAME1 @299
+  SAY DESC @303
 
 // Creatures
 
@@ -181,6 +225,40 @@ COPY ~Askaria/CRE/zyhagu.cre~ ~override~
 COPY ~Askaria/CRE/zya#tmo.cre~ ~override~
   SAY NAME1 @37
   SAY NAME2 @37
+  
+ ACTION_IF GAME_IS ~bgt eet~ BEGIN
+COPY_EXISTING ~GORGUA05.cre~ ~override/zyjoswor.cre~
+  SAY NAME1 @298
+  SAY NAME2 @298
+  WRITE_SHORT 0x14 5250 // XP for killing
+  WRITE_SHORT 0x24 100 // Current HP
+  WRITE_SHORT 0x26 100 // Maximum HP
+  WRITE_SHORT 0x28 0x5110  // Animation
+  WRITE_BYTE 0x2D 47  // Minor Color
+  WRITE_BYTE 0x2E 50  // Major Color
+  WRITE_SHORT 0x46 ~-1~  // Natural AC
+  WRITE_SHORT 0x48 ~-1~  // Effective AC
+  WRITE_BYTE 0x52 4  // THACO
+  WRITE_BYTE 0x53 2  // Attack per round
+  WRITE_BYTE 0x234 10  // Level first class  
+  WRITE_BYTE 0x237 2  // Sex  
+  //WRITE_SHORT 0x238 18  // Force 
+  WRITE_ASCII 0x248 ~zyjoswor~ (8)  // script override  
+  WRITE_ASCII 0x280 ~zyjoswor~ (8)  // Script name 
+  REMOVE_CRE_ITEM ~GHOST3~
+  REMOVE_CRE_ITEM ~RING95~ ~lring~
+  REMOVE_CRE_ITEM ~PLAT16~ ~armor~
+  REMOVE_CRE_ITEM ~HELM04~ ~helmet~
+  REMOVE_CRE_ITEM ~SW2H17~ ~weapon1~
+  ADD_CRE_ITEM ~PLAT05~ #0 #0 #0 ~unstealable&undroppable~ ~armor~
+  ADD_CRE_ITEM ~HELM02~ #0 #0 #0 ~unstealable&undroppable~ ~helmet~
+  ADD_CRE_ITEM ~SW2H06~ #0 #0 #0 ~unstealable&undroppable~ ~weapon1~
+  ADD_CRE_ITEM ~zyjoswor~ #0 #1 #0 ~unstealable~ ~inv3~
+		END ELSE BEGIN
+COPY ~Askaria/CRE/zyjoswor.cre~ ~override~
+  SAY NAME1 @298
+  SAY NAME2 @298
+END 
 
 
 //Items
@@ -194,6 +272,8 @@ COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
   SAY UNIDENTIFIED_DESC @14
   SAY NAME2 @15
   SAY DESC @16
+  WRITE_ASCII 0x3A ~ZYsethel~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~ZYsethel~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 END ELSE BEGIN
 PRINT ~              ~
 PRINT ~EE Descriptions for ioun stone~
@@ -203,15 +283,19 @@ COPY ~Askaria/ITM/ZYsethel.itm~ ~override~
   SAY UNIDENTIFIED_DESC @14
   SAY NAME2 @15
   SAY DESC @40
+  WRITE_ASCII 0x3A ~ZYsethel~ (8)    // Write bam to item (first offset)  
+  WRITE_ASCII 0x76 ~ZYsethel~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 END
 
 COPY ~Askaria/ITM/zysuzung.itm~ ~override~
   SAY NAME2 @17
   SAY DESC @18
+  WRITE_ASCII 0x3A ~zysuzung~ (8)    // Write bam to item (first offset) 
 
 COPY ~Askaria/ITM/zysudust.itm~ ~override~
   SAY NAME2 @19
   SAY DESC @20
+  WRITE_ASCII 0x3A ~zysudust~ (8)    // Write bam to item (first offset) 
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
 PRINT ~              ~
@@ -222,6 +306,8 @@ COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
   SAY UNIDENTIFIED_DESC @23
   SAY NAME2 @24
   SAY DESC @25
+  WRITE_ASCII 0x3A ~ZYsetglo~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~ZYsetglo~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 END ELSE BEGIN
 PRINT ~              ~
 PRINT ~EE Descriptions for gantelets~
@@ -231,6 +317,8 @@ COPY ~Askaria/ITM/ZYsetglo.itm~ ~override~
   SAY UNIDENTIFIED_DESC @23
   SAY NAME2 @24
   SAY DESC @41
+  WRITE_ASCII 0x3A ~ZYsetglo~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~ZYsetglo~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
 END
 
 ACTION_IF (GAME_IS ~bgt~) BEGIN
@@ -240,6 +328,7 @@ PRINT ~              ~
 COPY ~Askaria/ITM/zyaring.itm~ ~override~
   SAY NAME2 @31
   SAY DESC @32
+  WRITE_ASCII 0x3A ~ZYJORING~ (8)    // Write bam to item 
 END ELSE BEGIN
 PRINT ~              ~
 PRINT ~EE Descriptions for Zyaska ring~
@@ -247,6 +336,7 @@ PRINT ~              ~
 COPY ~Askaria/ITM/zyaring.itm~ ~override~
   SAY NAME2 @31
   SAY DESC @42
+  WRITE_ASCII 0x3A ~ZYJORING~ (8)    // Write bam to item 
 END
 
 COPY ~Askaria/ITM/zya#bone.itm~ ~override~
@@ -258,10 +348,49 @@ COPY ~Askaria/ITM/zya#book.itm~ ~override~
   SAY NAME2 @33
   SAY UNIDENTIFIED_DESC @34
   SAY DESC @34
+  WRITE_ASCII 0x3A ~ZYJOBOOK~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar))
 
 COPY ~Askaria/ITM/akasw1.itm~ ~override~
 COPY ~Askaria/ITM/akasw2.itm~ ~override~
 COPY ~Askaria/ITM/akasw3.itm~ ~override~
+  
+// Jo implementation ZYtest.item
+
+COPY ~Askaria/ITM/zyjotest.itm~ ~override~
+  SAY NAME1 @299
+  SAY NAME2 @299
+  SAY UNIDENTIFIED_DESC #6738
+  SAY DESC @303
+  WRITE_ASCII 0x3A ~zyjotest~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~zyjotest~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+
+ACTION_IF (GAME_IS ~bgt~) BEGIN
+PRINT ~              ~
+PRINT ~BGT Descriptions for Zyaska ring~
+PRINT ~              ~
+COPY ~Askaria/ITM/zyjoswor.itm~ ~override~
+  SAY NAME1 @300
+  SAY NAME2 @300
+  SAY UNIDENTIFIED_DESC #6738
+  SAY DESC @302
+  WRITE_ASCII 0x3A ~zyjoswor~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~zyjoswor~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@299)
+    APPEND ~tooltip.2da~ ~zyjoswor    -1    %ability2strref%~
+END ELSE BEGIN
+PRINT ~              ~
+PRINT ~EE Descriptions for Zyaska ring~
+PRINT ~              ~
+COPY ~Askaria/ITM/zyjoswor.itm~ ~override~
+  SAY NAME1 @300
+  SAY NAME2 @300
+  SAY UNIDENTIFIED_DESC #6738
+  SAY DESC @301
+  WRITE_ASCII 0x3A ~zyjoswor~ (8)    // Write bam to item (first offset) 
+  WRITE_ASCII 0x76 ~zyjoswor~ (8)    // Write bam to item (second offset Bam for use (displayed in action bar)) 
+    OUTER_SET ability2strref = RESOLVE_STR_REF (@299)
+    APPEND ~tooltip.2da~ ~zyjoswor    -1    %ability2strref%~
+END
 
 
 // Scripts
@@ -276,6 +405,8 @@ COMPILE ~Askaria/BAF/akahagu2.baf~
 COMPILE ~Askaria/BAF/akahagu3.baf~
 COMPILE ~Askaria/BAF/akahagu4.baf~
 COMPILE ~Askaria/BAF/akahagu5.baf~
+COMPILE ~Askaria/BAF/zyjoswor.baf~
+    EVALUATE_BUFFER
 
 EXTEND_TOP ~%Beregost_FeldepostsInn_L1_BCS%.bcs~ ~Askaria/BAF/AR6751.baf~
     EVALUATE_BUFFER
@@ -290,6 +421,8 @@ EXTEND_TOP ~%SouthBeregostRoad_Cave_BCS%.bcs~ ~Askaria/BAF/AR9702.baf~
 EXTEND_TOP ~%SouthBeregostRoad_BCS%.bcs~ ~Askaria/BAF/AR9700.baf~
     EVALUATE_BUFFER
 EXTEND_TOP ~%Beregost_ThunderhammerSmithy_BCS%.bcs~ ~Askaria/BAF/AR6701.baf~
+    EVALUATE_BUFFER
+EXTEND_TOP ~%ThievesMaze%.bcs~ ~Askaria/BAF/AR0146.baf~
     EVALUATE_BUFFER
 
 

@@ -133,7 +133,7 @@ Hum... Je ne comprends pas pourquoi il y a tant de monstres aujourd'hui. Nous av
 
 25 Eléasis :
  
-Je suis si excitée que je n'arrive pas à écrire correctement. Je crois n'avoir jamais ressenti une telle ardeur. Le trio légendaire sera bientôt... légendaire, mais pour ça nous devons ramener la tête de dragon. Maman, désolé d'être parti sans un mot, mais après cette aventure, nous n'aurons plus besoin de travailler...~ 
+Je suis si excitée que je n'arrive pas à écrire correctement. Je crois n'avoir jamais ressenti une telle ardeur. Le trio légendaire sera bientôt... légendaire, mais pour ça nous devons ramener la tête du dragon. Maman, désolé d'être parti sans un mot, mais après cette aventure, nous n'aurons plus besoin de travailler...~ 
 
 @35   = ~Crâne~ 
 @36   = ~Les restes d'une des victimes du dragon de Saphir.~  
@@ -279,6 +279,144 @@ Nous n'avons pas respecté notre engagement et Askaria s'est volatilisé.~
 Twidley n'est pas rentré à la maison depuis plus d'une semaine. Il est plutôt rond et pas très grand pour son âge. Serais-je capable de le retrouver ?~
 
 // JO change
+
+@298   = ~Sire Wediyer~
+@299   = ~Lame divine~
+@300   = ~Purificatrice~
+
+
+@301   = ~Cette épée bâtarde fait partie des Larmes de Tyr, sa puissance de combat est indéniable et pourtant elle fait pâle figure à côté de la Lame divine, une épée légendaire qui accorde au porteur les attributs d'un dieu ou d'une déesse...
+
+Lame divine peut être invoquée une fois par jour rendant le porteur invulnérable et capable de d'infliger des dégâts colossaux à ses ennemis.
+
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
+
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice céleste
+
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
+
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
+
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
+
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Régénère 1 point de vie toutes les 20 secondes
+- Immunité à la peur, à l'emprisonnement, au labyrinthe, au renversement et à la confusion
+- Double la vitesse de déplacement
+
+Capacité de charge (1 fois par jour) : 
+- Lame divine pendant 100 secondes
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +3
+TAC0 : +2
+Dégâts : 2d4 (Tranchant)
+Facteur de vitesse : 3
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Nécessite : 
+- 11 en Force
+
+Poids : 10~
+
+@302   = ~Cette épée bâtarde fait partie des Larmes de Tyr, sa puissance de combat est indéniable et pourtant elle fait pâle figure à côté de la Lame divine, une épée légendaire qui accorde au porteur les attributs d'un dieu ou d'une déesse...
+
+Lame divine peut être invoquée une fois par jour rendant le porteur invulnérable et capable de d'infliger des dégâts colossaux à ses ennemis.
+
+Les Larmes du dieu aveugle composent un équipement de cinq pièces assorties
+
+Gantelets de compétence divine
+Bottes de la prompte justice
+L’Œil de Tyr 
+Armure de plates rayonnante
+Purificatrice
+
+Lucrecia était un paladin au service de Tyr, héros d'innombrables légendes, pourfendeur de dragons rouges, destructeur de liches, tueur de vampires et autres créatures maléfiques, il a sauvé un nombre incalculable de personnes. Après sa mort, on découvrit que cinq des objets lui ayant appartenu étaient bénis par Tyr en personne. 
+
+On raconte que celui ou celle qui équipe les cinq pièces d'équipement recevra la toute puissante bénédiction de Tyr...
+
+Le porteur obtiendrait la possibilité d'invoquer le Jugement de Tyr. La Larme du Ciel, cette puissante capacité serait capable d'infliger 2D6 points de dégâts électriques aux ennemis à proximité, avant que les larmes de Tyr ne s'abattent à leurs tours provoquant 20D10 points de dégâts magiques. Un jet de sauvegarde contre les sorts avec une pénalité de 4 permet de réduire les dégâts de moitié.
+
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Régénère 1 point de vie toutes les 20 secondes
+- Immunité à la peur, à l'emprisonnement, au labyrinthe, au renversement et à la confusion
+- Double la vitesse de déplacement
+
+Capacité de charge (1 fois par jour) : 
+- Lame divine pendant 100 secondes
+
+Capacités de combat : 
+- Inflige 2 points de dégâts d'électricité à la cible
+
+Enchantement : +3
+TAC0 : +2
+Dégâts : 2d4 (Tranchant)
+Facteur de vitesse : 3
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Nécessite : 
+- 11 en Force
+
+Poids : 10~
+
+/*
+
+Utilisable par : 
+Paladin
+*/
+
+@303   = ~Lame divine peut être invoquée une fois par jour, elle rend son porteur invulnérable et lui donne la capacité d'infliger des dégâts colossaux à ses ennemis.
+
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- TAC0 : +30
+- Régénère 10 points de vie par seconde
+- Les points de vie ne peuvent passer en dessous de 1
+- Immunité à la mort magique, à la peur, à l'empoisonnement, au silence, au sommeil, à la lenteur, à l'étourdissement, à la cécité, à la débilité mentale, à la maladie, à la surdité, à la paralysie, à la dissipation de la peur, à la dissipation de la paralysie, aux combats mentaux, à l'emprisonnement, au labyrinthe, au drain de niveaux, au renversement, à la désintégration, aux charmes, à la confusion et à la pétrification
+- Double la vitesse de déplacement et le nombre d'attaques par round
+
+Capacités de combat : 
+- Inflige 5 points de dégâts d'électricité à la cible
+- Inflige 5 points de dégâts de feu magique à la cible
+
+Enchantement : +6
+TAC0 : +12
+Dégâts : 2d4 (Tranchant)
+Facteur de vitesse : 3
+Type de compétence : Épée bâtarde
+Type : Arme à 1 main
+
+Nécessite : 
+- 11 en Force
+
+Poids : 10~
+
+
+// ZYDOP2 Interjection if player talk to ZYDOP1
+
+@7777  = ~*ricane* <RACE> stupide !...~ // Same as @7 in Dop#2M.tra
+
+
+// @310   = ~Bottes de la prompte justice~
+// @320   = ~Armure de plates rayonnante~
+
+
 
 
 /* =============== *

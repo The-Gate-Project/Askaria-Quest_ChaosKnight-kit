@@ -16,7 +16,7 @@ END
 
 IF
   ActionListEmpty()
-  See(Nearestenemyof(Myself))
+  See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
   EquipMostDamagingMelee()

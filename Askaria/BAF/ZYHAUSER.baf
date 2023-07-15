@@ -32,10 +32,10 @@ END
 
 
 IF
-  See(Nearestenemyof(Myself))
+  See(NearestEnemyOf(Myself))
   HPPercentLT(Myself,25)
   HPGT(Myself,1)
-  !Range(Nearestmygroupoftype,10)
+  !Range(NearestMyGroupOfType,10)
   !GlobalTimerNotExpired("ZYWhined","LOCALS")
 THEN
   RESPONSE #50
@@ -96,10 +96,10 @@ THEN
 END
 
 IF
-  See(Nearestenemyof(Myself))
+  See(NearestEnemyOf(Myself))
   OR(2)
-    Range(Nearestmygroupoftype,20)
-    See(Nearestmygroupoftype([0.GENERAL_ITEM.0.CLERIC_ALL]))
+    Range(NearestMyGroupOfType,20)
+    See(NearestMyGroupOfType([0.GENERAL_ITEM.0.CLERIC_ALL]))
   HPPercentLT(Myself,35)
   !GlobalTimerNotExpired("ZYCallForHeal","LOCALS")
 THEN
@@ -125,7 +125,7 @@ END
 
 IF
   HPPercentLT(Myself,50)
-  !Range(Nearestenemyof(Myself),5)
+  !Range(NearestEnemyOf(Myself),5)
   HaveSpell(MONK_LAY_ON_HANDS)
   !GlobalTimerNotExpired("ZYLayOnHands","LOCALS")
 THEN
@@ -139,8 +139,8 @@ IF
   OR(2)
     HaveSpell(MONK_LAY_ON_HANDS)
     HasItem("POTN55",Myself)
-  Range(Nearestenemyof(Myself),6)
-  Range(Secondnearestenemyof(Myself),6)
+  Range(NearestEnemyOf(Myself),6)
+  Range(SecondNearestEnemyOf(Myself),6)
   RandomNum(2,1)
   Global("ZYTimeToMove","LOCALS",0)
 THEN
@@ -152,9 +152,9 @@ END
 IF
   RandomNum(2,1)
   AttackedBy([GOODCUTOFF],DEFAULT)
-  Range(Nearestenemyof(Myself),8)
-  Range(Secondnearestenemyof(Myself),8)
-  Range(Thirdnearestenemyof(Myself),8)
+  Range(NearestEnemyOf(Myself),8)
+  Range(SecondNearestEnemyOf(Myself),8)
+  Range(ThirdNearestEnemyOf(Myself),8)
   Global("ZYTimeToMove","LOCALS",0)
 THEN
   RESPONSE #100
@@ -168,7 +168,7 @@ IF
   OR(2)
     HaveSpell(MONK_LAY_ON_HANDS)
     HasItem("POTN55",Myself)
-  Range(Nearestenemyof(Myself),6)
+  Range(NearestEnemyOf(Myself),6)
   Global("ZYTimeToMove","LOCALS",0)
 THEN
   RESPONSE #100
@@ -180,7 +180,7 @@ END
 IF
   RandomNum(3,1)
   HPPercentLT(Myself,75)
-  Range(Lastseenby(Myself),10)
+  Range(LastSeenBy(Myself),10)
   Global("ZYLunar","GLOBAL",0)
   !StateCheck(Myself,STATE_INVISIBLE)
   !StateCheck(Myself,STATE_NORMAL)
@@ -194,22 +194,22 @@ END
 
 IF
   !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
-  Range(Lastseenby(Myself),4)
+  Range(LastSeenBy(Myself),4)
   RandomNum(3,1)
   Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",3)
     DisplayStringHead(Myself,73942)
-    FaceObject(Lastseenby(Myself))
+    FaceObject(LastSeenBy(Myself))
     SwingOnce()
     PlaySound("BALTHA02")
-    ReallyForceSpellRES("BALTH09",Lastseenby(Myself))
+    ReallyForceSpellRES("BALTH09",LastSeenBy(Myself))
 END
 
 IF
   !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
-  Range(Lastseenby(Myself),10)
+  Range(LastSeenBy(Myself),10)
   RandomNum(2,1)
   Global("ZYLunar","GLOBAL",0)
 THEN
@@ -222,7 +222,7 @@ END
 
 IF
   !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
-  Range(Lastseenby(Myself),10)
+  Range(LastSeenBy(Myself),10)
   RandomNum(2,2)
   Global("ZYLunar","GLOBAL",0)
 THEN
@@ -235,7 +235,7 @@ END
 
 IF
   !GlobalTimerNotExpired("ZYMonkTimer","LOCALS")
-  Range(Lastseenby(Myself),5)
+  Range(LastSeenBy(Myself),5)
   RandomNum(2,1)
   Global("ZYLunar","GLOBAL",0)
 THEN
@@ -277,7 +277,7 @@ IF
   Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    AttackReevaluate(Lastseenby(Myself),15)
+    AttackReevaluate(LastSeenBy(Myself),15)
 END
 
 IF
@@ -285,21 +285,21 @@ IF
   OR(3)
     HasItem("POTN55",Myself)
     HaveSpell(MONK_LAY_ON_HANDS)
-    Range(Nearestmygroupoftype,20)
+    Range(NearestMyGroupOfType,20)
   Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    RunAwayFrom(Nearestenemyof(Myself),45)
+    RunAwayFrom(NearestEnemyOf(Myself),45)
 END
 
 IF
   HPPercentLT(Myself,20)
   !HasItem("POTN55",Myself)
   !HaveSpell(MONK_LAY_ON_HANDS)
-  !Range(Nearestmygroupoftype,20)
+  !Range(NearestMyGroupOfType,20)
   Global("ZYLunar","GLOBAL",0)
 THEN
   RESPONSE #100
-    AttackReevaluate(Lastseenby(Myself),15)
+    AttackReevaluate(LastSeenBy(Myself),15)
 END
 

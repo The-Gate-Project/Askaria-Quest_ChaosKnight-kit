@@ -112,6 +112,7 @@ CHANGES
   - Separate kit from Jacob npc to allow ChaosKnight Kit to be installed on BG2EE
   - French translation
   - Really restrict the use of Jacob's mace to Jacob only (APPEND ITEM_USE.2DA)
+  - Bam for Zymace.itm
   
 - Askaria :
 
@@ -139,3 +140,7 @@ CHANGES
   - Add unused reply option for zyaska.d
   - Rearrange a few quirks between English and Korean and try to put some polish into Askaria's meeting dialogue. (Using existing dialogue)
   - French translation
+  - Prevent fear of ZYDOP1.cre which may block dialogue
+  - Prevent Askaria's final dialogue from occurring too soon
+  - Bam for Items 
+  - Implement Zytest.itm (Create an little encounter)

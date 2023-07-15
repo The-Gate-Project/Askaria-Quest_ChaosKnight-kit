@@ -261,3 +261,151 @@ We didn't honor our commitment and Askaria flew away.~
 Twidley has not been home for a week. He is a bit too fat and a bit too short for his age. Will I be able to look after him?~
 
 // JO change
+
+@298   = ~Sir Wediyer~
+@299   = ~GodBlade~
+@300   = ~Celestear~
+
+
+@301   = ~This bastard sword is one of the Tears of Tyr. Its fighting power is undeniable, yet it is no match for the GodBlade, a legendary sword that grants the wearer the attributes of a god or goddess...
+
+GodBlade can be invoked once a day, granting its wearer the power to inflict colossal damage on enemies and the ability to be invulnerable.
+
+Other Items in the set (5 items) 
+Tears from the Maimed God 
+
+Gauntlets of Holy Power 
+Boots of Quick Justice 
+Eye of Tyr 
+Plate of Aura 
+Celestear
+
+Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
+
+Set Effect (2 items) 
+
+Soul of freedom 
+A wearer is immune to the following effects : stun, capture, and horror. 
+
+Set Effect (5 items) 
+
+A Tear of Heaven  
+It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
+A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- Regenerates 1 hit point every 20 seconds
+- Immunity to horror, imprisonment, maze, wing buffets and confusion
+- Double the movement speed
+
+Charge ability (1x per day): 
+- GodBlade for 100 seconds
+
+Combat abilities: 
+- Inflicts 2 electrical damage to the target
+
+Enchantment: +3
+THAC0: +2
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+@302   = ~This bastard sword is one of the Tears of Tyr. Its fighting power is undeniable, yet it is no match for the GodBlade, a legendary sword that grants the wearer the attributes of a god or goddess...
+
+GodBlade can be invoked once a day, granting its wearer the power to inflict colossal damage on enemies and the ability to be invulnerable.
+
+Other Items in the set (5 items) 
+Tears from the Maimed God 
+
+Gauntlets of Holy Power 
+Boots of Quick Justice 
+Eye of Tyr 
+Plate of Aura 
+Celestear
+
+Ian Lucrecia Martinez was a paladin serving Tyr. He's the hero of countless legends, having saved many people by defeating wicked red dragons, liches, vampires and other evil creatures. After he died, five items that belonged to him were found to have been blessed by Tyr. If the five items are equipped at the same time, the wearer is said to receive a powerful blessing of Tyr.  
+
+Set Effect (2 items) 
+
+Soul of freedom 
+A wearer is immune to the following effects : stun, capture, and horror. 
+
+Set Effect (5 items) 
+
+A Tear of Heaven  
+It gives the wearer the power to call upon the Judgment of Tyr. This advanced ability can be used when the Holy avenger and Celestear are equipped.  
+A Tear of Heaven deals 2D6 electricity damage to nearby enemies, and a tear of Tyr falls from the sky onto the enemies. It does 20D10 of magic damage. Enemies receive a -4 penalty against saving throws. Damage is be halved, if the saving throw is successful.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- Regenerates 1 hit point every 20 seconds
+- Immunity to horror, imprisonment, maze, wing buffets and confusion
+- Double the movement speed
+
+Charge ability (1x per day): 
+- GodBlade for 100 seconds
+
+Combat abilities: 
+- Inflicts 2 electrical damage to the target
+
+Enchantment: +3
+THAC0: +2
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+/*
+
+Only usable by: 
+Paladin
+*/
+
+@303   = ~GodBlade can be invoked once a day, granting its wearer the power to inflict colossal damage on enemies and the ability to be invulnerable.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- THAC0: +30
+- Regenerates 10 hit points per second
+- Hit points can fall below 1
+- Immunity to magical death, horror, poisoning, silence, sleep, slowness, stun, magic death, blindness, Feeblemindedness, disease, deafness, paralysis, mind attacks, imprisonment, maze, level drain, wing buffets, disintegration, charms, confusion and flesh to stone
+- Double the movement speed and the number of attacks per round
+
+Combat abilities: 
+- Inflicts 5 electrical damage to the target
+- Inflicts 5 magic fire damage to the target
+
+Enchantment: +6
+THAC0: +12
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+
+// ZYDOP2 Interjection if player talk to ZYDOP1
+
+@7777  = ~(scoffs) Stupid <RACE> being...~

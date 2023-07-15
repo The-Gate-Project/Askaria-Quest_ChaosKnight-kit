@@ -4,5 +4,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("ZyDGAlmostDie","GLOBAL",1)
+	ApplySpell("zydop1",INVOKE_COURAGE)
+	ApplySpell("zydop2",CLERIC_REMOVE_FEAR)
+	ApplySpell("zydop1",CLERIC_REMOVE_FEAR)
+	ApplySpell("zydop2",INVOKE_COURAGE)
     Dialogue([PC])
 END

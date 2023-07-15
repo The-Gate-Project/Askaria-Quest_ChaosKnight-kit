@@ -277,3 +277,157 @@ THAC0: +1
 트위들리는 일주일 동안 집에 없었습니다. 나이에 비해 너무 뚱뚱하고 키가 너무 작아요. 제가 돌봐줄 수 있을까요?~
 
 // JO change
+
+@298   = ~웨다이어 경의~
+@299   = ~갓블레이드~
+@300   = ~셀레스티어~
+
+
+@301   = ~이 사생아 검은 티르의 눈물 중 하나입니다. 그 전투력은 부인할 수 없지만, 착용자에게 신 또는 여신의 속성을 부여하는 전설적인 검인 갓블레이드에는 상대가 되지 못합니다...
+
+갓블레이드는 하루에 한 번 소환할 수 있으며, 착용자에게 적에게 막대한 피해를 입힐 수 있는 힘과 무적 상태가 되는 능력을 부여합니다.
+
+세트 아이템 (5)
+'눈먼 신의 눈물'
+
+신성한 힘의 건틀릿
+신속한 정의의 부츠
+아이 오브 티르
+오라 플레이트
+셀레스티어
+
+이안 루크레시아 마르티네스는 티르를 섬기는 팰러딘이었다. 그는 사악한 레드 드래곤, 리치, 뱀파이어 등을 격퇴하여 수많은 사람을 구했는데 그의 무용담은 너무나도 많아서 샐 수 없을 정도였다.
+그가 죽은 후 그의 물품 중 강력한 다섯 개는 티르의 축복을 받아 서로 강력한 상호작용을 이루게 되었다. 그의 물품을 여러개 동시에 착용하게 되면 강력한 티르의 축복을 받을 수 있을 것이다. 
+
+
+세트 효과 (2)
+
+'자유로운 영혼'
+착용자가 스턴, 포박, 공포 상태에 빠졌을 경우 착용자 스스로 해당 효과에서 벗어난다.
+
+
+세트 효과 (5)
+
+'하늘의 눈물' 
+홀리 어벤저, 셀레스티어의 기능인 '티르의 심판'이 향상되어 '티르의 심판' 사용시 추가로 '하늘의 눈물'이 발동된다.
+'하늘의 눈물'은 주위의 적들에게 2D6의 전기 데미지를 주고 잠시 후, 하늘에서 티르의 눈물이 떨어져 적들에게 20D10의 마법 피해를 준다. 적들은 주문에 대한 내성굴림에 -4 페널티를 받고 성공하면 피해를 절반으로 줄일 수 있다.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- Regenerates 1 hit point every 20 seconds
+- Immunity to horror, imprisonment, maze, wing buffets and confusion
+- Double the movement speed
+
+Charge ability (1x per day): 
+- 갓블레이드 for 100 seconds
+
+Combat abilities: 
+- Inflicts 2 electrical damage to the target
+
+Enchantment: +3
+THAC0: +2
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+@302   = ~이 사생아 검은 티르의 눈물 중 하나입니다. 그 전투력은 부인할 수 없지만, 착용자에게 신 또는 여신의 속성을 부여하는 전설적인 검인 갓블레이드에는 상대가 되지 못합니다...
+
+갓블레이드는 하루에 한 번 소환할 수 있으며, 착용자에게 적에게 막대한 피해를 입힐 수 있는 힘과 무적 상태가 되는 능력을 부여합니다.
+
+세트 아이템 (5)
+'눈먼 신의 눈물'
+
+신성한 힘의 건틀릿
+신속한 정의의 부츠
+아이 오브 티르
+오라 플레이트
+셀레스티어
+
+이안 루크레시아 마르티네스는 티르를 섬기는 팰러딘이었다. 그는 사악한 레드 드래곤, 리치, 뱀파이어 등을 격퇴하여 수많은 사람을 구했는데 그의 무용담은 너무나도 많아서 샐 수 없을 정도였다.
+그가 죽은 후 그의 물품 중 강력한 다섯 개는 티르의 축복을 받아 서로 강력한 상호작용을 이루게 되었다. 그의 물품을 여러개 동시에 착용하게 되면 강력한 티르의 축복을 받을 수 있을 것이다. 
+
+
+세트 효과 (2)
+
+'자유로운 영혼'
+착용자가 스턴, 포박, 공포 상태에 빠졌을 경우 착용자 스스로 해당 효과에서 벗어난다.
+
+
+세트 효과 (5)
+
+'하늘의 눈물' 
+홀리 어벤저, 셀레스티어의 기능인 '티르의 심판'이 향상되어 '티르의 심판' 사용시 추가로 '하늘의 눈물'이 발동된다.
+'하늘의 눈물'은 주위의 적들에게 2D6의 전기 데미지를 주고 잠시 후, 하늘에서 티르의 눈물이 떨어져 적들에게 20D10의 마법 피해를 준다. 적들은 주문에 대한 내성굴림에 -4 페널티를 받고 성공하면 피해를 절반으로 줄일 수 있다.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- Regenerates 1 hit point every 20 seconds
+- Immunity to horror, imprisonment, maze, wing buffets and confusion
+- Double the movement speed
+
+Charge ability (1x per day): 
+- 갓블레이드 for 100 seconds
+
+Combat abilities: 
+- Inflicts 2 electrical damage to the target
+
+Enchantment: +3
+THAC0: +2
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+/*
+
+Only usable by: 
+Paladin
+*/
+
+@303   = ~갓블레이드는 하루에 한 번 소환할 수 있으며, 착용자에게 적에게 막대한 피해를 입히고 무적 상태가 되는 힘을 부여합니다.
+
+
+STATISTICS: 
+
+Equipped abilities: 
+- THAC0: +30
+- Regenerates 10 hit points per second
+- Hit points can fall below 1
+- Immunity to magical death, horror, poisoning, silence, sleep, slowness, stun, magic death, blindness, Feeblemindedness, disease, deafness, paralysis, mind attacks, imprisonment, maze, level drain, wing buffets, disintegration, charms, confusion and flesh to stone
+- Double the movement speed and the number of attacks per round
+
+Combat abilities: 
+- Inflicts 5 electrical damage to the target
+- Inflicts 5 magic fire damage to the target
+
+Enchantment: +6
+THAC0: +12
+Damage: 2d4 (Slashing)
+Speed Factor: 3
+Proficiency Type: bastard sword
+Type: One-Handed
+
+Requires: 
+- 11 Strength
+
+Weight: 10~
+
+
+// ZYDOP2 Interjection if player talk to ZYDOP1
+
+@7777  = ~크후후... 어리석은 인간들...~
