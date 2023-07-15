@@ -409,3 +409,18 @@ Weight: 10~
 // ZYDOP2 Interjection if player talk to ZYDOP1
 
 @7777  = ~(scoffs) Stupid <RACE> being...~
+
+
+
+// ZYHAUSER.BAF
+
+@7778  = ~Second Wind!~
+@7779  = ~*quaffs a potion*~
+@7780  = ~I need healing!~
+@7781  = ~Shadow Stance!~
+@7782  = ~Shadowless Kick!~
+@7783  = ~Dragon Fist~
+@7784  = ~Tiger Strike~
+@7785  = ~Hand of Murder~
+@7786  = ~Hyo-o-cha !~
+@7787  = ~Kyai-ya !~

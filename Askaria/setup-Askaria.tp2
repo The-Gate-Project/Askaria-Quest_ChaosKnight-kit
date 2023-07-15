@@ -7,19 +7,7 @@ VERSION ~v2.0~
 ALWAYS
 		
 
-	ACTION_IF GAME_IS ~bgee~ BEGIN 
-OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#31819) // @31819 = ~Cet endroit maudit sera votre tombe. Mourez !~
-OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#71024) // @71024 = ~Meurs en silence !~
-OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#42142) // @42142 = ~Préparez-vous à rencontrer vos dieux païens !~
-		END ELSE ACTION_IF GAME_IS ~eet~  BEGIN
-OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#100598) // @100598 = ~Je commencerai par danser sur votre tombe.~
-OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#39147) // @39147  = ~Tu ne pourras pas m'échapper ! Je finirai par t'avoir !~
-OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23814) // @23814  = ~Je vous enterrerai tous !~
-		END ELSE ACTION_IF GAME_IS ~bgt~  BEGIN
-OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#57525) // @57525 = ~Doit détruire !~
-OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#57522) // @57522 = ~Vous allez mourir !~
-OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23187) // @23187 = ~Je... je suis ta mort ! Tout ceci m'insupporte !~
-		END
+INCLUDE ~Askaria/Lib/ZYJODisplayStringHead.tpa~
 
 INCLUDE ~Askaria/Lib/g3_cpmvars_master.tpa~
 
@@ -397,6 +385,7 @@ END
 
 COMPILE ~Askaria/BAF/ZYASKA.baf~
 COMPILE ~Askaria/BAF/ZYHAUSER.baf~
+    EVALUATE_BUFFER
 COMPILE ~Askaria/BAF/ZYDOP1.baf~
 COMPILE ~Askaria/BAF/ZYDOP2.baf~
 COMPILE ~Askaria/BAF/MQSIGHT.baf~

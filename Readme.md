@@ -150,3 +150,4 @@ Corrected by Xicloing
   - Prevent Askaria's final dialogue from occurring too soon
   - Bam for Items 
   - Implement Zytest.itm (Create an little encounter)
+  - Use right streff numbers depending of the game

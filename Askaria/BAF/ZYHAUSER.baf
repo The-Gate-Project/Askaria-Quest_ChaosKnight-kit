@@ -40,22 +40,22 @@ IF
 THEN
   RESPONSE #50
     SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,46151)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff1%)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
     SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,49763)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff2%)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
     SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,49764)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff3%)
     Shout(ASSIST)
     Continue()
   RESPONSE #50
     SetGlobalTimer("ZYWhined","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,49765)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff4%)
     Shout(ASSIST)
     Continue()
 END
@@ -64,13 +64,13 @@ IF
   BreakingPoint()
 THEN
   RESPONSE #50
-    DisplayStringHead(Myself,49766)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff5%)
     Shout(ASSIST)
   RESPONSE #50
-    DisplayStringHead(Myself,49767)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff6%)
     Shout(ASSIST)
   RESPONSE #50
-    DisplayStringHead(Myself,49768)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff7%)
     Shout(ASSIST)
 END
 
@@ -80,7 +80,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("ZYSecondWind","LOCALS",1)
-    DisplayStringHead(Myself,73944)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff8%)
     ApplySpell(Myself,CLERIC_HEAL)
 END
 
@@ -91,7 +91,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYDrankPotioTime","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,46150)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff9%)
     UseItem("POTN55",Myself)
 END
 
@@ -105,7 +105,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYCallForHeal","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,72808)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff10%)
     Shout(HEALME)
     Continue()
 END
@@ -119,7 +119,7 @@ THEN
   RESPONSE #100
     SetGlobalTimer("ZYDrankPotioTime","LOCALS",ONE_ROUND)
     SetGlobal("ZYGiantStrengPotio","LOCALS",1)
-    DisplayStringHead(Myself,46150)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff9%)
     UseItem("POTN05",Myself)
 END
 
@@ -188,7 +188,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYShadowStance","LOCALS",FIVE_ROUNDS)
-    DisplayStringHead(Myself,73943)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff11%)
     ReallyForceSpellRES("BALTH10",Myself)
 END
 
@@ -200,7 +200,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",3)
-    DisplayStringHead(Myself,73942)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff12%)
     FaceObject(LastSeenBy(Myself))
     SwingOnce()
     PlaySound("BALTHA02")
@@ -215,7 +215,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",TWO_ROUNDS)
-    DisplayStringHead(Myself,72915)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff13%)
     ForceSpellRES("BALTH03",Myself)
     Continue()
 END
@@ -228,7 +228,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",TWO_ROUNDS)
-    DisplayStringHead(Myself,72916)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff14%)
     ForceSpellRES("BALTH04",Myself)
     Continue()
 END
@@ -241,7 +241,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",ONE_ROUND)
-    DisplayStringHead(Myself,71989)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff15%)
     ForceSpellRES("BALTH05",Myself)
     Continue()
 END
@@ -254,7 +254,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",5)
-    DisplayStringHead(Myself,72936)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff16%)
     ForceSpell(Myself,MONK_QUIVERING_PALM)
     Continue()
 END
@@ -267,7 +267,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("ZYMonkTimer","LOCALS",9)
-    DisplayStringHead(Myself,72937)
+    DisplayStringHead(Myself,%ZYHAUSER_JOstreff17%)
     ForceSpell(Myself,MONK_STUNNING_BLOW)
     Continue()
 END

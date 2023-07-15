@@ -1,0 +1,82 @@
+ACTION_IF GAME_IS ~bgee~ BEGIN 
+	
+// ZYJOSWOR.BAF
+
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#31819) // @31819 = ~Cet endroit maudit sera votre tombe. Mourez !~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#71024) // @71024 = ~Meurs en silence !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#42142) // @42142 = ~Préparez-vous à rencontrer vos dieux païens !~
+
+// ZYHAUSER.BAF
+
+OUTER_SET ZYHAUSER_JOstreff1  = RESOLVE_STR_REF (#62279) // @62279 = ~À l'aide !~
+OUTER_SET ZYHAUSER_JOstreff2  = RESOLVE_STR_REF (#62280) // @62280 = ~J'ai besoin d'aide.~
+OUTER_SET ZYHAUSER_JOstreff3  = RESOLVE_STR_REF (#62281) // @62281 = ~Défendez-moi !~
+OUTER_SET ZYHAUSER_JOstreff4  = RESOLVE_STR_REF (#62282) // @62282 = ~Tuez mon agresseur !~
+OUTER_SET ZYHAUSER_JOstreff5  = RESOLVE_STR_REF (#62283) // @62283 = ~Je n'en peux plus !~
+OUTER_SET ZYHAUSER_JOstreff6  = RESOLVE_STR_REF (#62284) // @62284 = ~Assez !~
+OUTER_SET ZYHAUSER_JOstreff7  = RESOLVE_STR_REF (#62285) // @62285 = ~Pitié !~
+OUTER_SET ZYHAUSER_JOstreff8  = RESOLVE_STR_REF (@7778) // @7778  = ~Second souffle !~
+OUTER_SET ZYHAUSER_JOstreff9  = RESOLVE_STR_REF (@7779) // @7779  = ~*avale une potion*~
+OUTER_SET ZYHAUSER_JOstreff10 = RESOLVE_STR_REF (@7780) // @7780  = ~J'ai besoin de soins !~
+OUTER_SET ZYHAUSER_JOstreff11 = RESOLVE_STR_REF (@7781) // @7781  = ~Posture d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff12 = RESOLVE_STR_REF (@7782) // @7782  = ~Coup d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff13 = RESOLVE_STR_REF (@7783) // @7783  = ~Poing draconique~
+OUTER_SET ZYHAUSER_JOstreff14 = RESOLVE_STR_REF (@7784) // @7784  = ~Frappe du tigre~
+OUTER_SET ZYHAUSER_JOstreff15 = RESOLVE_STR_REF (@7785) // @7785  = ~Main du meurtre~
+OUTER_SET ZYHAUSER_JOstreff16 = RESOLVE_STR_REF (@7786) // @7786  = ~Hyo-o-cha !~
+OUTER_SET ZYHAUSER_JOstreff17 = RESOLVE_STR_REF (@7787) // @7787  = ~Kyai-ya !~
+		END ELSE ACTION_IF GAME_IS ~eet~  BEGIN
+		
+// ZYJOSWOR.BAF
+
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#100598) // @100598 = ~Je commencerai par danser sur votre tombe.~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#39147) // @39147  = ~Tu ne pourras pas m'échapper ! Je finirai par t'avoir !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23814) // @23814  = ~Je vous enterrerai tous !~
+
+// ZYHAUSER.BAF
+
+OUTER_SET ZYHAUSER_JOstreff1  = RESOLVE_STR_REF (#46151) // @46151  = ~Au secours !~
+OUTER_SET ZYHAUSER_JOstreff2  = RESOLVE_STR_REF (#49763) // @49763  = ~J'ai besoin d'aide.~
+OUTER_SET ZYHAUSER_JOstreff3  = RESOLVE_STR_REF (#49764) // @49764  = ~Défends-moi !~
+OUTER_SET ZYHAUSER_JOstreff4  = RESOLVE_STR_REF (#49765) // @49765  = ~Terrasse l'attaquant !~
+OUTER_SET ZYHAUSER_JOstreff5  = RESOLVE_STR_REF (#49766) // @49766  = ~Je ne peux pas le supporter.~
+OUTER_SET ZYHAUSER_JOstreff6  = RESOLVE_STR_REF (#49767) // @49767  = ~Assez.~
+OUTER_SET ZYHAUSER_JOstreff7  = RESOLVE_STR_REF (#49768) // @49768  = ~Pitié !~
+OUTER_SET ZYHAUSER_JOstreff8  = RESOLVE_STR_REF (#73944) // @73944  = ~Second souffle !~
+OUTER_SET ZYHAUSER_JOstreff9  = RESOLVE_STR_REF (#46150) // @46150  = ~*avale une potion*~ // *2
+OUTER_SET ZYHAUSER_JOstreff10 = RESOLVE_STR_REF (#72808) // @72808  = ~J'ai besoin de soins !~
+OUTER_SET ZYHAUSER_JOstreff11 = RESOLVE_STR_REF (#73943) // @73943  = ~Posture d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff12 = RESOLVE_STR_REF (#73942) // @73942  = ~Coup d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff13 = RESOLVE_STR_REF (#72915) // @72915  = ~Poing draconique~
+OUTER_SET ZYHAUSER_JOstreff14 = RESOLVE_STR_REF (#72916) // @72916  = ~Frappe du tigre~
+OUTER_SET ZYHAUSER_JOstreff15 = RESOLVE_STR_REF (#71989) // @71989  = ~Main du meurtre~
+OUTER_SET ZYHAUSER_JOstreff16 = RESOLVE_STR_REF (#72936) // @72936  = ~Hyo-o-cha !~
+OUTER_SET ZYHAUSER_JOstreff17 = RESOLVE_STR_REF (#72937) // @72937  = ~Kyai-ya !~
+		END ELSE ACTION_IF GAME_IS ~bgt~  BEGIN
+		
+// ZYJOSWOR.BAF
+
+OUTER_SET Wediyer_JOstreff = RESOLVE_STR_REF (#57525) // @57525 = ~Doit détruire !~
+OUTER_SET Wediyer_JOstreff2 = RESOLVE_STR_REF (#39147) // @39147 = ~Tu ne pourras pas m'échapper ! Je finirai par t'avoir !~
+OUTER_SET Wediyer_JOstreff3 = RESOLVE_STR_REF (#23187) // @23187 = ~Je... je suis ta mort ! Tout ceci m'insupporte !~
+
+// ZYHAUSER.BAF
+
+OUTER_SET ZYHAUSER_JOstreff1  = RESOLVE_STR_REF (#46151) // @46151  = ~Au secours !~
+OUTER_SET ZYHAUSER_JOstreff2  = RESOLVE_STR_REF (#49763) // @49763  = ~J'ai besoin d'aide.~
+OUTER_SET ZYHAUSER_JOstreff3  = RESOLVE_STR_REF (#49764) // @49764  = ~Défends-moi !~
+OUTER_SET ZYHAUSER_JOstreff4  = RESOLVE_STR_REF (#49765) // @49765  = ~Terrasse l'attaquant !~
+OUTER_SET ZYHAUSER_JOstreff5  = RESOLVE_STR_REF (#49766) // @49766  = ~Je ne peux pas le supporter.~
+OUTER_SET ZYHAUSER_JOstreff6  = RESOLVE_STR_REF (#49767) // @49767  = ~Assez.~
+OUTER_SET ZYHAUSER_JOstreff7  = RESOLVE_STR_REF (#49768) // @49768  = ~Pitié !~
+OUTER_SET ZYHAUSER_JOstreff8  = RESOLVE_STR_REF (#73944) // @73944  = ~Second souffle !~
+OUTER_SET ZYHAUSER_JOstreff9  = RESOLVE_STR_REF (#46150) // @46150  = ~*avale une potion*~ // *2
+OUTER_SET ZYHAUSER_JOstreff10 = RESOLVE_STR_REF (#72808) // @72808  = ~J'ai besoin de soins !~
+OUTER_SET ZYHAUSER_JOstreff11 = RESOLVE_STR_REF (#73943) // @73943  = ~Posture d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff12 = RESOLVE_STR_REF (#73942) // @73942  = ~Coup d'ombre !~
+OUTER_SET ZYHAUSER_JOstreff13 = RESOLVE_STR_REF (#72915) // @72915  = ~Poing draconique~
+OUTER_SET ZYHAUSER_JOstreff14 = RESOLVE_STR_REF (#72916) // @72916  = ~Frappe du tigre~
+OUTER_SET ZYHAUSER_JOstreff15 = RESOLVE_STR_REF (#71989) // @71989  = ~Main du meurtre~
+OUTER_SET ZYHAUSER_JOstreff16 = RESOLVE_STR_REF (#72936) // @72936  = ~Hyo-o-cha !~
+OUTER_SET ZYHAUSER_JOstreff17 = RESOLVE_STR_REF (#72937) // @72937  = ~Kyai-ya !~
+		END
