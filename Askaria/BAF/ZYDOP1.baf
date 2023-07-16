@@ -10,3 +10,13 @@ THEN
 	ApplySpell("zydop2",INVOKE_COURAGE)
     Dialogue([PC])
 END
+
+IF
+  Global("zyJOhagu","GLOBAL",1)
+  Global("ZyJOPRIME","GLOBAL",0)
+THEN
+  RESPONSE #100
+	DisplayStringHead("zydop1",#5167)
+	DisplayStringHead("zydop2",#5167)
+	SetGlobal("ZyJOPRIME","GLOBAL",1)
+END
