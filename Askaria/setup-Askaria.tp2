@@ -221,7 +221,7 @@ COPY_EXISTING ~GORGUA05.cre~ ~override/zyjoswor.cre~
   WRITE_SHORT 0x14 5250 // XP for killing
   WRITE_SHORT 0x24 100 // Current HP
   WRITE_SHORT 0x26 100 // Maximum HP
-  WRITE_SHORT 0x28 0x5110  // Animation
+  WRITE_LONG 0x28 0x5110  // Animation
   WRITE_BYTE 0x2D 47  // Minor Color
   WRITE_BYTE 0x2E 50  // Major Color
   WRITE_SHORT 0x46 ~-1~  // Natural AC
@@ -230,7 +230,7 @@ COPY_EXISTING ~GORGUA05.cre~ ~override/zyjoswor.cre~
   WRITE_BYTE 0x53 2  // Attack per round
   WRITE_BYTE 0x234 10  // Level first class  
   WRITE_BYTE 0x237 2  // Sex  
-  //WRITE_SHORT 0x238 18  // Force 
+  //WRITE_BYTE 0x238 18  // Force 
   WRITE_ASCII 0x248 ~zyjoswor~ (8)  // script override  
   WRITE_ASCII 0x280 ~zyjoswor~ (8)  // Script name 
   REMOVE_CRE_ITEM ~GHOST3~
@@ -240,7 +240,7 @@ COPY_EXISTING ~GORGUA05.cre~ ~override/zyjoswor.cre~
   REMOVE_CRE_ITEM ~SW2H17~ ~weapon1~
   ADD_CRE_ITEM ~PLAT05~ #0 #0 #0 ~unstealable&undroppable~ ~armor~
   ADD_CRE_ITEM ~HELM02~ #0 #0 #0 ~unstealable&undroppable~ ~helmet~
-  ADD_CRE_ITEM ~SW2H06~ #0 #0 #0 ~unstealable&undroppable~ ~weapon1~
+  ADD_CRE_ITEM ~SW2H06~ #0 #0 #0 ~unstealable&undroppable~ ~weapon1~ EQUIP
   ADD_CRE_ITEM ~zyjoswor~ #0 #1 #0 ~unstealable~ ~inv3~
 		END ELSE BEGIN
 COPY ~Askaria/CRE/zyjoswor.cre~ ~override~
