@@ -39,7 +39,7 @@ END
 
 AUTO_TRA ~Askaria/Language/autotra/%s/D~
 
-LANGUAGE ~ÇÑ±¹¾î~ ~korean~ ~Askaria/Language/korean/setup.tra~
+LANGUAGE ~Korean~ ~korean~ ~Askaria/Language/korean/setup.tra~
 LANGUAGE ~English~ ~english~ ~Askaria/Language/english/setup.tra~
 LANGUAGE ~French~ ~french~ ~Askaria/Language/french/setup.tra~
 
